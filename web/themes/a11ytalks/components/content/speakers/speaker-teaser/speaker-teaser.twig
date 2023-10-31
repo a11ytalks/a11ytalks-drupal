@@ -1,0 +1,9 @@
+<div class="speaker-teaser">
+    <div class="speaker-teaser__media">
+        {{ content.field_media}}
+    </div>
+    {% include "a11ytalks:field" with {
+        field_name: "speaker-teaser__title",
+        content: content.field_title|field_value
+    }%}
+</div>

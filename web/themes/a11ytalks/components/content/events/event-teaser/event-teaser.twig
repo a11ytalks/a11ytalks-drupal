@@ -1,0 +1,16 @@
+<div {{attributes.addClass('event-teaser')}}>
+  <div className='event-teaser__item-meta'>
+    {{content.field_media}}
+    <div className='event-teaser__item-content'>
+      <div>
+        {{ content.field_date }}
+        {{ content.field_speakers }}
+        {{ title }}
+      </div>
+      {{ content.body }}
+      {{ link }}
+    </div>
+  </div>
+
+  <hr className="hr-last" />
+</div>

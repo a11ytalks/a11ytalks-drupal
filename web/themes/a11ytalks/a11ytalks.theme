@@ -1,0 +1,27 @@
+<?php declare(strict_types = 1);
+
+/**
+ * @file
+ * Functions to support theming in the a11ytalks theme.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK() for html.html.twig.
+ */
+function a11ytalks_preprocess_html(array &$variables): void {
+
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for page.html.twig.
+ */
+function a11ytalks_preprocess_page(array &$variables): void {
+
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for node.html.twig.
+ */
+function a11ytalks_preprocess_node(array &$variables): void {
+
+}
