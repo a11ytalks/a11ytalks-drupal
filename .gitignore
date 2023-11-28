@@ -44,3 +44,5 @@ web/sites/simpletest
 /web/modules/contrib/*
 /web/themes/contrib/*
 /web/.htaccess
+.DS_Store
+node_modules

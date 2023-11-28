@@ -12,3 +12,5 @@ props:
   properties:
     field_name:
       type: string
+    content:
+      type: ["string","null"]

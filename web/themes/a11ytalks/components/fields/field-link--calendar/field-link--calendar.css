@@ -1,0 +1,34 @@
+.calendar {
+    margin: 0 -10px;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+    list-style: none;
+    padding: 0;
+    text-align: center !important;
+  
+    & li {
+      display: inline-block;
+      margin: 10px 5px;
+      font-weight: 600;
+      text-transform: uppercase;
+  
+      & a {
+        display: inline-block;
+        height: 35px;
+        padding: 0 24px;
+        line-height: 35px;
+        border: 1px solid #757575;
+        text-decoration: none;
+        border-radius: 20px;
+        background: #ff9f1c;
+        color: #000;
+  
+        &:hover,
+        &:focus {
+          filter: brightness(1.2);
+          color: #000;
+          text-decoration: underline;
+        }
+      }
+    }
+  }

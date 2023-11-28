@@ -1,0 +1,27 @@
+{
+  "name": "a11ytalks-drupal",
+  "version": "1.0.0",
+  "description": "Storybook for Drupal ",
+  "main": "index.js",
+  "repository": "git@github.com:a11ytalks/a11ytalks-drupal.git",
+  "author": "markie@teampoop.com",
+  "license": "MIT",
+  "dependencies": {
+    "sb": "^7.5.3"
+  },
+  "devDependencies": {
+    "@lullabot/storybook-drupal-addon": "^2.0.2",
+    "@storybook/addon-essentials": "^7.5.3",
+    "@storybook/addon-links": "^7.5.3",
+    "@storybook/blocks": "^7.5.3",
+    "@storybook/server": "^7.5.3",
+    "@storybook/server-webpack5": "^7.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.5.3"
+  },
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  }
+}

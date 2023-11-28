@@ -1,0 +1,57 @@
+.site-branding {
+  text-align: center;
+}
+
+.site-branding__logo {
+  display: inline-block;
+  margin-bottom: 0;
+  border-radius: 50%;
+  background-clip: padding-box
+}
+
+.site-name {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.125rem;
+  margin: .5rem 0;
+
+  a {
+    color: #2ec4b6;
+
+    &::hover,
+    &::focus {
+      color: #757575;
+    }
+
+  }
+
+}
+
+.site-slogan {
+  color: #757575;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+
+@media (prefers-color-scheme: light) {
+  .site-name {
+
+    a {
+      color: #000;
+
+      &:hover,
+      &:focus {
+        color: #000;
+        text-shadow: inherit;
+      }
+    }
+  }
+
+  .site-slogan {
+    color: #000;
+  }
+}

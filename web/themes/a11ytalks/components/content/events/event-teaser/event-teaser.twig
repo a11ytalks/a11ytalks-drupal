@@ -1,16 +1,25 @@
+
+{% set speaker_1 = node.field_speakers.entity %}
 <div {{attributes.addClass('event-teaser')}}>
-  <div className='event-teaser__item-meta'>
-    {{content.field_media}}
-    <div className='event-teaser__item-content'>
-      <div>
-        {{ content.field_date }}
-        {{ content.field_speakers }}
-        {{ title }}
-      </div>
+  {{title_suffix}}
+  <div class='event-teaser__meta'>
+    <div class="event-teaser__date">
+      {{ content.field_date_time }}
+    </div>
+    <h2 class="event-teaser__title">
+      <a href={{url}} class="event-teaser__title-link">{{label}}</a></h2>
+  </div>
+  <div class="event-teaser__content">
+    <div class="event-teaser__image">
+      {% include "a11ytalks:speaker-teaser" with {
+        speaker: speaker_1,
+      }%}
+    </div>
+    <div class="event-teaser__description">
       {{ content.body }}
-      {{ link }}
+      <a href="{{url}}" class="event-teaser__readmore">Read more<span class="sr-only"> about {{label}}</span> &#8594;</a>
     </div>
   </div>
 
-  <hr className="hr-last" />
+  <hr class="event-teaser__last" />
 </div>

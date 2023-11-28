@@ -1,0 +1,39 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.sidebar {
+    width: 100%;
+    text-align: center;
+    &__inner {
+        position: relative;
+        padding: 25px 20px 0;
+    }
+
+    @include breakpoint-sm {
+        position: sticky;
+        top: 0;
+        max-width: 30vw;
+        &__inner {
+            padding: 30px 20px 0;
+            &:after {
+                background: $color-gray-border;
+                position: absolute;
+                content: '';
+                width: 1px;
+                height: auto;
+                top: 30px;
+                right: -10px;
+                bottom: 30px;
+            }
+        }
+    }
+
+    @include breakpoint-md {
+        max-width: 20vw;
+        &__inner {
+        padding: 30px;
+        }
+    }
+
+}
+

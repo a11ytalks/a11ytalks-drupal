@@ -10,5 +10,5 @@ group: A11yTalks
 props:
   type: object
   properties:
-    content:
+    speaker:
       type: object

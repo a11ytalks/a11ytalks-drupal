@@ -1,0 +1,56 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.pagination {
+  @include margin-top(2);
+  display: inline-flex;
+  clear: both;
+  width: 100%;
+
+  &__prev {
+    width: 50%;
+    text-align: left;
+
+    &-link {
+      color: $color-accent;
+      font-size: 26px;
+      font-weight: bold;
+
+      &:hover,
+      &:focus {
+        color: $color-primary;
+      }
+
+      &--disable {
+        pointer-events: none;
+        color: lighten($color-gray, 13%);
+      }
+
+    }
+
+  }
+
+  &__next {
+    width: 50%;
+    text-align: right;
+
+    &-link {
+      color: $color-accent;
+      font-size: 26px;
+      font-weight: bold;
+
+      &:hover,
+      &:focus {
+        color: $color-primary;
+      }
+
+      &--disable {
+        pointer-events: none;
+        color: lighten($color-gray, 13%);
+      }
+
+    }
+
+  }
+
+}

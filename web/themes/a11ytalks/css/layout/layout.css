@@ -1,0 +1,46 @@
+.layout {
+  display: block;
+
+  @media (min-width: 685px) {
+    display: flex;
+  }
+}
+
+.sidebar {
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: 685px) {
+    position: sticky;
+    top: 0;
+    max-width: 30vw;
+  }
+
+  @media (min-width: 960px) {
+    max-width: 20vw;
+  }
+
+}
+
+.sidebar__inner {
+  position: relative;
+  padding: 25px 20px 0;
+
+  @media (min-width: 685px) {
+    padding: 30px 20px 0;
+    &::after {
+        background: #757575;
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: auto;
+        top: 30px;
+        right: -10px;
+        bottom: 30px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    padding: 30px;
+  }
+}

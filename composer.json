@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^2.0",
         "drupal/admin_toolbar": "^3.4",
+        "drupal/cl_server": "^2.0.0@beta",
         "drupal/core-composer-scaffold": "^10.1",
         "drupal/core-recommended": "^10.1",
         "drupal/core-vendor-hardening": "^10.1",
@@ -25,9 +26,11 @@
         "drupal/gin_toolbar": "^1.0@rc",
         "drupal/migrate_plus": "^6.0",
         "drupal/migrate_process_markdown_to_html": "^1.1",
+        "drupal/migrate_source_csv": "^3.5",
         "drupal/pathauto": "^1.12",
         "drupal/smart_trim": "^2.1",
         "drupal/twig_field_value": "^2.0",
+        "drupal/twig_tweak": "^3.2",
         "drush/drush": "^12.3"
     },
     "conflict": {

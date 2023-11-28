@@ -1,0 +1,35 @@
+ul.menu {
+
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  text-align: center;
+
+  a {
+    color: #e90909;
+    font-weight: 600;
+  }
+}
+
+.menu-item {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+
+  & a {
+    font-size: 16px;
+    font-weight: normal;
+    border: 0;
+
+    &:hover, &:focus {
+      color: #2ec4b6;
+    }
+
+    &.is-active {
+      color: #222;
+    }
+
+  }
+
+}
+

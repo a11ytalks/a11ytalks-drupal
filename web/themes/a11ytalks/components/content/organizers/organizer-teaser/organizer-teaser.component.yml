@@ -1,0 +1,18 @@
+# This is so your IDE knows about the syntax for fixes and autocomplete.
+$schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
+
+# The human readable name.
+name: Organizer - Teaser
+
+# Status can be: "experimental", "stable", "deprecated", "obsolete".
+status: stable
+
+# Use this key to organize components together.
+group: Content
+
+props:
+  type: object
+  properties:
+    content:
+      title: Content
+      type: object
