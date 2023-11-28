@@ -1,0 +1,24 @@
+uuid: 59af99ad-4bd8-4ae3-aacc-d210167f1c62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.organizers
+  module:
+    - text
+id: node.organizers.body
+field_name: body
+entity_type: node
+bundle: organizers
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

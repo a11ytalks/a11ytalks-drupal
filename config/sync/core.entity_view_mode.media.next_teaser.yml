@@ -1,0 +1,10 @@
+uuid: d3f228a8-0fb7-49a2-aa7d-4dbfb21cdf97
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.next_teaser
+label: 'Next Teaser'
+targetEntityType: media
+cache: true

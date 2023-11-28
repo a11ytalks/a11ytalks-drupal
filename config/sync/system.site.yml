@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 8e44c643-c302-46ea-a054-c47fd6454ea5
+name: A11yTalks
+mail: admin@example.com
+slogan: 'Virtual meet-up featuring speakers & conversations around digital accessibility'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

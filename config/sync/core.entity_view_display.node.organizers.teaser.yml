@@ -1,0 +1,49 @@
+uuid: abc6f724-942d-4e84-8da5-212094650403
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.organizers.body
+    - field.field.node.organizers.field_callouts
+    - field.field.node.organizers.field_current
+    - field.field.node.organizers.field_link
+    - field.field.node.organizers.field_media
+    - field.field.node.organizers.field_pronouns
+    - field.field.node.organizers.field_title
+    - node.type.organizers
+  module:
+    - text
+    - user
+id: node.organizers.teaser
+targetEntityType: node
+bundle: organizers
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_callouts: true
+  field_current: true
+  field_link: true
+  field_media: true
+  field_pronouns: true

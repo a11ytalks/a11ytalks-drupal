@@ -1,0 +1,22 @@
+uuid: 17ba0645-ebf8-41df-9998-61283c022517
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - a11ytalks
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: a11ytalks_breadcrumbs
+theme: a11ytalks
+region: header
+weight: 1
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

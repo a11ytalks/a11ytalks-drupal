@@ -1,0 +1,22 @@
+uuid: 46af61f1-a0c2-447d-94d0-8413dfdc264f
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - a11ytalks
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: a11ytalks_help
+theme: a11ytalks
+region: header
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

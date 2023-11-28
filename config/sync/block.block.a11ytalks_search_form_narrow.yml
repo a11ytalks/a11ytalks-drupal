@@ -1,0 +1,23 @@
+uuid: 35149917-3902-4c7a-bcb1-a4f08a71ca9f
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - a11ytalks
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: a11ytalks_search_form_narrow
+theme: a11ytalks
+region: header
+weight: -2
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

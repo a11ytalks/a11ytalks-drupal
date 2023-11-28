@@ -1,0 +1,22 @@
+uuid: 1ecc3ce3-3fcc-4a89-b41b-54a2d7dae94f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - a11ytalks
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: a11ytalks_primary_local_tasks
+theme: a11ytalks
+region: header
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

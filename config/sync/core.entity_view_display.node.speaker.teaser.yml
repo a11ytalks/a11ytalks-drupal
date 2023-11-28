@@ -1,0 +1,39 @@
+uuid: 8565f716-348d-4003-8ef9-6641f0448905
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.speaker.field_company
+    - field.field.node.speaker.field_media
+    - field.field.node.speaker.field_pronouns
+    - field.field.node.speaker.field_title
+    - node.type.speaker
+  module:
+    - user
+id: node.speaker.teaser
+targetEntityType: node
+bundle: speaker
+mode: teaser
+content:
+  field_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_pronouns:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_company: true
+  field_title: true
+  links: true

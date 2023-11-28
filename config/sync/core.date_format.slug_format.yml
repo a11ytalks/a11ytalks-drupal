@@ -1,0 +1,8 @@
+uuid: 690fddb3-83ad-4c00-b4ac-2a05286949b8
+langcode: en
+status: true
+dependencies: {  }
+id: slug_format
+label: 'Slug Format'
+locked: false
+pattern: M-Y

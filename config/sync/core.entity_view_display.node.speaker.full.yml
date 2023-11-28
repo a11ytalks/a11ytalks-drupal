@@ -1,0 +1,57 @@
+uuid: 1a839fee-2235-4423-837a-f535279b2cee
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.speaker.field_company
+    - field.field.node.speaker.field_media
+    - field.field.node.speaker.field_pronouns
+    - field.field.node.speaker.field_title
+    - node.type.speaker
+  module:
+    - user
+id: node.speaker.full
+targetEntityType: node
+bundle: speaker
+mode: full
+content:
+  field_company:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_pronouns:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

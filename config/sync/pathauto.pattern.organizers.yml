@@ -1,0 +1,22 @@
+uuid: 0a1cf544-77d6-4637-a247-6d6ad52ecdd5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: organizers
+label: Organizers
+type: 'canonical_entities:node'
+pattern: 'members/[node:field_name:value]'
+selection_criteria:
+  0d5168d8-f66d-4438-9959-bb05a4de504e:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 0d5168d8-f66d-4438-9959-bb05a4de504e
+    context_mapping:
+      node: node
+    bundles:
+      organizers: organizers
+selection_logic: and
+weight: -5
+relationships: {  }

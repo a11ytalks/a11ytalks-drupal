@@ -1,0 +1,50 @@
+uuid: 3e04edc9-18e1-4c1e-b824-2ebd66414a96
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.next
+    - field.field.node.event.body
+    - field.field.node.event.field_date_time
+    - field.field.node.event.field_link
+    - field.field.node.event.field_media
+    - field.field.node.event.field_speakers
+    - field.field.node.event.field_tags
+    - field.field.node.event.field_youtube
+    - node.type.event
+  module:
+    - datetime
+    - text
+    - user
+id: node.event.next
+targetEntityType: node
+bundle: event
+mode: next
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_date_time:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_link: true
+  field_media: true
+  field_speakers: true
+  field_tags: true
+  field_youtube: true

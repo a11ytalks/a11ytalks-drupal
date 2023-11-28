@@ -1,0 +1,19 @@
+uuid: 0d60a215-1562-47b0-8808-d166371f8844
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pronouns
+    - node.type.organizers
+id: node.organizers.field_pronouns
+field_name: field_pronouns
+entity_type: node
+bundle: organizers
+label: Pronouns
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

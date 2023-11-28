@@ -1,0 +1,20 @@
+uuid: dda18ffc-2506-4978-a282-2413d72aff7a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - a11ytalks
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: a11ytalks_page_title
+theme: a11ytalks
+region: featured
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }
