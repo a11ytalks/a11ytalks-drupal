@@ -6,22 +6,24 @@
   "repository": "git@github.com:a11ytalks/a11ytalks-drupal.git",
   "author": "markie@teampoop.com",
   "license": "MIT",
-  "dependencies": {
-    "sb": "^7.5.3"
-  },
+  "type": "module",
   "devDependencies": {
     "@lullabot/storybook-drupal-addon": "^2.0.2",
     "@storybook/addon-essentials": "^7.5.3",
     "@storybook/addon-links": "^7.5.3",
     "@storybook/blocks": "^7.5.3",
+    "@storybook/react-vite": "^7.6.2",
     "@storybook/server": "^7.5.3",
     "@storybook/server-webpack5": "^7.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "storybook": "^7.5.3"
+    "sass": "^1.69.5",
+    "storybook": "^7.5.3",
+    "vite-plugin-twig-drupal": "^1.0.2"
   },
   "scripts": {
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "dev": "vite"
   }
 }

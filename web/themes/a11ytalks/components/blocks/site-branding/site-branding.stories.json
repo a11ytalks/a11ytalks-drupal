@@ -1,0 +1,45 @@
+{
+  "title": "A11ytalks/SiteBranding",
+  "argTypes": {
+    "ctaTarget": {
+      "control": "radio",
+      "options": {
+        "Empty": "",
+        "Blank": "_blank"
+      }
+    }
+  },
+  "stories": [
+    {
+      "name": "1. Default",
+      "args": {
+        "heading": "Join us at The Conference",
+        "image": "https://picsum.photos/seed/affse3/1200/150",
+        "ctaText": "Register",
+        "ctaHref": "https://www.example.org"
+      }
+    },
+    {
+      "name": "2. No Image",
+      "args": {
+        "heading": "Are you sure you want to end the session?",
+        "ctaText": "Log out",
+        "ctaHref": "https://www.example.org",
+        "image": ""
+      }
+    },
+    {
+      "name": "3. With Body",
+      "args": {
+        "heading": "Improve perceived performance",
+        "ctaText": "Learn More",
+        "ctaHref": "https://www.example.org",
+        "image": "https://picsum.photos/seed/se3/1200/350",
+        "banner_body": "<h4>Benefits of our technology</h4>\n<ul>\n  <li>Faster first contentful paint.</li>\n  <li>Distributed content delivery networks.</li>\n  <li>High availability and redundancy.</li>\n</ul>\n"
+      }
+    }
+  ],
+  "args": {
+    "ctaTarget": ""
+  }
+}

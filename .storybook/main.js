@@ -1,18 +1,16 @@
 /** @type { import('@storybook/server-webpack5').StorybookConfig } */
 const config = {
   stories: [
-    "../web/modules/**/*.mdx",
-    "../web/modules/**/*.stories.json",
     "../web/themes/**/*.mdx",
+    "../web/themes/**/*.stories.js",
     "../web/themes/**/*.stories.json",
   ],
   addons: [
     "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    '@lullabot/storybook-drupal-addon'
+    "@storybook/addon-essentials"
   ],
   framework: {
-    name: "@storybook/server-webpack5",
+    name: '@storybook/react-vite', // 👈 The builder enabled here.
     options: {},
   },
   docs: {
