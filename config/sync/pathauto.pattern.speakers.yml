@@ -1,0 +1,22 @@
+uuid: 7b6743cf-bf6f-439b-9180-cb7bad7464ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: speakers
+label: Speakers
+type: 'canonical_entities:node'
+pattern: 'speakers/[node:title]'
+selection_criteria:
+  5ed68e75-d597-4ba7-8d5b-b971d213db5e:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 5ed68e75-d597-4ba7-8d5b-b971d213db5e
+    context_mapping:
+      node: node
+    bundles:
+      speaker: speaker
+selection_logic: and
+weight: -5
+relationships: {  }
