@@ -18,9 +18,9 @@
         "composer/installers": "^2.0",
         "drupal/admin_toolbar": "^3.4",
         "drupal/cl_server": "^2.0.0@beta",
-        "drupal/core-composer-scaffold": "^10.1",
-        "drupal/core-recommended": "^10.1",
-        "drupal/core-vendor-hardening": "^10.1",
+        "drupal/core-composer-scaffold": "^10.2",
+        "drupal/core-recommended": "^10.2",
+        "drupal/core-vendor-hardening": "^10.2",
         "drupal/editoria11y": "^2.1",
         "drupal/gin": "^3.0@rc",
         "drupal/gin_toolbar": "^1.0@rc",
@@ -31,7 +31,10 @@
         "drupal/smart_trim": "^2.1",
         "drupal/twig_field_value": "^2.0",
         "drupal/twig_tweak": "^3.2",
-        "drush/drush": "^12.3"
+        "drush/drush": "^12.4"
+    },
+    "require-dev": {
+        "drupal/core-dev": "^10.2"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -44,7 +47,8 @@
             "drupal/core-composer-scaffold": true,
             "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "drupal/core-vendor-hardening": true
+            "drupal/core-vendor-hardening": true,
+            "php-http/discovery": true
         },
         "sort-packages": true
     },
@@ -104,8 +108,5 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
-    },
-    "require-dev": {
-        "drupal/core-dev": "^10.1"
     }
 }

@@ -1,16 +1,10 @@
 ## INTRODUCTION
 
-The migrate_markdown_frontmatter module is a DESCRIBE_THE_MODULE_HERE.
-
-The primary use case for this module is:
-
-- Use case #1
-- Use case #2
-- Use case #3
+The migrate_markdown_frontmatter module is used to migrate Markdown Frontmatter.
 
 ## REQUIREMENTS
 
-DESCRIBE_MODULE_DEPENDENCIES_HERE
+league\CommonMark
 
 ## INSTALLATION
 

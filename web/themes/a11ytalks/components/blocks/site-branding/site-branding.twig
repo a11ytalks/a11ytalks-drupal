@@ -1,20 +1,20 @@
-  <div class="site-branding">
-    <a href="{{ path('<front>') }}" rel="home" class="site-logo">
-      <img
-        src="{{site_logo}}"
-        class="site-branding__logo"
-        width="75"
-        height="75"
-        alt="{{ 'Home'|t}}"
-      />
-    </a>
+<div class="site-branding">
+  <a href="{{ path('<front>') }}" rel="home" class="site-logo">
+    <img
+      src="{{site_logo}}"
+      class="site-branding__logo"
+      width="75"
+      height="75"
+      alt="{{ 'Home'|t}}"
+    />
+  </a>
 
-  {% if site_name %}
-    <div class="site-name">
-      <a href="{{ path('<front>') }}" rel="home">{{ site_name }}</a>
-    </div>
-  {% endif %}
-  {% if site_slogan %}
-    <div class="site-slogan">{{ site_slogan }}</div>
-  {% endif %}
+{% if site_name %}
+  <div class="site-name">
+    <a href="{{ path('<front>') }}" rel="home">{{ site_name }}</a>
   </div>
+{% endif %}
+{% if site_slogan %}
+  <div class="site-slogan">{{ site_slogan }}</div>
+{% endif %}
+</div>
