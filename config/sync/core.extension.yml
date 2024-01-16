@@ -9,7 +9,6 @@ module:
   block_content: 0
   breakpoint: 0
   ckeditor5: 0
-  cl_server: 0
   config: 0
   contextual: 0
   datetime: 0
@@ -31,6 +30,7 @@ module:
   menu_ui: 0
   mysql: 0
   node: 0
+  nomarkup: 0
   options: 0
   page_cache: 0
   path: 0
