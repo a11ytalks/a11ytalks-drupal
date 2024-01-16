@@ -27,7 +27,9 @@
         "drupal/migrate_plus": "^6.0",
         "drupal/migrate_process_markdown_to_html": "^1.1",
         "drupal/migrate_source_csv": "^3.5",
+        "drupal/nomarkup": "^1.0",
         "drupal/pathauto": "^1.12",
+        "drupal/sdc_examples": "@dev",
         "drupal/smart_trim": "^2.1",
         "drupal/twig_field_value": "^2.0",
         "drupal/twig_tweak": "^3.2",
@@ -39,7 +41,7 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {

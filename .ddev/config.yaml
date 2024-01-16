@@ -28,6 +28,18 @@ web_extra_daemons:
   - name: node.js
     command: "tail -F package.json > /dev/null"
     directory: /var/www/html
+hooks:
+  post-start:
+    - exec: echo '============================================================='
+    - exec: echo '                            NOTICE'
+    - exec: echo '============================================================='
+    - exec: echo 'The node.js container is ready. Start storybook by typing:'
+    - exec: echo 'ddev yarn storybook'
+    - exec: echo
+    - exec: echo 'It will be available at https://a11ytalks-drupal.ddev.site:6006'
+    - exec: echo "Use ddev describe to confirm if this doesn't work."
+    - exec: echo 'Check the status of startup by running "ddev logs --follow --time"'
+    - exec: echo '============================================================='
 
 
 # Key features of DDEV's config.yaml:

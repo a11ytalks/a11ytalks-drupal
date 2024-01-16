@@ -1,20 +1,24 @@
-/** @type { import('@storybook/server-webpack5').StorybookConfig } */
+// .storybook/main.js
 const config = {
   stories: [
-    "../web/themes/**/*.mdx",
-    "../web/themes/**/*.stories.js",
-    "../web/themes/**/*.stories.json",
+    '../web/themes/**/*.stories.mdx',
+    '../web/themes/**/*.stories.@(json|yml)',
+    '../web/modules/**/*.stories.mdx',
+    '../web/modules/**/*.stories.@(json|yml)',
   ],
+  // ...jj
   addons: [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials"
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@lullabot/storybook-drupal-addon',
   ],
   framework: {
-    name: '@storybook/react-vite', // 👈 The builder enabled here.
+    name: '@storybook/server-webpack5',
     options: {},
   },
   docs: {
-    autodocs: "tag",
+    autodocs: 'tags',
   },
 };
+
 export default config;
