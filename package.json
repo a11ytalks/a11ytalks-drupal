@@ -10,14 +10,14 @@
   "packageManager": "yarn@4.0.2",
   "devDependencies": {
     "@lullabot/storybook-drupal-addon": "^2.0.6",
-    "@storybook/addon-essentials": "^7.6.7",
-    "@storybook/addon-links": "^7.6.7",
-    "@storybook/blocks": "^7.6.7",
-    "@storybook/server": "^7.6.7",
-    "@storybook/server-webpack5": "^7.6.7",
+    "@storybook/addon-essentials": "^7.6.9",
+    "@storybook/addon-links": "^7.6.9",
+    "@storybook/blocks": "^7.6.9",
+    "@storybook/server": "^7.6.9",
+    "@storybook/server-webpack5": "^7.6.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "storybook": "^7.6.7"
+    "storybook": "^7.6.9"
   },
   "scripts": {
     "storybook": "storybook dev -p 6006",

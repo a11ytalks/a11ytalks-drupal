@@ -11,7 +11,6 @@ const preview = {
   },
   parameters: {
     server: {
-      // Replace this with your Drupal site URL, or an environment variable.
       url: 'https://a11ytalks-drupal.ddev.site',
     },
     actions: { argTypesRegex: "^on[A-Z].*" },
