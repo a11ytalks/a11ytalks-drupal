@@ -1,24 +1,24 @@
   <div class="event">
     <h1 class="event__title">{{label}}</h1>
-    <h2 class="event__speaker">{{content.field_speakers}}</h2>
-    <div class="event__body">{{content.body}}</div>
+    <h2 class="event__speaker">{{field_speakers}}</h2>
+    <div class="event__body">{{body}}</div>
 
     <div class="event__meta">
-        {% set hastube = content.field_youtube|render %}
+        {% set hastube = field_youtube|render %}
         {%if hastube %}
-        {{content.field_youtube}}
+        {% block youtube %}
+          <iframe title="{{label}}" src="https://www.youtube.com/embed/{{field_youtube}}" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        {% endblock %}
         {% else %}
-        {% set bob = content.field_media[0]["#media"]|file_url %}
-        <img class="content__preview" src="{{bob}}" alt="Preview image for session. Image repeats title and description above, with an image of the speaker." />
+        {% block field_media %}
+        <img class="content__preview" src="{{field_media}}" alt="Preview image for session. Image repeats title and description above, with an image of the speaker." />
+        {% endblock %}
         {%endif %}
-        {{content.field_footnote}} {# only one occurance of this field. #}
-        {% include "a11ytalks:field-link--calendar" with {
-            href: content.field_link[0]['#url']
-        }%}
+        {{field_footnote}} {# only one occurance of this field. #}
         <hr />
-        {{ content.field_date_time}}
+        {{ field_date_time}}
       </div>
     <div class="event_tags">
-      {{content.field_tags}}
+      {% block field_tags %}{% endblock %}
     </div>
   </div>

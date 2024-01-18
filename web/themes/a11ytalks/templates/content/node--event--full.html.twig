@@ -1,1 +1,19 @@
-{% include "a11ytalks:event" %}
+{% embed "a11ytalks:event" with {
+  body: content.body,
+  field_date_time: content.field_date_time,
+  field_link: content.field_link,
+  field_media: content.field_media,
+  field_speakers: content.field_speakers,
+  field_youtube: content.field_youtube
+} %}
+  {% block youtube %}
+    {{content.field_youtube}}
+  {% endblock %}
+  {% block field_media %}
+    {{ content.field_media }}
+  {% endblock %}
+  {% block field_tags %}
+    {{ content.field_tags }}
+  {% endblock %}
+{% endembed %}
+  

@@ -1,1 +1,10 @@
-{% include "a11ytalks:event-teaser" %}
+{% embed "a11ytalks:event-teaser" with {
+  body: content.body,
+  field_date_time: content.field_date_time
+} %}
+  {% block speaker_image %}
+    {% include "a11ytalks:speaker-teaser" with {
+      speaker: node.field_speakers.entity,
+    }%}
+  {% endblock %}
+{% endembed %}
