@@ -1,4 +1,4 @@
-// .storybook/main.js
+
 const config = {
   stories: [
     '../web/themes/**/*.stories.mdx',
@@ -6,10 +6,11 @@ const config = {
     '../web/modules/**/*.stories.mdx',
     '../web/modules/**/*.stories.@(json|yml)',
   ],
-  // ...jj
+ 
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
+    '@storybook/preset-scss',
     '@lullabot/storybook-drupal-addon',
   ],
   framework: {

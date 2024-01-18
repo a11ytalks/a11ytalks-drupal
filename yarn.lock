@@ -3073,6 +3073,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/preset-scss@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@storybook/preset-scss@npm:1.0.3"
+  peerDependencies:
+    css-loader: "*"
+    sass-loader: "*"
+    style-loader: "*"
+  checksum: 6df3a8edb0d9ff36ad20954355ebda979b5cf32f3e3c24fea995cf22edbff6efbf349f96cbd867b3afb39af069e7e15e347fa15b7caed34a8e06a9e8cfe7eb60
+  languageName: node
+  linkType: hard
+
 "@storybook/preset-server-webpack@npm:7.6.9":
   version: 7.6.9
   resolution: "@storybook/preset-server-webpack@npm:7.6.9"
@@ -3957,12 +3968,16 @@ __metadata:
     "@storybook/addon-essentials": "npm:^7.6.9"
     "@storybook/addon-links": "npm:^7.6.9"
     "@storybook/blocks": "npm:^7.6.9"
+    "@storybook/preset-scss": "npm:^1.0.3"
     "@storybook/server": "npm:^7.6.9"
     "@storybook/server-webpack5": "npm:^7.6.9"
+    css-loader: "npm:^6.9.0"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     sass: "npm:^1.69.7"
+    sass-loader: "npm:^14.0.0"
     storybook: "npm:^7.6.9"
+    style-loader: "npm:^3.3.4"
   languageName: unknown
   linkType: soft
 
@@ -4961,6 +4976,24 @@ __metadata:
   peerDependencies:
     webpack: ^5.0.0
   checksum: a6e23de4ec1d2832f10b8ca3cfec6b6097a97ca3c73f64338ae5cd110ac270f1b218ff0273d39f677a7a561f1a9d9b0d332274664d0991bcfafaae162c2669c4
+  languageName: node
+  linkType: hard
+
+"css-loader@npm:^6.9.0":
+  version: 6.9.0
+  resolution: "css-loader@npm:6.9.0"
+  dependencies:
+    icss-utils: "npm:^5.1.0"
+    postcss: "npm:^8.4.31"
+    postcss-modules-extract-imports: "npm:^3.0.0"
+    postcss-modules-local-by-default: "npm:^4.0.3"
+    postcss-modules-scope: "npm:^3.1.0"
+    postcss-modules-values: "npm:^4.0.0"
+    postcss-value-parser: "npm:^4.2.0"
+    semver: "npm:^7.5.4"
+  peerDependencies:
+    webpack: ^5.0.0
+  checksum: dded9ddbf3d7d2befe6a6c8fc861a46790626219a732ada3e52d02833dd2731d81b5f9ac7be51d3871b48d1a4b840668598e033f5f82790e892c6942139dbf9c
   languageName: node
   linkType: hard
 
@@ -8144,7 +8177,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-modules-scope@npm:^3.0.0":
+"postcss-modules-scope@npm:^3.0.0, postcss-modules-scope@npm:^3.1.0":
   version: 3.1.0
   resolution: "postcss-modules-scope@npm:3.1.0"
   dependencies:
@@ -8183,7 +8216,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.21":
+"postcss@npm:^8.4.21, postcss@npm:^8.4.31":
   version: 8.4.33
   resolution: "postcss@npm:8.4.33"
   dependencies:
@@ -8804,6 +8837,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sass-loader@npm:^14.0.0":
+  version: 14.0.0
+  resolution: "sass-loader@npm:14.0.0"
+  dependencies:
+    neo-async: "npm:^2.6.2"
+  peerDependencies:
+    node-sass: ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
+    sass: ^1.3.0
+    sass-embedded: "*"
+    webpack: ^5.0.0
+  peerDependenciesMeta:
+    node-sass:
+      optional: true
+    sass:
+      optional: true
+    sass-embedded:
+      optional: true
+  checksum: 40729573560feb1a368c984198f655b287495470fa5b5a47f6bc6ab0c474c1bd973ccccbb855d3320a91020a64913e5f0d8905e224ea13e6766d9abbb5085a41
+  languageName: node
+  linkType: hard
+
 "sass@npm:^1.69.7":
   version: 1.69.7
   resolution: "sass@npm:1.69.7"
@@ -8867,7 +8921,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.3.8":
+"semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.3.8, semver@npm:^7.5.4":
   version: 7.5.4
   resolution: "semver@npm:7.5.4"
   dependencies:
@@ -9230,6 +9284,15 @@ __metadata:
   peerDependencies:
     webpack: ^5.0.0
   checksum: 104bae8abd0627579dc14f3917cf65f1117e8098e3529872f09c26b5eee07933567b7be5c8ebf94d16e322b6e726dc569c5787111bf3786915850db4e351ef33
+  languageName: node
+  linkType: hard
+
+"style-loader@npm:^3.3.4":
+  version: 3.3.4
+  resolution: "style-loader@npm:3.3.4"
+  peerDependencies:
+    webpack: ^5.0.0
+  checksum: 8f8027fc5c6e91400cbb60066e7db3315810f8eaa0d19b2a254936eb0bec399ba8a7043b1789da9d05ab7c3ba50faf9267765ae0bf3571e48aa34ecdc774be37
   languageName: node
   linkType: hard
 
