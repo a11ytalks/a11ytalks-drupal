@@ -1,1 +1,8 @@
-{% include "a11ytalks:speaker-teaser" %}
+{% embed "a11ytalks:speaker-teaser" with {
+  field_pronouns: content.field_pronouns,
+}
+%}
+  {% block media_image %}
+    {{ content.field_media }}
+  {% endblock %}
+{% endembed %}

@@ -3,8 +3,6 @@
   field_date_time: content.field_date_time
 } %}
   {% block speaker_image %}
-    {% include "a11ytalks:speaker-teaser" with {
-      speaker: node.field_speakers.entity,
-    }%}
+    {{ content.field_speakers }}
   {% endblock %}
 {% endembed %}

@@ -1,10 +1,13 @@
 <div class="speaker-teaser" data-component-id="a11ytalks:speaker-teaser">
     <div class="speaker-teaser__media">
+      {% block media_image %}
         <img
-            src={{ file_url(speaker.field_media.entity.field_media_image.entity.fileuri) }}
+            src="https://a11ytalks.com/media/amyjune-bio.png"
             class="speaker-teaser__social-image"
-            alt=""
+            alt="I didn't  do this right"
         />
+      {% endblock %}
+        
     </div>
-    <h3 class="speaker-teaser__name">{{speaker.label}} {{speaker.field_pronouns.value}}</h3>
+    <h3 class="speaker-teaser__name">{{ label}} {{field_pronouns}}</h3>
 </div>
