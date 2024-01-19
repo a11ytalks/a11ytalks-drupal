@@ -1,0 +1,40 @@
+<div {{attributes.addClass('member-bio')}}>
+  {% block media_image %}
+    <img
+        src="https://a11ytalks.com/media/amyjune-bio.png"
+        class="bio-image"
+        alt="AmyJune"
+    />
+  {% endblock %}
+  
+  <h2 class="member-bio__name">
+    {{ label }}
+    <span class="pronouns">
+      {{ field_pronouns }}
+    </span>
+  </h2>
+  <h3 class="member-bio__title seafoam">
+    {{ field_title }}
+  </h3>
+  <div class="member-bio__body">
+    {{ body }}
+  </div>
+  <div class="member-bio__meta">
+    <div class="member-callout">
+      <p><strong>Notable Contributions to Highlight</strong></p>
+      {{ field_callouts }}
+    </div>
+    <div class="member-social">
+      <ul class="social-links">
+        <li>
+          <p class="connect"><strong>Connect</strong></p>
+        </li>
+        {{ field_link }}
+      </ul>
+    </div>
+  </div>
+  
+  <div class="member-bio__link">
+    <a href="/pages/about">Back to About</a>
+  </div>
+</div>
