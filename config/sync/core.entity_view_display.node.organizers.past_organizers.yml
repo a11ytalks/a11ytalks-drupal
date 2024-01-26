@@ -1,9 +1,9 @@
-uuid: abc6f724-942d-4e84-8da5-212094650403
+uuid: db956c38-c8e0-4d37-8603-f887d317f88b
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.past_organizers
     - field.field.node.organizers.body
     - field.field.node.organizers.field_callouts
     - field.field.node.organizers.field_current
@@ -13,31 +13,30 @@ dependencies:
     - field.field.node.organizers.field_title
     - node.type.organizers
   module:
-    - nomarkup
+    - link
     - user
-id: node.organizers.teaser
+id: node.organizers.past_organizers
 targetEntityType: node
 bundle: organizers
-mode: teaser
+mode: past_organizers
 content:
-  field_media:
-    type: entity_reference_entity_view
+  field_link:
+    type: link
     label: hidden
     settings:
-      view_mode: teaser
-      link: false
-    third_party_settings:
-      nomarkup:
-        enabled: true
-        separator: '|'
-        referenced_entity: '1'
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   body: true
   field_callouts: true
   field_current: true
-  field_link: true
+  field_media: true
   field_pronouns: true
   field_title: true
   links: true

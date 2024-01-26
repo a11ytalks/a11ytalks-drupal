@@ -1,0 +1,11 @@
+uuid: 176f9d61-140f-4686-b45a-87e9eaed8ec7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.past_organizers
+label: 'Past Organizers'
+description: ''
+targetEntityType: node
+cache: true

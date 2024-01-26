@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.speaker.field_title
     - node.type.speaker
   module:
+    - nomarkup
     - user
 id: node.speaker.teaser
 targetEntityType: node
@@ -22,7 +23,11 @@ content:
     settings:
       view_mode: default
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: '1'
     weight: 0
     region: content
   field_pronouns:
@@ -30,7 +35,11 @@ content:
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
     weight: 1
     region: content
 hidden:

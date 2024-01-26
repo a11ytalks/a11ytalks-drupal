@@ -7,12 +7,12 @@ dependencies:
 id: organizers
 label: Organizers
 type: 'canonical_entities:node'
-pattern: 'members/[node:field_name:value]'
+pattern: '/members/[node:title]'
 selection_criteria:
-  0d5168d8-f66d-4438-9959-bb05a4de504e:
+  48d27a64-2fcf-44ee-a7b9-92e28f44c140:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 0d5168d8-f66d-4438-9959-bb05a4de504e
+    uuid: 48d27a64-2fcf-44ee-a7b9-92e28f44c140
     context_mapping:
       node: node
     bundles:

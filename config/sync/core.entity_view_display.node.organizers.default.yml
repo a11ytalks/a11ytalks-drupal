@@ -13,6 +13,7 @@ dependencies:
     - node.type.organizers
   module:
     - link
+    - nomarkup
     - text
     - user
 id: node.organizers.default
@@ -24,67 +25,78 @@ content:
     type: text_default
     label: hidden
     settings: {  }
-    third_party_settings: {  }
-    weight: 101
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 0
     region: content
   field_callouts:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
-    third_party_settings: {  }
-    weight: 107
-    region: content
-  field_current:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 106
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: ''
+        referenced_entity: ''
+    weight: 4
     region: content
   field_link:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    weight: 106
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 5
     region: content
   field_media:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
-      view_mode: default
+      view_mode: teaser
       link: false
-    third_party_settings: {  }
-    weight: 105
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: '1'
+    weight: 3
     region: content
   field_pronouns:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
-    third_party_settings: {  }
-    weight: 103
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 2
     region: content
   field_title:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
-    third_party_settings: {  }
-    weight: 102
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 1
     region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
-    region: content
-hidden: {  }
+hidden:
+  field_current: true
+  links: true

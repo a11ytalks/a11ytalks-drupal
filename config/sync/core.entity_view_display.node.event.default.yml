@@ -14,6 +14,7 @@ dependencies:
   module:
     - datetime
     - link
+    - nomarkup
     - text
     - user
 id: node.event.default
@@ -25,7 +26,11 @@ content:
     type: text_default
     label: hidden
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
     weight: 1
     region: content
   field_date_time:
