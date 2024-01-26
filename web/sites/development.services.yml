@@ -7,8 +7,7 @@ parameters:
   twig.config:
     debug: true
     cache: false
-  # Remember to disable development mode in production!
-  cl_server.development: true
+  storybook.development: true
   cors.config:
     enabled: true
     allowedHeaders: ['*']
