@@ -1,0 +1,12 @@
+{% embed "a11ytalks:organizer" with {
+      field_pronouns: content.field_pronouns,
+      field_title: content.field_title,
+      body: content.body,
+      field_callouts: content.field_callouts,
+      field_link: content.field_link
+} %}
+  {% block media_image %}
+    {{ content.field_media }}
+  {% endblock %}
+{% endembed %}
+  

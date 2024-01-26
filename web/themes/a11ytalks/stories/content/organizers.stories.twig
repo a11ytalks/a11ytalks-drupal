@@ -1,0 +1,57 @@
+{% stories organizers with { title: "A11yTalks/Organizers"} %}
+
+  {% story full_organizer with {
+    name: 'Full',
+    default: true,
+    args: {
+      label: 'AmyJune Hineline',
+      field_pronouns: 'she/her',
+      field_title: 'Aaron Winborn Award Winner',
+      body: 'Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.',
+      field_callouts: 'Aaron Winborn Award Winner',
+      field_link: 'Mastadon',
+    }
+  } %}
+    {% include 'a11ytalks:organizer' with {
+      label,
+      field_pronouns,
+      field_title,
+      body,
+      field_callouts,
+      field_link
+    } %}
+  {% endstory %}
+
+  {% story teaser with {
+    name: 'Teaser',
+    args: {
+      label: 'AmyJune Hinelines',
+      url: '#'
+    }
+  } %}
+    <h2>This is a teaser. It is very Teasy.</h2>
+    {{ include ("a11ytalks:organizer-teaser", {
+      label: label,
+      url: url
+    }) }}  
+  {% endstory %}
+
+  {% story past_organizer with {
+    name: "Past",
+    args: {
+      label: 'Past',
+      url: '#',
+      title: 'Twitter',
+    }
+  } %}
+    {% include 'a11ytalks:organizer-past' with {
+      label,
+      url,
+      title
+    }%}
+  {% endstory %}
+
+{% endstories %}
+
+
+      

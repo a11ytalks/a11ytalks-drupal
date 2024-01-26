@@ -1,0 +1,14 @@
+{% stories site_branding with {title: "A11ytalks/Blocks"} %}
+  {% story blocks_branding with {
+    name: "Branding",
+    args: {
+      site_name: "A11yTalks",
+      site_logo: "https://a11ytalks.com/photo.png",
+      site_slogan: "Virtual meet-up featuring speakers & conversations around digital accessibility",
+      front: "#",
+    }
+  } %}
+    {% include "a11ytalks:site-branding" %}
+  {% endstory %}
+
+{% endstories %}

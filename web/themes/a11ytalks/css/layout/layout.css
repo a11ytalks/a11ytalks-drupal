@@ -35,7 +35,7 @@
         width: 1px;
         height: auto;
         top: 30px;
-        right: -10px;
+        right: 0;
         bottom: 30px;
     }
   }
@@ -43,4 +43,8 @@
   @media (min-width: 960px) {
     padding: 30px;
   }
+}
+
+.page-content {
+  padding-left: 1rem;
 }

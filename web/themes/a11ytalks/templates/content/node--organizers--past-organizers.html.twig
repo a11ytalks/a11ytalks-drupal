@@ -1,0 +1,17 @@
+{#
+/**
+ * @file
+ * Past organizers display using a component.
+ *
+ * Available variables:
+ *   url: field_link's first uri. This will always be external. Or should be.
+ *   title: field_link's first title.
+ *   label: node.getTitle() because we don't want the extra twig.
+ #}
+
+{% include "a11ytalks:organizer-past" with {
+  url: node.field_link.uri,
+  title: node.field_link.title,
+  label: node.getTitle()
+} %}
+  

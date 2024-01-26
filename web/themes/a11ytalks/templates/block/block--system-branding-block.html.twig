@@ -13,5 +13,7 @@
  * - site_slogan: Slogan for site as defined in Site information settings.
  */
 #}
-{% include "a11ytalks:site-branding" %}
+{% include "a11ytalks:site-branding" with {
+  front: path('<front>')
+} %}
 

@@ -1,0 +1,34 @@
+{% stories events with {title: "A11yTalks/Events"} %}
+
+  {% story events_teaser with {
+    name: "Teaser",
+    args: {
+      label: "Event Title is very Titled",
+      url: '#',
+      body: "Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit.",
+      field_date_time: "December 12, 2023",
+    }
+  } %}
+  {% include "a11ytalks:event-teaser" %}
+  {% endstory %}
+
+  {% story event_full with {
+    name: "Full",
+    primary: true,
+    args: {
+      label: "hi there",
+      field_speakers: 'Speaker name here',
+      body: "Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit.",
+      field_date_time: "December 12, 2023",
+      field_link: "figure this out dummy",
+      field_media: "https://a11ytalks.com/media/previews/2024-JAN.png",
+      field_tags: [
+        '<a href="#">tag string</a>',
+        'tag 2',
+      ],
+      field_youtube: "hRR2VNFFLek",
+    }
+   } %}
+    {% include 'a11ytalks:event' %}
+  {% endstory %}
+{% endstories %}

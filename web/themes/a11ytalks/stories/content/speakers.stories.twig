@@ -1,0 +1,13 @@
+{% stories speakers with { title: "A11yTalks/Speaker"} %}
+
+  {% story speaker_teaser with {
+    name: "Teaser",
+    args: {
+      label: 'AmyJune Hineline',
+      field_pronouns: 'she/her'
+    }
+  } %}
+
+    {% include 'a11ytalks:speaker-teaser' %}
+  {% endstory %}
+{% endstories %}

@@ -13,6 +13,17 @@ group: Content
 props:
   type: object
   properties:
-    content:
-      title: Content
-      type: object
+      field_pronouns:
+        type: string
+      field_title:
+        type: string
+      label:
+        type: string
+      body:
+        type: string
+      field_callouts:
+        type: string
+      field_link:
+        type: string
+slots:
+  media_image: {}

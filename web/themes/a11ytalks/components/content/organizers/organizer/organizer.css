@@ -8,7 +8,16 @@
 }
 
 .member-bio {
-  padding: 4rem;
+
+  img {
+    border: 4px solid #ff9f1c;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    max-width: 150px;
+    text-align: center;
+  }
 
   h2 {
     margin-top: 0.67rem;
@@ -33,16 +42,6 @@
   text-align: center;
   }*/
   /*bio adds*/
-
-  .bio-image{
-    margin-right: 2rem;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-    border: 4px solid #ff9f1c;
-    border-radius: 50%;
-    text-align: center;
-    max-width: 150px;
-  }
 
   .pronouns{
     font-size: 16px;

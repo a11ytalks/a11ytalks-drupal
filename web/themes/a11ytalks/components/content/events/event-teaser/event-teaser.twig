@@ -11,7 +11,7 @@
   <div class="event-teaser__content">
     <div class="event-teaser__image">
       {% block speaker_image %}
-        <img src="http://www.a11ytalks.com/media/amyjune-bio.png" class="social-image-next" alt="AmyJune Hineline (she/her)">
+        {% include "a11ytalks:speaker-teaser" %} 
       {% endblock %}
     </div>
     <div class="event-teaser__description">

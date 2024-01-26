@@ -1,0 +1,14 @@
+.volunteer {
+  padding-left: 1rem;
+  width: 100%;
+  @media(min-width: 960px)  {
+    width: 33%;
+  }
+  a {
+    &:after {
+      content: '→';
+      padding-left: .5rem;
+    }
+  }
+}
+
