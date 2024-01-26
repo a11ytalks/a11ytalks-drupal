@@ -1,0 +1,9 @@
+<nav {{ attributes.addClass('menu') }}>
+  <ul>
+    {% for item in items %}
+      <li >
+        {{link (item.title, item.url, item.attributes)}}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

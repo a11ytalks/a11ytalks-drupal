@@ -1,4 +1,5 @@
-{% stories site_branding with {title: "A11ytalks/Blocks"} %}
+{% stories blocks with { title: "A11yTalks/Blocks"} %}
+
   {% story blocks_branding with {
     name: "Branding",
     args: {
@@ -9,6 +10,20 @@
     }
   } %}
     {% include "a11ytalks:site-branding" %}
+  {% endstory %}
+
+  {% story main_menu with {
+    name: "Main Menu",
+    args: {
+      items: [
+        { title: 'Link 1', url: '/home'},
+        { title:'Link 2', url: '/home'}
+      ]
+    }
+  } %}
+  <h2>hi</h2>
+   {% include 'a11ytalks:main-menu' %}
+
   {% endstory %}
 
 {% endstories %}

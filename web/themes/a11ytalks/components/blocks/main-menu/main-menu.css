@@ -1,0 +1,38 @@
+[data-component-id="a11ytalks:main-menu"] {
+  margin-bottom: 1rem;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  a {
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-size: var(--typographic-base-font-size);
+    font-weight: normal;
+    border: 0;
+
+    &:hover,
+    &:focus {
+      color: var(--color-primary);
+    }
+
+    &--active {
+      color: var(--color-base);
+    }
+  }
+
+  li {
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  @media (prefers-color-scheme: light) {
+    a {
+      color: var(--color-primary);
+    }
+  }
+}
