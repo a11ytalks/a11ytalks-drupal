@@ -9,7 +9,6 @@
   "private": true,
   "packageManager": "yarn@4.0.2",
   "devDependencies": {
-    "@lullabot/storybook-drupal-addon": "^2.0.6",
     "@storybook/addon-essentials": "^7.6.9",
     "@storybook/addon-links": "^7.6.9",
     "@storybook/blocks": "^7.6.9",

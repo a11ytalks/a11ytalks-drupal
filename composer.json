@@ -17,7 +17,6 @@
     "require": {
         "composer/installers": "^2.0",
         "drupal/admin_toolbar": "^3.4",
-        "drupal/cl_server": "^2.0.0@beta",
         "drupal/core-composer-scaffold": "^10.2",
         "drupal/core-recommended": "^10.2",
         "drupal/core-vendor-hardening": "^10.2",
@@ -31,6 +30,7 @@
         "drupal/pathauto": "^1.12",
         "drupal/sdc_examples": "@dev",
         "drupal/smart_trim": "^2.1",
+        "drupal/storybook": "^1.0@alpha",
         "drupal/twig_field_value": "^2.0",
         "drupal/twig_tweak": "^3.2",
         "drush/drush": "^12.4"

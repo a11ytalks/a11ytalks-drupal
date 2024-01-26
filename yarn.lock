@@ -1794,28 +1794,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lullabot/storybook-drupal-addon@npm:^2.0.6":
-  version: 2.0.6
-  resolution: "@lullabot/storybook-drupal-addon@npm:2.0.6"
-  peerDependencies:
-    "@storybook/blocks": ^7.0.0
-    "@storybook/components": ^7.0.0
-    "@storybook/core-events": ^7.0.0
-    "@storybook/manager-api": ^7.0.0
-    "@storybook/preview-api": ^7.0.0
-    "@storybook/theming": ^7.0.0
-    "@storybook/types": ^7.0.0
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-  peerDependenciesMeta:
-    react:
-      optional: true
-    react-dom:
-      optional: true
-  checksum: bf73884afc08a56a433c1464994e1b24939d28be95f1a71c4f784fc7a24b379c43a230b4fc819e56a44d62f6260712c3571b5eae226bc8baaed841367c65869d
-  languageName: node
-  linkType: hard
-
 "@mdx-js/react@npm:^2.1.5":
   version: 2.3.0
   resolution: "@mdx-js/react@npm:2.3.0"
@@ -3964,7 +3942,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "a11ytalks-drupal@workspace:."
   dependencies:
-    "@lullabot/storybook-drupal-addon": "npm:^2.0.6"
     "@storybook/addon-essentials": "npm:^7.6.9"
     "@storybook/addon-links": "npm:^7.6.9"
     "@storybook/blocks": "npm:^7.6.9"

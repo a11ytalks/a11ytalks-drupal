@@ -10,8 +10,7 @@ const config = {
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
-    '@storybook/preset-scss',
-    '@lullabot/storybook-drupal-addon',
+    '@storybook/preset-scss'
   ],
   framework: {
     name: '@storybook/server-webpack5',

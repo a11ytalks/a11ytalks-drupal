@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cabea5309896d33725bcb680409a11ff",
+    "content-hash": "0bac0f86ed0b84b3159462ec18804a50",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1222,52 +1222,6 @@
             }
         },
         {
-            "name": "drupal/cl_server",
-            "version": "2.0.0-beta5",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/cl_server.git",
-                "reference": "2.0.0-beta5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/cl_server-2.0.0-beta5.zip",
-                "reference": "2.0.0-beta5",
-                "shasum": "b59f96968565aab4476e77dd55e4ad356975ec11"
-            },
-            "require": {
-                "drupal/core": "^9.3 || ^10",
-                "php": ">=8.1"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.0-beta5",
-                    "datestamp": "1700826209",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Mateu Aguiló Bosch",
-                    "homepage": "https://www.drupal.org/user/550110",
-                    "email": "mateu@mateuaguilo.com"
-                }
-            ],
-            "description": "Providers server rendering for CL Components",
-            "homepage": "https://www.drupal.org/project/cl_server",
-            "support": {
-                "source": "https://git.drupalcode.org/project/cl_server"
-            }
-        },
-        {
             "name": "drupal/core",
             "version": "10.2.2",
             "source": {
@@ -2266,6 +2220,54 @@
             }
         },
         {
+            "name": "drupal/storybook",
+            "version": "1.0.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/storybook.git",
+                "reference": "1.0.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/storybook-1.0.0-alpha3.zip",
+                "reference": "1.0.0-alpha3",
+                "shasum": "ddb21364baf8efe5a59ca70cfe0b81e35e1179a5"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10",
+                "e0ipso/twig-storybook": "^1",
+                "ext-dom": "*",
+                "symfony/dom-crawler": "^6 || ^4"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-alpha3",
+                    "datestamp": "1705357392",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mateu Aguiló Bosch (e0ipso)",
+                    "homepage": "https://www.drupal.org/u/e0ipso",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Storybook integration for Single Directory Components in Drupal",
+            "homepage": "https://www.drupal.org/project/storybook",
+            "support": {
+                "source": "https://git.drupalcode.org/project/storybook"
+            }
+        },
+        {
             "name": "drupal/token",
             "version": "1.13.0",
             "source": {
@@ -2590,6 +2592,61 @@
                 }
             ],
             "time": "2023-11-16T22:57:24+00:00"
+        },
+        {
+            "name": "e0ipso/twig-storybook",
+            "version": "v1.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/e0ipso/twig-storybook.git",
+                "reference": "563fd177fc2feed6ea2c1dac063c660181e68265"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/e0ipso/twig-storybook/zipball/563fd177fc2feed6ea2c1dac063c660181e68265",
+                "reference": "563fd177fc2feed6ea2c1dac063c660181e68265",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-mbstring": "*",
+                "php": ">=8.1",
+                "symfony/dom-crawler": "^6",
+                "twig/twig": "^3"
+            },
+            "require-dev": {
+                "enlightn/security-checker": "^1",
+                "ergebnis/composer-normalize": "^2",
+                "nikic/php-parser": "^4",
+                "php-parallel-lint/php-parallel-lint": "^1",
+                "phpro/grumphp-shim": "^2",
+                "phpunit/phpunit": "^9.5",
+                "povils/phpmnd": "^3",
+                "squizlabs/php_codesniffer": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TwigStorybook\\": "src",
+                    "TwigStorybook\\Tests\\": "tests/src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mateu Aguiló Bosch",
+                    "email": "mateu@mateuaguilo.com"
+                }
+            ],
+            "description": "Extends Twig with new \"stories\" and \"story\" tags for easily writing Storybook stories using Twig templates.",
+            "support": {
+                "issues": "https://github.com/e0ipso/twig-storybook/issues",
+                "source": "https://github.com/e0ipso/twig-storybook/tree/v1.2.5"
+            },
+            "time": "2024-01-12T12:48:49+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -4957,6 +5014,73 @@
                 }
             ],
             "time": "2023-05-23T14:45:45+00:00"
+        },
+        {
+            "name": "symfony/dom-crawler",
+            "version": "v6.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/dom-crawler.git",
+                "reference": "14ff4fd2a5c8969d6158dbe7ef5b17d6a9c6ba33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/14ff4fd2a5c8969d6158dbe7ef5b17d6a9c6ba33",
+                "reference": "14ff4fd2a5c8969d6158dbe7ef5b17d6a9c6ba33",
+                "shasum": ""
+            },
+            "require": {
+                "masterminds/html5": "^2.6",
+                "php": ">=8.1",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "require-dev": {
+                "symfony/css-selector": "^5.4|^6.0|^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\DomCrawler\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Eases DOM navigation for HTML and XML documents",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/dom-crawler/tree/v6.4.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-11-20T16:41:16+00:00"
         },
         {
             "name": "symfony/error-handler",
@@ -12235,73 +12359,6 @@
             "time": "2023-10-31T08:40:20+00:00"
         },
         {
-            "name": "symfony/dom-crawler",
-            "version": "v6.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "14ff4fd2a5c8969d6158dbe7ef5b17d6a9c6ba33"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/14ff4fd2a5c8969d6158dbe7ef5b17d6a9c6ba33",
-                "reference": "14ff4fd2a5c8969d6158dbe7ef5b17d6a9c6ba33",
-                "shasum": ""
-            },
-            "require": {
-                "masterminds/html5": "^2.6",
-                "php": ">=8.1",
-                "symfony/polyfill-ctype": "~1.8",
-                "symfony/polyfill-mbstring": "~1.0"
-            },
-            "require-dev": {
-                "symfony/css-selector": "^5.4|^6.0|^7.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\DomCrawler\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Eases DOM navigation for HTML and XML documents",
-            "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/dom-crawler/tree/v6.4.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2023-11-20T16:41:16+00:00"
-        },
-        {
             "name": "symfony/lock",
             "version": "v6.4.2",
             "source": {
@@ -12731,10 +12788,10 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/cl_server": 10,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
-        "drupal/sdc_examples": 20
+        "drupal/sdc_examples": 20,
+        "drupal/storybook": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,
