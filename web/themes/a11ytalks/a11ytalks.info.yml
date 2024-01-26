@@ -1,6 +1,6 @@
 name: a11ytalks
 type: theme
-base theme: claro
+base theme: stable9
 description: A11y Talks theme
 package: Custom
 core_version_requirement: ^10
