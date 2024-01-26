@@ -11,7 +11,7 @@
   <div class="event-teaser__content">
     <div class="event-teaser__image">
       {% block speaker_image %}
-        {% include "a11ytalks:speaker-teaser" %} 
+        {% include "a11ytalks:speaker-teaser" with { label: ''} %} 
       {% endblock %}
     </div>
     <div class="event-teaser__description">

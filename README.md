@@ -20,3 +20,9 @@ Drupal version of a11ytalks
 - `ddev yarn install`
 - `ddev yarn storybook`
 - Storybook instance is viewable at [https://a11ytalks-drupal.ddev.site:6006](https://a11ytalks-drupal.ddev.site:6006)
+
+## Updating Storybook
+
+Storybook is based on the [Storybook](https://www.drupal.org/project/storybook) module. All stories are kept in `web/themes/custom/a11ytalks/stories` in a twig file that needs to be recompiled if you update any of the arguments or add new stories.
+
+- `ddev drush storybook:generate-all-stories`

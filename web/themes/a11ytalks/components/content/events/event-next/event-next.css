@@ -1,0 +1,155 @@
+[data-component-id='a11ytalks:event-next'] {
+  text-align: center;
+  padding: 1rem 2rem;
+
+  h2 {
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: .05rem;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    font-size: var(--font-size-huge);
+    font-weight: 900;
+    float: none;
+    clear: both;
+
+    @media(min-width: 960px) {
+      margin-top: 0;
+      float: left;
+    }
+  }
+
+  h3,
+  .date {
+    line-height: 1.5rem;
+    margin-top: 0;
+    margin-bottom: .05rem;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    font-size: var(--font-size-large);
+    font-weight: 500;
+    float: none;
+    clear: both;
+
+    @media(min-width: 960px) {
+      float: left;
+    }
+  }
+
+
+  hr {
+    clear: both;
+  }
+
+  .title {
+    font-size: 1.68rem;
+    line-height: 1.5rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
+  }
+  .title-link {
+    color: var(--color-primary);
+    text-transform: none;
+    float: none;
+    text-align: center;
+
+    @media(min-width: 960px) {
+      float: left;
+      text-align: left;
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--color-gray-bg);
+    }
+  }
+
+  .image {
+    text-align: center;
+    width: 100%;
+
+    @media(min-width: 960px) {
+      width: 45%;
+      float: right;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    @media(min-width: 960px) {
+      justify-content: space-between;
+      flex-direction: column;
+      float: left;
+      width: 50%;
+    }
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1;
+    margin-bottom: .75em;
+  }
+
+  .date {
+    font-size: var(--font-size-small);
+    color: var(--color-gray-bg);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .readmore {
+    font-size: var(--font-size-base);
+    color: var(--color-secondary);
+    margin-bottom: (1.5);
+
+    &:hover,
+    &:focus {
+      color: var(--color-primary);
+    }
+  }
+
+  .description {
+    margin-right: 0;
+    margin-top: 0.5rem;
+    float: none;
+  }
+
+  @media(min-width: 960px) {
+    text-align: left;
+
+    .image {
+      margin-left: 0;
+      text-align: left;
+
+      img {
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+      }
+    }
+
+    .description {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    .title-link {
+      color: var(--color-black);
+
+      &:hover,
+      &:focus {
+        color: var(--color-primary);
+      }
+    }
+
+    .date,
+    h3 {
+      color: var(--color-gray-border);
+    }
+  }
+}

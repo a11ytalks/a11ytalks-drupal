@@ -6,10 +6,10 @@
       label: "Event Title is very Titled",
       url: '#',
       body: "Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit.",
-      field_date_time: "December 12, 2023",
+      field_date_time: "December 2023",
     }
   } %}
-  {% include "a11ytalks:event-teaser" %}
+    {% include "a11ytalks:event-teaser" %}
   {% endstory %}
 
   {% story event_full with {
@@ -30,5 +30,19 @@
     }
    } %}
     {% include 'a11ytalks:event' %}
+  {% endstory %}
+
+  {% story event_next with {
+    name: "Event Next",
+    primary: true,
+    args: {
+      label: "hi there",
+      url: '#',
+      field_speakers: 'Speaker name here',
+      body: "Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit.",
+      field_date_time: "December 12, 2023",
+    }
+  } %}
+    {% include "a11ytalks:event-next" %}
   {% endstory %}
 {% endstories %}

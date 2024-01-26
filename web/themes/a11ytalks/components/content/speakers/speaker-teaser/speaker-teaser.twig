@@ -1,13 +1,12 @@
-<div class="speaker-teaser" data-component-id="a11ytalks:speaker-teaser">
-    <div class="speaker-teaser__media">
-      {% block media_image %}
-        <img
-            src="https://a11ytalks.com/media/amyjune-bio.png"
-            class="speaker-teaser__social-image"
-            alt="I didn't  do this right"
-        />
-      {% endblock %}
-        
-    </div>
-    <h3 class="speaker-teaser__name">{{ label}} {{field_pronouns}}</h3>
+<div {{attributes.addClass("speaker-teaser")}}>
+  <div class="speaker-teaser__media">
+    {% block media_image %}
+      <img
+          src="https://a11ytalks.com/media/amyjune-bio.png"
+          class="speaker-teaser__social-image"
+          alt="AmyJune Bio"
+      />
+    {% endblock %}      
+  </div>
+  <h3 class="speaker-teaser__name">{{ label }} {{field_pronouns}}</h3>
 </div>

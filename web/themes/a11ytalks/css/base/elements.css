@@ -1,3 +1,41 @@
+/** Variables **/
+:root {
+  --color-base: #222;
+  --color-primary: #2ec4b6;
+  --color-secondary: #E90909;
+  --color-accent: #FF9F1c;
+
+  --color-white: #FFF;
+  --color-gray: #6e6e6e;
+  --color-gray-border: #757575;
+  --color-gray-bg: #c8c8c8;
+  --color-black: #000;
+
+  --font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+  --font-size: 100;
+  --typographic-base-font-size: 16px;
+  --font-size-huge: 34px;
+  --font-size-large: 28px;
+  --font-size-small: 14px;
+
+  --typographic-base-line-height: 1.625;
+
+  --typographic-base-font-color: var(--color-base);
+  --typographic-link-p-font-color: var(--color-secondary);
+  --typographic-link-s-font-color: var(--color-primary);
+
+  --button-height: 35px;
+  --button-border-radius: 20px;
+
+  --layout-post-single-width: 945px;
+  --layout-post-width: calc(var(--layout-post-single-width) - 305px);
+
+  --bp-xs: 320px;
+  --bp-small: 685px;
+  --bp-medium: 960px;
+  --bp-large: 1100px;
+}
 /**
  * Generic
  */
@@ -17,7 +55,7 @@ html {
 
 body {
   margin: 0 0 0 calc(100vw - 100%);
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: var(--font-family);
   line-height: 1.625;
   font-size: 16px;
   -ms-text-size-adjust: 100%;
