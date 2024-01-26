@@ -1,9 +1,7 @@
 
 const config = {
   stories: [
-    '../web/themes/**/*.stories.mdx',
     '../web/themes/**/*.stories.@(json|yml)',
-    '../web/modules/**/*.stories.mdx',
     '../web/modules/**/*.stories.@(json|yml)',
   ],
  

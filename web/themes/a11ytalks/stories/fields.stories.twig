@@ -1,0 +1,15 @@
+{% stories fields with { title: "A11yTalks/Fields" } %}
+
+  {% story field_tags with {
+    name: "Field Tags",
+    args:{
+      tags: [
+        'Tag 1',
+        'Tag 2',
+      ]
+    }
+  } %}
+    {% include 'a11ytalks:field-tags' %}
+
+  {% endstory %}
+{% endstories %}

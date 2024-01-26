@@ -1,11 +1,11 @@
-<div class='tags'>
-  <ul class='tags__list'>
-    {% foreach tag in tags %}
-      <li class='tags__list-item'>
-        <a href="{tag.url}" class='tags__list-item-link'>
-          {tag.name}
-        </a>
+<div {{ attributes.addClass('tags')}}>
+  <ul>
+    {% block tags %}
+    {% for tag in tags %}
+      <li>
+        <a href="#">{{ tag }}</a>
       </li>
-    {% endforeach %}
+    {% endfor %}
+    {% endblock %}
   </ul>
 </div>

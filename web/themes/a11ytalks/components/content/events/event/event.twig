@@ -5,21 +5,25 @@
     <div class="event__body">{{body}}</div>
 
     <div class="event__meta">
-        {% set hastube = field_youtube|render %}
-        {%if hastube %}
+      {% set hastube = field_youtube|render %}
+      {% if hastube %}
         {% block youtube %}
           <iframe title="{{label}}" src="https://www.youtube.com/embed/{{field_youtube}}" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         {% endblock %}
-        {% else %}
+      {% else %}
         {% block field_media %}
-        <img class="content__preview" src="{{field_media}}" alt="Preview image for session. Image repeats title and description above, with an image of the speaker." />
+          <img class="content__preview" src="{{field_media}}" alt="Preview image for session. Image repeats title and description above, with an image of the speaker." />
         {% endblock %}
-        {%endif %}
-        {{field_footnote}} {# only one occurance of this field. #}
-        <hr />
-        {{ field_date_time}}
-      </div>
-    <div class="event_tags">
-      {% block field_tags %}{% endblock %}
+      {% endif %}
+      {{field_footnote}} {# only one occurance of this field. #}
+      <hr />
+      {{ field_date_time}}
     </div>
+  <div class="event__tags">
+    {% block field_tags %}
+      {% include "a11ytalks:field-tags" with {
+        tags: field_tags
+      } %}
+    {% endblock %}
   </div>
+</div>

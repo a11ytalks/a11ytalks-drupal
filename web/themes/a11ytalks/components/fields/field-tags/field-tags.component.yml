@@ -11,4 +11,4 @@ props:
   type: object
   properties:
     tags:
-      type: object
+      type: array

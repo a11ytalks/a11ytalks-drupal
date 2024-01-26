@@ -1,0 +1,8 @@
+
+{% embed 'a11ytalks:field-tags' %}
+  {% block tags %}
+    {% for item in items %}
+      <li>{{item}}</li>
+    {% endfor %}
+  {% endblock %}
+{% endembed %}
