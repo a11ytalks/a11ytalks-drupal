@@ -10,6 +10,7 @@ Drupal version of a11ytalks
 - `ddev start`
 - `ddev composer install`
 - `ddev drush si minimal` - to be replaced with a snapshot later.
+- `ddev drush config-set "system.site" uuid 8e44c643-c302-46ea-a054-c47fd6454ea5` - Updates the site UUID so the config imports without issue.
 - `ddev drush cim` - one day this will work out of the box, but the snapshot will replace it anyway
 - Site is available at [https://a11ytalks-drupal.ddev.site](https://a11ytalks-drupal.ddev.site)
 
