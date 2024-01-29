@@ -1,11 +1,10 @@
-uuid: e166ee32-7689-44a5-9282-c05ae6b16075
+uuid: 90d9a085-f4f2-4abe-aec0-cc45651b8887
 langcode: en
 status: true
 dependencies:
   content:
     - 'block_content:basic:392d0f2e-a70f-4c1d-b18e-5ebb349a6948'
   module:
-    - block_class
     - block_content
   theme:
     - a11ytalks
@@ -18,7 +17,7 @@ plugin: 'block_content:392d0f2e-a70f-4c1d-b18e-5ebb349a6948'
 settings:
   id: 'block_content:392d0f2e-a70f-4c1d-b18e-5ebb349a6948'
   label: Copyright
-  label_display: '0'
+  label_display: visible
   provider: block_content
   status: true
   info: ''
