@@ -16,12 +16,11 @@
     name: "Main Menu",
     args: {
       items: [
-        { title: 'Link 1', url: '/home'},
-        { title:'Link 2', url: '/home'}
+        { title: "Link 1", url: "/home"},
+        { title: "Link 2", url: "/home"}
       ]
     }
   } %}
-  <h2>hi</h2>
    {% include 'a11ytalks:main-menu' %}
 
   {% endstory %}
@@ -33,4 +32,13 @@
     {% include "a11ytalks:contacts" %}
   {% endstory %}
 
+  {% story copyright_block with {
+    name: "Copyright",
+    args: {
+      content: "I am a copyright"
+    }
+  } %}
+
+    {% include "a11ytalks:copyright" %}
+  {% endstory %}
 {% endstories %}

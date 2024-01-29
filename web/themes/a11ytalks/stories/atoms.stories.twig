@@ -1,31 +1,18 @@
-{% stories atoms with { title: "A11yTalks/Atoms"} %}
+{% stories atoms with { title: "A11yTalks"} %}
 
   {% story base with {
-    name: "Base"
-  } %}
-    <div>
-      <h2>Colors</h2>
-
-    </div>
-  {% endstory %}
-
-  {% story icons with {
-    name: "Icons",
+    name: "Base",
     args: {
       theIcon: "twitter"
     }
   } %}
-    <h2>Options include:</h2>
-      <ul>
-        <li>twitter</li>
-        <li>facebook</li>
-        <li>oc</li>
-        <li>github</li>
-        <li>email</li>
-        <li>youtube</li>
-      </ul>
-    {% include 'a11ytalks:icon' %}
+    <h2>Colors</h2>
+    {% include "a11ytalks:colors" %}
 
+    <h2>Icons</h2>
+    {% include "a11ytalks:icon" %}
+    <p>Options: "twitter", "facebook", "oc", "github", "email", "youtube"</p>
+    <p>Use the controls below</p>
   {% endstory %}
 
 {% endstories %}

@@ -2,7 +2,7 @@
   <ul>
     {% for item in items %}
       <li >
-        {{link (item.title, item.url, item.attributes)}}
+        <a href="{{item.url}}">{{item.title}}</a>
       </li>
     {% endfor %}
   </ul>

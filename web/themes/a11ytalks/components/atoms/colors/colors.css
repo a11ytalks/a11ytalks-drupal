@@ -1,0 +1,10 @@
+[data-component-id="a11ytalks:colors"] {
+  .base { background-color: var(--color-base); color: var(--color-white); }
+  .primary {background-color: var(--color-primary); }
+  .secondary {background-color: var(--color-secondary); }
+  .accent {background-color: var(--color-accent); }
+  .white {background-color: var(--color-white); }
+  .gray {background-color: var(--color-gray); }
+  .gray-border {background-color: var(--color-gray-border); }
+  .gray-bg {background-color: var(--color-gray-bg); }
+}

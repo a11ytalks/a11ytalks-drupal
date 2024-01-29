@@ -1,0 +1,18 @@
+{% set theColors = [
+  "base",
+  "primary",
+  "secondary",
+  "accent",
+  "white",
+  "gray",
+  "gray-border",
+  "gray-bg"
+] %}
+
+<div {{attributes.addClass("colors")}}>
+  <ul>
+    {% for color in theColors %}
+    <li class="{{color}}">{{color}}</li>
+    {% endfor %}
+  </ul>
+</div>

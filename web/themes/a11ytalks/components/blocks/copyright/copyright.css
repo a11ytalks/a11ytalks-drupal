@@ -1,0 +1,10 @@
+[data-component-id="a11ytalks:copyright"] {
+  color: var(--color-gray-bg);
+  font-size: var(--typographic-small-font-size);
+  
+  @media (prefers-color-scheme: light) {
+    color: var(--color-gray-border);
+  }
+}
+
+
