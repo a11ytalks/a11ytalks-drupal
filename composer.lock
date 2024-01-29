@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d4546c07d50e23b3acaf014cabe5c87",
+    "content-hash": "db5ab160af8e34cd9a8e6d3572e8a835",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1219,106 +1219,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
-            }
-        },
-        {
-            "name": "drupal/block_class",
-            "version": "2.0.11",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/block_class.git",
-                "reference": "2.0.11"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/block_class-2.0.11.zip",
-                "reference": "2.0.11",
-                "shasum": "bd098ef0071b5baca1248c0deaa9bbedc0ddcaf4"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9 || ^10"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.11",
-                    "datestamp": "1672065313",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Todd Nienkerk",
-                    "homepage": "https://www.drupal.org/u/todd-nienkerk",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Renato Gonçalves (RenatoG)",
-                    "homepage": "https://www.drupal.org/u/RenatoG",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Neslee Canil Pinto",
-                    "homepage": "https://www.drupal.org/u/neslee-canil-pinto",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Aaron Stanush",
-                    "homepage": "https://www.drupal.org/u/aaron-stanush",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "David Suissa (DYdave)",
-                    "homepage": "https://www.drupal.org/u/DYdave",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Four Kitchens",
-                    "homepage": "https://www.drupal.org/user/358502",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "berenddeboer",
-                    "homepage": "https://www.drupal.org/u/berenddeboer",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "elliotttf",
-                    "homepage": "https://www.drupal.org/u/elliotttf",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Michal Minecki (mirzu)",
-                    "homepage": "https://www.drupal.org/u/mirzu",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Patrick Coffey (pcoffey)",
-                    "homepage": "https://www.drupal.org/u/pcoffey",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Taylor Smith (tsmith512)",
-                    "homepage": "https://www.drupal.org/u/tsmith512",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Allows assigning classes to Blocks.",
-            "homepage": "https://www.drupal.org/project/block_class",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "https://git.drupalcode.org/project/block_class",
-                "issues": "https://www.drupal.org/project/issues/block_class",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {

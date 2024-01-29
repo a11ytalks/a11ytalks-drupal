@@ -1,0 +1,26 @@
+uuid: e166ee32-7689-44a5-9282-c05ae6b16075
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:392d0f2e-a70f-4c1d-b18e-5ebb349a6948'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - a11ytalks
+id: a11ytalks_copyright
+theme: a11ytalks
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:392d0f2e-a70f-4c1d-b18e-5ebb349a6948'
+settings:
+  id: 'block_content:392d0f2e-a70f-4c1d-b18e-5ebb349a6948'
+  label: Copyright
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

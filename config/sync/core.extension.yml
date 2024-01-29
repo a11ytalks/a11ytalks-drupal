@@ -57,11 +57,11 @@ module:
   views_ui: 0
   pathauto: 1
   views: 10
-  minimal: 1000
+  standard: 1000
 theme:
   olivero: 0
   claro: 0
   a11ytalks: 0
   gin: 0
   stable9: 0
-profile: minimal
+profile: standard
