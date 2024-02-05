@@ -2,9 +2,12 @@
 
   {% story base with {
     name: "Base",
-    args: {
-      theIcon: "twitter"
-    }
+    argTypes: {
+      theIcon: {
+        control: "select",
+        options: ["twitter", "facebook", "oc", "github", "email", "youtube"]
+      }
+    },
   } %}
     <h2>Colors</h2>
     {% include "a11ytalks:colors" %}
