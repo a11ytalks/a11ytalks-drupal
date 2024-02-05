@@ -1,13 +1,25 @@
 {
-    "name": "drupal/recommended-project",
-    "description": "Project template for Drupal projects with a relocated document root",
+    "name": "a11ytalks/a11ytalks-drupal",
+    "description": "The Drupal version of a11ytalks.com",
     "type": "project",
     "license": "GPL-2.0-or-later",
-    "homepage": "https://www.drupal.org/project/drupal",
+    "homepage": "https://a11ytalks.com",
+    "authors": [
+        {
+            "name": "Mark Casias",
+            "email": "markie@teampoop.com",
+            "role": "developer"
+        }
+    ],
     "support": {
-        "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
-        "chat": "https://www.drupal.org/node/314178"
+        "issues": "https://github.com/a11ytalks/a11ytalks-drupal/issues"
     },
+    "funding": [
+        {
+            "type": "opencollective",
+            "url": "https://opencollective.com/a11ytalks"
+        }
+    ],
     "repositories": [
         {
             "type": "composer",
