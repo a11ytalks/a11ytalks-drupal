@@ -2,10 +2,10 @@
   text-align: center;
   padding: 1rem 2rem;
 
+  /* Date */
   h2 {
     line-height: 1.5rem;
-    margin-top: 1rem;
-    margin-bottom: .05rem;
+    margin: 1rem 0;
     text-transform: uppercase;
     color: var(--color-secondary);
     font-size: var(--font-size-huge);
@@ -19,13 +19,13 @@
     }
   }
 
-  h3,
-  .date {
+  /* Speaker Name */
+  h3 {
     line-height: 1.5rem;
     margin-top: 0;
-    margin-bottom: .05rem;
+    margin-bottom: 1rem;
     text-transform: uppercase;
-    color: var(--color-accent);
+    color: var(--color-gray-bg);
     font-size: var(--font-size-large);
     font-weight: 500;
     float: none;
@@ -62,6 +62,14 @@
     &:focus {
       color: var(--color-gray-bg);
     }
+    @media (prefers-color-scheme: light) {
+      color: var(--color-black);
+
+      &:hover,
+      &:focus {
+        color: var(--color-primary);
+      }
+    }
   }
 
   .image {
@@ -94,12 +102,6 @@
     margin-bottom: .75em;
   }
 
-  .date {
-    font-size: var(--font-size-small);
-    color: var(--color-gray-bg);
-    font-weight: 600;
-    text-transform: uppercase;
-  }
   .readmore {
     font-size: var(--font-size-base);
     color: var(--color-secondary);
@@ -108,6 +110,10 @@
     &:hover,
     &:focus {
       color: var(--color-primary);
+    }
+    &::after {
+      content: '\2192';
+      margin-left: .5rem;
     }
   }
 
@@ -137,19 +143,4 @@
     }
   }
 
-  @media (prefers-color-scheme: light) {
-    .title-link {
-      color: var(--color-black);
-
-      &:hover,
-      &:focus {
-        color: var(--color-primary);
-      }
-    }
-
-    .date,
-    h3 {
-      color: var(--color-gray-border);
-    }
-  }
 }

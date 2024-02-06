@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.event.body
+    - field.field.node.event.feeds_item
     - field.field.node.event.field_date_time
     - field.field.node.event.field_link
     - field.field.node.event.field_media
@@ -14,6 +15,7 @@ dependencies:
     - node.type.event
   module:
     - datetime
+    - nomarkup
     - text
     - user
 id: node.event.teaser
@@ -44,10 +46,15 @@ content:
     settings:
       view_mode: teaser
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: ''
+        referenced_entity: '1'
     weight: 1
     region: content
 hidden:
+  feeds_item: true
   field_link: true
   field_media: true
   field_tags: true

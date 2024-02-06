@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
+    - field.field.media.remote_video.feeds_item
     - field.field.media.remote_video.field_media_oembed_video
     - image.style.medium
     - media.type.remote_video
@@ -20,8 +21,8 @@ content:
     type: image
     label: hidden
     settings:
-      image_style: medium
       image_link: ''
+      image_style: medium
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -29,6 +30,7 @@ content:
     region: content
 hidden:
   created: true
+  feeds_item: true
   field_media_oembed_video: true
   name: true
   uid: true

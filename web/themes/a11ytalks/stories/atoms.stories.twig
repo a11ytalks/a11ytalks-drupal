@@ -5,9 +5,12 @@
     argTypes: {
       theIcon: {
         control: "select",
-        options: ["twitter", "facebook", "oc", "github", "email", "youtube"]
+        name: "Icon Picker",
+        options: ["twitter", "facebook", "oc", "github", "email", "youtube"],
+        description: "Select an icon to view."
       }
     },
+    args: {theIcon: "twitter"}
   } %}
     <h2>Colors</h2>
     {% include "a11ytalks:colors" %}
@@ -16,6 +19,14 @@
     {% include "a11ytalks:icon" %}
     <p>Options: "twitter", "facebook", "oc", "github", "email", "youtube"</p>
     <p>Use the controls below</p>
+
+
+    <h2>RSS Icon</h2>
+    {% include "a11ytalks:feed" with {
+      title: "Sample RSS",
+      url: "#"
+    } %}
   {% endstory %}
+
 
 {% endstories %}

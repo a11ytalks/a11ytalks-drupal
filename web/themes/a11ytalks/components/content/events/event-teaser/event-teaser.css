@@ -46,20 +46,17 @@
   }
 
   .event-teaser__content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
     width: 100%;
 
     @media (max-width: var(--bp-medium)) {
-      justify-content: space-between;
       flex-direction: column;
     }
   }
 
   .event-teaser__image {
-    margin-right: 1rem;
-    width: 220px;
 
     @media (max-width: var(--bp-medium)) {
       margin-right: 0;
@@ -73,9 +70,10 @@
   }
 
   .event-teaser__readmore {
+    display: block;
     font-size: 16px;
     color: var(--color-secondary);
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0;
 
     &:hover{
       color: var(--color-primary);
@@ -88,7 +86,7 @@
   .event-teaser__description {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
-    
+
     @media (max-width: var(--bp-medium)) {
       margin-bottom: 0;
     }

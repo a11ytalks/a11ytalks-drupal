@@ -11,7 +11,7 @@
   a {
     color: var(--color-secondary);
     font-weight: 600;
-    font-size: var(--typographic-base-font-size);
+    font-size: var(--font-size-base);
     font-weight: normal;
     border: 0;
 

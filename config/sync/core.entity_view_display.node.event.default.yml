@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
+    - field.field.node.event.feeds_item
     - field.field.node.event.field_date_time
     - field.field.node.event.field_link
     - field.field.node.event.field_media
@@ -49,9 +50,13 @@ content:
       trim_length: 80
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: ''
+        referenced_entity: ''
     weight: 4
     region: content
   field_media:
@@ -73,15 +78,16 @@ content:
     weight: 0
     region: content
   field_tags:
-    type: entity_reference_label
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
+      view_mode: default
+      link: false
     third_party_settings:
       nomarkup:
         enabled: false
         separator: '|'
-        referenced_entity: ''
+        referenced_entity: '1'
     weight: 6
     region: content
   field_youtube:
@@ -94,4 +100,5 @@ content:
     weight: 3
     region: content
 hidden:
+  feeds_item: true
   links: true

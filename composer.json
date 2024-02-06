@@ -34,6 +34,7 @@
         "drupal/core-recommended": "^10.2",
         "drupal/core-vendor-hardening": "^10.2",
         "drupal/editoria11y": "^2.1",
+        "drupal/feeds": "^3.0@beta",
         "drupal/gin": "^3.0@rc",
         "drupal/gin_toolbar": "^1.0@rc",
         "drupal/link_attributes": "^2.1",
@@ -81,11 +82,7 @@
             }
         },
         "enable-patching": true,
-        "patches": {
-            "e0ipso/twig-storybook": {
-                "Add argTypes to Storybook renderer (https://dgo.to/3417859)": "patches/e0ipso/storybook-twig/2--add-argTypes.patch"
-            }
-        },
+        "patches": {},
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"

@@ -1,0 +1,12 @@
+#block-a11ytalks-primary-local-tasks {
+  ul:not(.contextual-links) {
+    margin-block-start: .1em;
+    list-style: none;
+    display: inline;
+    padding-inline-start: 0;
+
+    li {
+      display: inline;
+    }
+  }
+}

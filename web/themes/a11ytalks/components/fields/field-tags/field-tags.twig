@@ -1,11 +1,7 @@
 <div {{ attributes.addClass('tags')}}>
   <ul>
-    {% block tags %}
-    {% for tag in tags %}
-      <li>
-        <a href="#">{{ tag }}</a>
-      </li>
+    {% for item in items %}
+      {{ item }}
     {% endfor %}
-    {% endblock %}
   </ul>
 </div>

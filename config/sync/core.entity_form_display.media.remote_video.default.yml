@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.remote_video.feeds_item
     - field.field.media.remote_video.field_media_oembed_video
     - media.type.remote_video
   module:
@@ -53,4 +54,5 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
+  feeds_item: true
   name: true

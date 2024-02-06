@@ -1,0 +1,25 @@
+[data-component-id="a11ytalks:tags"] {
+
+  display: inline-block;
+  margin: 10px 5px;
+  list-style: none;
+
+  a {
+    display: inline-block;
+    height: 34px;
+    padding: 0 24px;
+    line-height: 34px;
+    border: 1px solid #757575;
+    text-decoration: none;
+    border-radius: 20px;
+    color: #222;
+    background: #2ec4b6;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &:hover, &:focus {
+      background: #757575;
+    }
+
+  }
+}

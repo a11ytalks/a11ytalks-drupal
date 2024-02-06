@@ -14,16 +14,40 @@
   --font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
   --font-size: 100;
-  --typographic-base-font-size: 16px;
+  --font-size-base: 16px;
   --font-size-huge: 34px;
   --font-size-large: 28px;
   --font-size-small: 14px;
+  --font-size-xxs: 0.75rem;
 
   --typographic-base-line-height: 1.625;
 
   --typographic-base-font-color: var(--color-base);
   --typographic-link-p-font-color: var(--color-secondary);
   --typographic-link-s-font-color: var(--color-primary);
+
+  --sp: 1.125rem;
+    /* Layout helpers */
+    --sp0-25: calc(0.25 * var(--sp));
+    --sp0-5: calc(0.5 * var(--sp));
+    --sp0-75: calc(0.75 * var(--sp));
+    --sp1: calc(1 * var(--sp));
+    --sp1-5: calc(1.5 * var(--sp));
+    --sp2: calc(2 * var(--sp));
+    --sp2-5: calc(2.5 * var(--sp));
+    --sp3: calc(3 * var(--sp));
+    --sp3-5: calc(3.5 * var(--sp));
+    --sp4: calc(4 * var(--sp));
+    --sp4-5: calc(4.5 * var(--sp));
+    --sp5: calc(5 * var(--sp));
+    --sp6: calc(6 * var(--sp));
+    --sp7: calc(7 * var(--sp));
+    --sp8: calc(8 * var(--sp));
+    --sp9: calc(9 * var(--sp));
+    --sp10: calc(10 * var(--sp));
+    --sp11: calc(11 * var(--sp));
+    --sp12: calc(12 * var(--sp));
+    --sp13: calc(13 * var(--sp));
 
   --button-height: 35px;
   --button-border-radius: 20px;
