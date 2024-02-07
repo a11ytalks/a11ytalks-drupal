@@ -17,12 +17,12 @@
       {% endif %}
       {{field_footnote}} {# only one occurance of this field. #}
       <hr />
-      {{ field_date_time}}
+      <p class="event__date">{{ field_date_time}}</p>
     </div>
   <div class="event__tags">
     {% block field_tags %}
       {% include "a11ytalks:field-tags" with {
-        tags: field_tags
+        items: field_tags
       } %}
     {% endblock %}
   </div>

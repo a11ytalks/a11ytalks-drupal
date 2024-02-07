@@ -1,0 +1,19 @@
+{% stories taxonomy_stories with { title: "A11yTalks/Taxonomy"} %}
+
+  {% story taxonomy_tags with {
+    title: "Tags",
+    args: {
+      name: "tag 1",
+      name2: "tag 2",
+      url: "#"
+    }
+  } %}
+  <h2>Tags</h2>
+  <p>Tags are listed in an unordered list.</p>
+  <ul>
+    {% include "a11ytalks:tags" %}
+    {% include "a11ytalks:tags" with { name: name2 } %}
+  <ul
+  {% endstory %}
+
+{% endstories %}

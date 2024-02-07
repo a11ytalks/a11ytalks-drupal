@@ -3,13 +3,19 @@
   {% story field_tags with {
     name: "Field Tags",
     args:{
-      tags: [
-        'Tag 1',
-        'Tag 2',
+      items: [
+        { name: 'Tag 1', url: "#" },
+        { name: 'Tag 2', url: "#" }
       ]
     }
   } %}
-    {% include 'a11ytalks:field-tags' %}
+    {% embed 'a11ytalks:field-tags' %}
+      {% block tag_items %}
+        {% for item in items %}
+          {% include "a11ytalks:tags" with { name: item.name, url: item.url } %}
+        {% endfor %}
+      {% endblock %}
+    {% endembed %}
 
   {% endstory %}
 {% endstories %}

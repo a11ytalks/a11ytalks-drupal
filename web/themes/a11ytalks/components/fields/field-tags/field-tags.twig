@@ -1,7 +1,9 @@
 <div {{ attributes.addClass('tags')}}>
   <ul>
-    {% for item in items %}
-      {{ item }}
-    {% endfor %}
+    {% block tag_items %}
+      {% for item in items %}
+        {{item}}
+      {% endfor %}
+    {% endblock %}
   </ul>
 </div>
