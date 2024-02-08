@@ -21,9 +21,13 @@
     </div>
   <div class="event__tags">
     {% block field_tags %}
-      {% include "a11ytalks:field-tags" with {
-        items: field_tags
-      } %}
+    {% embed 'a11ytalks:field-tags' %}
+      {% block tag_items %}
+        {% for item in field_tags %}
+          {% include "a11ytalks:tags" with { name: item.name, url: item.url } %}
+        {% endfor %}
+      {% endblock %}
+    {% endembed %}
     {% endblock %}
   </div>
 </div>

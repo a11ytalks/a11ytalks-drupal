@@ -1,0 +1,4 @@
+$schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
+name: Home Link Block
+status: stable
+group: A11yTalks

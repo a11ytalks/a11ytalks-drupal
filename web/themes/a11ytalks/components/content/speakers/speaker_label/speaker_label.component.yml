@@ -2,18 +2,3 @@
 name: speaker-label
 status: stable
 description: Label Display mode for Speaker
-props:
-  type: object
-  properties:
-    label:
-      type: string
-      title: Label
-      description: Speaker Name (title)
-      examples: []
-    pronouns:
-      type: string
-      title: Pronouns
-      description: Speaker Pronouns
-      examples: ["she/her", "he/him"]
-      default: null
-      optional: true

@@ -4,6 +4,7 @@ global:
     js/a11ytalks.js: {}
   css:
     base:
+      css/base/variables.css: {}
       css/base/elements.css: {}
     component:
       css/component/block.css: {}

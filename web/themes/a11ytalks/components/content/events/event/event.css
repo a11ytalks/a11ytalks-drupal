@@ -4,13 +4,13 @@
   margin: 0 auto;
 
   .event__title {
-    font-size: 2rem;
-    max-width: 640px;;
+    font-size: calc(var(--font-size-base) * 2);
+    max-width: 640px;
     margin-left: auto;
     margin-right: auto;
     font-weight: 600;
     text-align: center;
-    color: #2dc4b6;
+    color: var(--color-primary);
     line-height: 1.65rem;
     margin-top: 1rem;
     margin-bottom: 0;
@@ -65,7 +65,7 @@
         padding: 1rem 0;
 
         & p {
-          
+
         max-width: 640px;
           font-size: 1.6rem;
           margin-top: 0;

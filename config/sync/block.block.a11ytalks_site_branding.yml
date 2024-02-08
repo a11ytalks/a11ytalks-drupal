@@ -11,7 +11,7 @@ _core:
 id: a11ytalks_site_branding
 theme: a11ytalks
 region: sidebar_first
-weight: -6
+weight: -7
 provider: null
 plugin: system_branding_block
 settings:
@@ -22,4 +22,8 @@ settings:
   use_site_logo: true
   use_site_name: true
   use_site_slogan: false
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/pages/*'

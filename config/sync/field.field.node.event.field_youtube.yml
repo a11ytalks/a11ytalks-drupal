@@ -10,7 +10,7 @@ id: node.event.field_youtube
 field_name: field_youtube
 entity_type: node
 bundle: event
-label: youtube
+label: 'YouTube Embed'
 description: ''
 required: false
 translatable: false

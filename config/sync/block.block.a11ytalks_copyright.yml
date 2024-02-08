@@ -11,7 +11,7 @@ dependencies:
 id: a11ytalks_copyright
 theme: a11ytalks
 region: sidebar_first
-weight: 0
+weight: -5
 provider: null
 plugin: 'block_content:392d0f2e-a70f-4c1d-b18e-5ebb349a6948'
 settings:

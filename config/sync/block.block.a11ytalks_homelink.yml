@@ -1,0 +1,30 @@
+uuid: 32368a86-5d66-4647-bd7e-b58366022d37
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1ef9f3ae-a58f-481b-bfd9-e2b370c11deb'
+  module:
+    - block_content
+    - system
+  theme:
+    - a11ytalks
+id: a11ytalks_homelink
+theme: a11ytalks
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'block_content:1ef9f3ae-a58f-481b-bfd9-e2b370c11deb'
+settings:
+  id: 'block_content:1ef9f3ae-a58f-481b-bfd9-e2b370c11deb'
+  label: 'Home Link'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/posts/*'
