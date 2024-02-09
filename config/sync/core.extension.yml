@@ -24,6 +24,7 @@ module:
   help: 0
   history: 0
   image: 0
+  inline_entity_form: 0
   link: 0
   link_attributes: 0
   link_attributes_menu_link_content: 0

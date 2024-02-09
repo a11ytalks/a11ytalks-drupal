@@ -1,0 +1,23 @@
+id: a11ytalks_organizer
+label: 'A11yTalks Organizers'
+source:
+  plugin: file
+    urls:
+      - ''
+  ids:
+process:
+  title: name
+  field_pronouns: pronouns
+  field_link: social
+  field_callouts: callout
+  body: body
+  field_current: current
+  field_media/target_id:
+    plugin: file_import
+    source: socialImage
+    resuse: true
+    id_only: true
+  field_media
+destination:
+  plugin: 'entity:node'
+  default_bundle: members

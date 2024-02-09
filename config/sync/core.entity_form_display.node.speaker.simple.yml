@@ -1,0 +1,64 @@
+uuid: 3f067b58-0ba7-4616-ae5e-de9cba9bdad0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.node.simple
+    - field.field.node.speaker.field_company
+    - field.field.node.speaker.field_media
+    - field.field.node.speaker.field_pronouns
+    - field.field.node.speaker.field_title
+    - node.type.speaker
+  module:
+    - media_library
+id: node.speaker.simple
+targetEntityType: node
+bundle: speaker
+mode: simple
+content:
+  field_company:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_media:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_pronouns:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

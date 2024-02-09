@@ -12,7 +12,7 @@ dependencies:
 id: a11ytalks_homelink
 theme: a11ytalks
 region: sidebar_first
-weight: -8
+weight: -5
 provider: null
 plugin: 'block_content:1ef9f3ae-a58f-481b-bfd9-e2b370c11deb'
 settings:

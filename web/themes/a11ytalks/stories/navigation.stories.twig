@@ -1,0 +1,18 @@
+{% stories navigation with { title: "A11yTalks/Navigation" } %}
+
+  {% story navigation_pagination with {
+    name: "Pagination",
+    args: {
+      items: {
+        next: {
+          href: "#",
+          text: "Next →",
+        },
+      }
+    }
+  } %}
+
+    {% include "a11ytalks:pager" %}
+  {% endstory %}
+
+{% endstories %}

@@ -4,40 +4,12 @@ namespace Drupal\migrate_markdown_frontmatter\Plugin\migrate\source;
 
 use Drupal\Component\Plugin\ConfigurableInterface;
 use Drupal\Component\Utility\NestedArray;
-use Drupal\migrate\Plugin\MigrationInterface;
 use Drupal\migrate\Plugin\migrate\source\SourcePluginBase;
+use Drupal\migrate\Plugin\MigrationInterface;
 use League\CommonMark\Extension\FrontMatter\FrontMatterExtension;
 
 /**
- * Takes markdown files from the folder path and
- * pull out the front matter fields defined in the configuration to return as an
- * iterator to be used.
- * 
- * source:
- *   plugin: 'frontmatter'
- *   path: '/path/to/markdown/folder'
- *   ids:
- *     - slug
- *   fields:
- *     0:
- *       name: slug
- *       label: 'Slug of file'
- *     1:
- *       name: title
- *       label: 'Title of event'
- *     2:
- *       name: subtitle
- *       label: 'Presenter name'
- *   get_body: FALSE
- * process:
- *   title: title
- *   type:
- *     plugin: default_value
- *     default_value: event
- *
- * destination:
- *   plugin: entity_node
- *   
+ * Takes markdown files from the folder path and pulls out frontmatter.
  */
 class Frontmatter extends SourcepluginBase implements ConfigurableInterface {
 
@@ -113,8 +85,6 @@ class Frontmatter extends SourcepluginBase implements ConfigurableInterface {
 
   }
 
-  
-
   /**
    * {@inheritdoc}
    */
@@ -132,13 +102,23 @@ class Frontmatter extends SourcepluginBase implements ConfigurableInterface {
   public function fields() {
     $fields = [];
     foreach ($this->configuration['fields'] as $field) {
-      $fields[$field['name']] = isset($field['label']) ? $field['label'] : $field['name'];
+      $fields[$field['name']] = $field['name'];
+      if (isset($field['label'])) {
+        $fields[$field['name']] = $field['label'];
+      }
     }
     return $fields;
   }
 
-
-
+  /**
+   * Gets the frontmatter content.
+   *
+   * @param string $markdown
+   *   Markdown items.
+   *
+   * @return array
+   *   Array of frontmatter and content.
+   */
   protected function readFrontmatter($markdown) {
     $frontMatterExtension = new FrontMatterExtension();
     $result = $frontMatterExtension->getFrontMatterParser()->parse($markdown);
@@ -147,4 +127,5 @@ class Frontmatter extends SourcepluginBase implements ConfigurableInterface {
       'content' => $result->getContent(),
     ];
   }
+
 }

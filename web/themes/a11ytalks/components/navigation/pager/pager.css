@@ -1,0 +1,42 @@
+[data-component-id="a11ytalks:pager"] {
+  ul {
+    margin: 1rem auto 0;
+    padding: 0;
+    display: inline-flex;
+    clear: both;
+    width: 50%;
+    min-width: 50vw;
+    list-style: none;
+  }
+
+  li {
+    font-size: 26px;
+    font-weight: bold;
+    width: 100%
+  }
+
+  a {
+    color: var(--color-accent);
+
+    &:hover,
+    &:focus {
+      color: var(--color-primary);
+    }
+  }
+
+  li.disabled {
+    pointer-events: none;
+    color: var(--color-gray);
+    filter: brightness(80%);
+  }
+
+  .pager--previous {
+    text-align: left;
+
+  }
+
+  .pager--next {
+    text-align: right;
+  }
+
+}

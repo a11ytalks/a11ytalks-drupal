@@ -23,13 +23,14 @@
       color: var(--color-black);
       background: var(--color-gray-bg);
     }
-    @media(max-width: 960px) {
-    position: fixed;
-      max-width: auto;
-      margin: 0;
-      top: 30px;
-      left: 30px
-    }
+
+  }
+
+  @media(min-width: 960px) {
+    position: sticky;
+    margin: 0;
+    top: 30px;
+    left: 30px;
   }
 
 }
