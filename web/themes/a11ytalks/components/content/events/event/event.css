@@ -73,6 +73,35 @@
     margin: 0 auto;
   }
 
+  .calendar {
+    margin: 1rem auto;
+    padding: 0;
+    text-align: center;
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    & a {
+      display: inline-block;
+      height: var(--button-height);
+      padding: 0 24px;
+      line-height: var(--button-height);
+      text-decoration: none;
+      border: 1px solid var(--color-gray-border);
+      border-radius: var(--button-border-radius);
+      background: var(--color-accent);
+      color: var(--color-black);
+
+      &:hover,
+      &:focus {
+        background: var(--color-gray-bg);
+        color: var(--color-black);
+        text-decoration: underline;
+      }
+
+    }
+  }
+
   .content__preview {
     max-width: 40rem;
     margin: 0 auto;

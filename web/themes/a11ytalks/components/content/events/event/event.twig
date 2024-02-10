@@ -16,6 +16,11 @@
         {% endblock %}
       {% endif %}
       {{field_footnote}} {# only one occurance of this field. #}
+      {% block calendar_link %}
+        <div class="calendar">
+          <a target="_blank" href={{field_link}}>Add to Google Calendar</a>
+        </div>
+      {% endblock %}
       <hr />
       <p class="event__date">{{ field_date_time}}</p>
     </div>

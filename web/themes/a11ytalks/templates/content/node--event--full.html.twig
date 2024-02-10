@@ -6,6 +6,15 @@
   field_speakers: content.field_speakers,
   field_youtube: content.field_youtube
 } %}
+  {% block calendar_link %}
+    {% if (node.field_date_time.0.value|date('U') > 'now'|date('U')) %}
+      <ul className="calendar">
+        <li className="calendar__list-item">
+          <a target="_blank" href={{field_link}}>Add to Google Calendar</a>
+        </li>
+      </ul>
+    {% endif %}
+  {% endblock %}
   {% block field_media %}
     {{ content.field_media }}
   {% endblock %}
