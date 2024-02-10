@@ -8,7 +8,7 @@
       {% set hastube = field_youtube|render %}
       {% if hastube %}
         {% block youtube %}
-          <iframe title="{{label}}" src="https://www.youtube.com/embed/{{field_youtube}}" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          {{ field_youtube }}
         {% endblock %}
       {% else %}
         {% block field_media %}

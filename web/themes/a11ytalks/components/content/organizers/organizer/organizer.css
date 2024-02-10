@@ -15,7 +15,6 @@
     margin-bottom: 0.5rem;
     margin-right: 2rem;
     margin-top: 0.5rem;
-    max-width: 150px;
     text-align: center;
   }
 
@@ -56,14 +55,14 @@
   }
   .member-bio__meta {
     display: flex;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
   }
   .member-social{
     width: 40%;
     padding: 1rem 0;
     margin-top: 1rem;
   }
-  ul.social-links {
+  ul {
     padding-left: 0;
     li{
       list-style-type: none;

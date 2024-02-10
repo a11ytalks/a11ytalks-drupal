@@ -27,7 +27,7 @@
   }
 
   @media(min-width: 960px) {
-    position: sticky;
+    position: absolute;
     margin: 0;
     top: 30px;
     left: 30px;

@@ -6,8 +6,8 @@ name: A11yTalks
 mail: admin@example.com
 slogan: 'Virtual meet-up featuring speakers & conversations around digital accessibility'
 page:
-  403: ''
-  404: ''
+  403: /node/32
+  404: /node/32
   front: /node
 admin_compact_mode: false
 weight_select_max: 100

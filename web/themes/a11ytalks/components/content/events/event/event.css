@@ -1,11 +1,11 @@
 [data-component-id="a11ytalks:event"] {
-  max-width: 945px;
+  width: 75vw;
   padding: 0 15px;
   margin: 0 auto;
 
   .event__title {
     font-size: calc(var(--font-size-base) * 2);
-    max-width: 640px;
+    max-width: 75%;
     margin-left: auto;
     margin-right: auto;
     font-weight: 600;
@@ -22,76 +22,36 @@
 
   .event__speaker {
     font-size: 16px;
-    max-width: 640px;
     margin-left: auto;
     margin-right: auto;
     font-weight: 600;
     text-align: center;
     line-height: 1rem;
-    margin-top: .5rem;
-    margin-bottom: 0;
+    margin: 1rem 0;
   }
 
   .event__footnote {
     font-size: .75em;
     text-align: right;
   }
-  .event__body,
+
+  .event__body {
+    p {
+      text-align: center;
+      word-break: break-word;
+      line-height: 1.2rem;
+    }
+    & * {
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto
+    }
+  }
   .event__meta {
+
     margin: 0 auto;
     text-align: center;
     word-break: break-word;
-
-    hr {
-      margin: 1rem auto;
-    }
-
-    p {
-      clear: both;
-      margin: 0 auto;
-
-      &.content-speaker-data {
-        margin-bottom: 1rem;
-      }
-    }
-
-    & figure {
-      margin-bottom: 1rem;
-
-      & blockquote {
-        font-style: italic;
-        text-align: center;
-        margin-top: 0;
-        padding: 1rem 0;
-
-        & p {
-
-        max-width: 640px;
-          font-size: 1.6rem;
-          margin-top: 0;
-          margin-bottom: 1rem;
-          line-height: 1.5rem;
-        }
-
-      }
-
-    }
-
-    & ul {
-      text-align: left;
-
-      & li {
-        float: left;
-
-        &:last-child {
-          margin-bottom: 1rem;
-        }
-      }
-    }
-
-    & a {
-      text-decoration: underline
-    }
 
     & * {
       max-width: 640px;
@@ -99,14 +59,22 @@
       margin-right: auto
     }
 
-    & img {
-      max-width: 100%;
+    hr {
+      margin: 1rem auto;
     }
 
+    p {
+      clear: both;
+    }
+  }
+
+  .event__tags {
+    max-width: 640px;
+    margin: 0 auto;
   }
 
   .content__preview {
-      max-width: 40rem;
-      margin: 0 auto;
+    max-width: 40rem;
+    margin: 0 auto;
   }
 }

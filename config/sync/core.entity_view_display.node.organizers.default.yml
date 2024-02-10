@@ -39,7 +39,7 @@ content:
       link_to_entity: false
     third_party_settings:
       nomarkup:
-        enabled: true
+        enabled: false
         separator: ''
         referenced_entity: ''
     weight: 4
@@ -50,13 +50,13 @@ content:
     settings:
       trim_length: 80
       url_only: false
-      url_plain: false
-      rel: '0'
-      target: '0'
+      url_plain: true
+      rel: nofollow
+      target: _blank
     third_party_settings:
       nomarkup:
-        enabled: true
-        separator: '|'
+        enabled: false
+        separator: ''
         referenced_entity: ''
     weight: 5
     region: content
