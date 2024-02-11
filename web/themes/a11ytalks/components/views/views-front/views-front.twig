@@ -1,0 +1,7 @@
+<div {{ attributes.addClass("event-listing") }}>
+{% for row in rows %}
+  <div{{ row.attributes.addClass('event-item') }}>
+    {{- row.content -}}
+  </div>
+{% endfor %}
+</div>

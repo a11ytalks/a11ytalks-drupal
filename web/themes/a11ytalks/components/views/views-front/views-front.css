@@ -1,5 +1,5 @@
-.event-listing {
-  .views-row:not(:last-child) {
+[data-component-id="a11ytalks:views-front"] {
+  .event-item:not(:last-child) {
     &::after {
       content: '';
       margin-bottom: 1.5rem;
