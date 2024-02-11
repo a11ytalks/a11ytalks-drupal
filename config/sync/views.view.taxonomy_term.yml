@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
   module:
+    - datetime
     - node
     - taxonomy
     - user
@@ -33,8 +34,8 @@ display:
           total_pages: 0
           id: 0
           tags:
-            next: ››
-            previous: ‹‹
+            next: 'Next →'
+            previous: '← Previous'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -62,31 +63,18 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        sticky:
-          id: sticky
-          table: taxonomy_index
-          field: sticky
+        field_date_time_value:
+          id: field_date_time_value
+          table: node__field_date_time
+          field: field_date_time_value
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: standard
+          plugin_id: datetime
           order: DESC
           expose:
             label: ''
-            field_identifier: sticky
-          exposed: false
-        created:
-          id: created
-          table: taxonomy_index
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: date
-          order: DESC
-          expose:
-            label: ''
-            field_identifier: created
+            field_identifier: ''
           exposed: false
           granularity: second
       arguments:

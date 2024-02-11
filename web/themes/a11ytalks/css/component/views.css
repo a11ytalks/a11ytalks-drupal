@@ -2,8 +2,7 @@
   .views-row:not(:last-child) {
     &::after {
       content: '';
-      margin-top: 40px;
-      margin-bottom: 40px;
+      margin-bottom: 1.5rem;
       border: 0;
       color: var(--color-base);
       display: block;
