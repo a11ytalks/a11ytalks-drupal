@@ -9,7 +9,6 @@ dependencies:
     - filter
     - media
     - search
-    - shortcut
     - storybook
     - system
 _core:
@@ -20,7 +19,6 @@ weight: 1
 is_admin: false
 permissions:
   - 'access content'
-  - 'access shortcuts'
   - 'delete own files'
   - 'render storybook stories'
   - 'search content'

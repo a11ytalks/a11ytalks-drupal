@@ -65,7 +65,8 @@
 
   .event-teaser__description {
     font-size: 16px;
-    line-height: 1;
+    line-height: 1.5;
+    max-width: 650px;
     margin-bottom: .75rem;
   }
 

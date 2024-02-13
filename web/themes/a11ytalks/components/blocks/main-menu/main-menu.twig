@@ -1,8 +1,9 @@
 <nav {{ attributes.addClass('menu') }}>
   <ul>
     {% for item in items %}
-      <li >
-        <a href="{{item.url}}">{{item.title}}</a>
+      {% set active_class =  item.in_active_trail ? "is-active" : "" %}
+      <li class="menu-item">
+        <a href="{{item.url}}" {{item.attributes.addClass(active_class)}}>{{item.title}}</a>
       </li>
     {% endfor %}
   </ul>

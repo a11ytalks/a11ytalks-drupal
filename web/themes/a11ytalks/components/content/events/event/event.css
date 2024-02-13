@@ -1,7 +1,5 @@
 [data-component-id="a11ytalks:event"] {
-  width: 75vw;
   padding: 0 15px;
-  margin: 0 auto;
 
   .event__title {
     font-size: calc(var(--font-size-base) * 2);
@@ -36,8 +34,12 @@
   }
 
   .event__body {
+
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+
     p {
-      text-align: center;
       word-break: break-word;
       line-height: 1.2rem;
     }

@@ -5,4 +5,4 @@ dependencies: {  }
 id: slug_format
 label: 'Slug Format'
 locked: false
-pattern: M-Y
+pattern: Y-M

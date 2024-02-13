@@ -43,7 +43,6 @@ module:
   sdc_examples: 0
   search: 0
   serialization: 0
-  shortcut: 0
   smart_trim: 0
   storybook: 0
   system: 0

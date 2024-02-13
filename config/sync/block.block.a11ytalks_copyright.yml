@@ -6,7 +6,6 @@ dependencies:
     - 'block_content:basic:392d0f2e-a70f-4c1d-b18e-5ebb349a6948'
   module:
     - block_content
-    - system
   theme:
     - a11ytalks
 id: a11ytalks_copyright
@@ -23,8 +22,4 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility:
-  request_path:
-    id: request_path
-    negate: true
-    pages: '/posts/*'
+visibility: {  }
