@@ -1,57 +1,57 @@
-.site-branding {
+[data-component-id="a11ytalks:site-branding"] {
   text-align: center;
-}
 
-.site-branding__logo {
-  display: inline-block;
-  margin-bottom: 0;
-  border-radius: 50%;
-  background-clip: padding-box
-}
-
-.site-name {
-  font-size: 34px;
-  font-weight: 600;
-  line-height: 1.125rem;
-  margin: .5rem 0;
-
-  a {
-    color: #2ec4b6;
-
-    &::hover,
-    &::focus {
-      color: #757575;
-    }
-
+  .site-branding__logo {
+    background-clip: padding-box;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 0;
   }
 
-}
-
-.site-slogan {
-  color: #757575;
-  line-height: 1;
-  margin-bottom: 0.5rem;
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-
-@media (prefers-color-scheme: light) {
   .site-name {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1;
+    margin: .5rem 0;
 
     a {
-      color: #000;
+      color: #2ec4b6;
 
-      &:hover,
-      &:focus {
-        color: #000;
-        text-shadow: inherit;
+      &::hover,
+      &::focus {
+        color: var(--color-gray-border);
       }
+
     }
+
   }
 
   .site-slogan {
-    color: #000;
+    color: var(--color-gray-border);
+    font-size: 0.9rem;
+    line-height: 1.625rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+
+  @media (prefers-color-scheme: light) {
+    .site-name {
+
+      a {
+        color: var(--color-black);
+
+        &:hover,
+        &:focus {
+          color: var(--color-black);
+          text-shadow: inherit;
+        }
+      }
+    }
+
+    .site-slogan {
+      color: var(--color-black);
+    }
   }
 }

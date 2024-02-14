@@ -8,7 +8,7 @@ slogan: 'Virtual meet-up featuring speakers & conversations around digital acces
 page:
   403: /node/32
   404: /node/32
-  front: /node
+  front: /page
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

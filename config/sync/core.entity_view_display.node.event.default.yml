@@ -24,10 +24,9 @@ bundle: event
 mode: default
 content:
   body:
-    type: text_summary_or_trimmed
+    type: text_default
     label: hidden
-    settings:
-      trim_length: 600
+    settings: {  }
     third_party_settings:
       nomarkup:
         enabled: true
@@ -39,9 +38,13 @@ content:
     type: datetime_default
     label: hidden
     settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
+      timezone_override: America/New_York
+      format_type: long
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
     weight: 5
     region: content
   field_link:

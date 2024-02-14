@@ -13548,6 +13548,7 @@
         "drupal/feeds": 10,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
+        "drupal/inline_entity_form": 5,
         "drupal/sdc_examples": 20,
         "drupal/storybook": 15
     },
