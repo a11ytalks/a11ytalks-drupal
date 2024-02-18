@@ -10,48 +10,42 @@ dependencies:
     - field.field.node.speaker.field_title
     - node.type.speaker
   module:
+    - nomarkup
     - user
 id: node.speaker.next
 targetEntityType: node
 bundle: speaker
 mode: next
 content:
-  field_company:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 104
-    region: content
   field_media:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
-      view_mode: default
+      view_mode: next_teaser
       link: false
-    third_party_settings: {  }
-    weight: 105
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: 0
+    weight: 2
     region: content
   field_pronouns:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 103
+    weight: 1
     region: content
   field_title:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 102
+    weight: 0
     region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
-    region: content
-hidden: {  }
+hidden:
+  field_company: true
+  links: true

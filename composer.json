@@ -38,6 +38,7 @@
         "drupal/feeds": "^3.0@beta",
         "drupal/gin": "^3.0@rc",
         "drupal/gin_toolbar": "^1.0@rc",
+        "drupal/google_tag": "^2.0",
         "drupal/inline_entity_form": "^3.0@RC",
         "drupal/link_attributes": "^2.1",
         "drupal/menus_attribute": "^1.3",

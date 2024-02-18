@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.next
     - field.field.node.event.body
-    - field.field.node.event.feeds_item
     - field.field.node.event.field_date_time
     - field.field.node.event.field_link
     - field.field.node.event.field_media
@@ -15,6 +14,7 @@ dependencies:
     - node.type.event
   module:
     - datetime
+    - nomarkup
     - text
     - user
 id: node.event.next
@@ -28,26 +28,37 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 101
+    weight: 0
     region: content
   field_date_time:
     type: datetime_default
-    label: above
+    label: hidden
     settings:
       timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 102
+      format_type: month_year
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 2
     region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+  field_speakers:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: '1'
+    weight: 1
     region: content
 hidden:
-  feeds_item: true
   field_link: true
   field_media: true
-  field_speakers: true
   field_tags: true
   field_youtube: true
+  links: true

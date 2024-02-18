@@ -19,6 +19,7 @@
     font-weight: 600;
     margin-top: 13px;
     text-transform: uppercase;
-    color: var(--color-gray)
+    color: var(--color-gray);
+    width: 100%;
   }
 }

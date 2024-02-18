@@ -1,0 +1,8 @@
+{% embed "a11ytalks:event-next" with {
+  body: content.body,
+  field_date_time: content.field_date_time
+} %}
+  {% block speaker_image %}
+    {{ content.field_speakers }}
+  {% endblock %}
+{% endembed %}

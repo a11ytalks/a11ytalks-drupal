@@ -1,20 +1,18 @@
 <div {{ attributes.addClass('event-next') }}>
   <div class='meta'>
     <div class='image'>
-      {% block media_image %}
-        {% include 'a11ytalks:speaker-teaser' with { label: '' }%}
+      {% block speaker_image %}
+        {% include 'a11ytalks:speaker-teaser' with { label: 'Spiffy Speaker' }%}
       {% endblock %}
     </div>
     <div class='content'>
-      <div>
-        <h2 class='date' dateTime="{{field_date_time}}">
-          {{ field_date_time }}
-        </h2>
-        <h3 class="speaker">{{ field_speakers }}</h3>
-          <h3 class='title'>
-            <a class='title-link' href={{ url }}>{{ label }}</a>
-          </h3>
-      </div>
+      <h2 class='date'>
+        {{ field_date_time }}
+      </h2>
+      <h3 class="speaker">{{ field_speakers }}</h3>
+      <h3 class='title'>
+        <a class='title-link' href={{ url }}>{{ label }}</a>
+      </h3>
       <p class='description'>{{ body }}
         <br /><br />
         <a class='readmore' href={{ url }}>Read more<span class="sr-only"> about {{ label }}</span></a>
