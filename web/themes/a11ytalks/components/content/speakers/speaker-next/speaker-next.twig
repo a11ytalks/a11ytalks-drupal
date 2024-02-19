@@ -1,0 +1,12 @@
+<div {{attributes.addClass("speaker-next")}}>
+  <div class="media">
+    {% block media_image %}
+      <img
+          src="https://a11ytalks.com/photo.png"
+          class="speaker-teaser__social-image"
+          alt="AmyJune Bio"
+      />
+    {% endblock %}
+  </div>
+  <h3 class="speaker-name">{{ label }}<br/>{{field_pronouns}}</h3>
+</div>

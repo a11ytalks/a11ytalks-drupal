@@ -1,0 +1,5 @@
+[data-component-id="image-teaser"] {
+  img {
+    max-height: 175px;
+  }
+}

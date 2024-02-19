@@ -1,0 +1,15 @@
+uuid: 69e61377-5832-4ee4-96b3-a4aaadec000e
+langcode: en
+status: true
+dependencies: {  }
+name: speaker_image_teaser
+label: 'Speaker - Next (175)'
+effects:
+  45c57c9e-e044-4d09-b512-890179bbc4a8:
+    uuid: 45c57c9e-e044-4d09-b512-890179bbc4a8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 175
+      height: 175
+      anchor: center-center

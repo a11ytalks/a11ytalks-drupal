@@ -1,0 +1,15 @@
+uuid: fd6aeda9-120d-4c5e-aa5d-0a7bbf0d5e54
+langcode: en
+status: true
+dependencies: {  }
+name: speaker_image_next
+label: 'Speaker - Next (300)'
+effects:
+  873dcdc2-64c7-4935-9906-6160d60fe307:
+    uuid: 873dcdc2-64c7-4935-9906-6160d60fe307
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 300
+      anchor: center-center

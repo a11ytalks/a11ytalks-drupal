@@ -1,6 +1,7 @@
 [data-component-id="a11ytalks:event-teaser"] {
   padding: 1rem 2rem;
   margin-bottom: 1rem;
+  text-align: left;
 
   .event-teaser__date {
     line-height: 1.5rem;
@@ -12,10 +13,6 @@
     font-weight: 600;
   }
 
-  hr {
-    clear: both;
-  }
-
   .event-teaser__title {
     font-size: 1.5rem;
     line-height: 1.5rem;
@@ -24,16 +21,8 @@
   }
 
   .event-teaser__title-link {
-    color: #2ec4b6;
-    text-transform: none;
-    float: none;
-    text-align: center;
+    color: var(--color-primary);
     text-decoration: none;
-
-    @media (max-width: var(--bp-medium)) {
-      float: left;
-      text-align: left;
-    }
 
     &:hover{
       filter: brightness(145%);
@@ -47,20 +36,15 @@
 
   .event-teaser__content {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
     width: 100%;
-
-    @media (max-width: var(--bp-medium)) {
-      flex-direction: column;
-    }
   }
 
   .event-teaser__image {
+    margin-right: 0;
+    margin-top: 0;
 
-    @media (max-width: var(--bp-medium)) {
-      margin-right: 0;
-    }
   }
 
   .event-teaser__description {
@@ -68,6 +52,10 @@
     line-height: 1.5;
     max-width: 650px;
     margin-bottom: .75rem;
+
+    p {
+      margin-top: 0;
+    }
   }
 
   .event-teaser__readmore {
@@ -86,16 +74,20 @@
 
   .event-teaser__description {
     margin-top: 0.5rem;
-    margin-bottom: 1rem;
-
-    @media (max-width: var(--bp-medium)) {
-      margin-bottom: 0;
-    }
+    margin-bottom: 0;
   }
 
-  @media (max-width: var(--bp-medium)) {
-    .event-teaser {
-      text-align: center;
+  @media (min-width: 960px) {
+    .event-teaser__content {
+      grid-template-columns: 200px 1fr;
+    }
+
+    .event-teaser__image {
+      margin-top: .5rem;
+    }
+
+    .event-teaser__description {
+      margin-bottom: 1rem;
     }
   }
 

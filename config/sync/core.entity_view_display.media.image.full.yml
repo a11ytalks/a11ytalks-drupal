@@ -5,10 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.media.full
     - field.field.media.image.field_media_image
-    - image.style.large
     - media.type.image
   module:
     - image
+    - nomarkup
 _core:
   default_config_hash: 73xaTNkI5J6sfFcBmNYeuk070X3mQS_iwwWaPYyfG2M
 id: media.image.full
@@ -21,10 +21,14 @@ content:
     label: visually_hidden
     settings:
       image_link: ''
-      image_style: large
+      image_style: ''
       image_loading:
         attribute: lazy
-    third_party_settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
     weight: 1
     region: content
 hidden:
