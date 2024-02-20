@@ -1,6 +1,7 @@
 {% embed "a11ytalks:event-next" with {
   body: content.body,
-  field_date_time: content.field_date_time
+  field_date_time: content.field_date_time,
+  speaker_label: drupal_field('field_speakers', 'node', node.id(), 'label')
 } %}
   {% block speaker_image %}
     {{ content.field_speakers }}

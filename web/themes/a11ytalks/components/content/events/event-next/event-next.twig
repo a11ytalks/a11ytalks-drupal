@@ -9,14 +9,14 @@
       <h2 class='date'>
         {{ field_date_time }}
       </h2>
+      <h3 class="speaker-label">{{speaker_label}}</h3>
       <h3 class='title'>
         <a class='title-link' href={{ url }}>{{ label }}</a>
       </h3>
-      <p class="description">
+      <div class="description">
         {{ body }}
-        <br /><br />
         <a class='readmore' href={{ url }}>Read more<span class="sr-only"> about {{ label }}</span></a>
-      </p>
+      </div>
     </div>
   </div>
 

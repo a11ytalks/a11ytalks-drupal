@@ -66,6 +66,10 @@
     }
   }
 
+  h3.speaker-label {
+    color: var(--color-gray-border);
+  }
+
 
   hr {
     clear: both;
@@ -102,7 +106,7 @@
 
   .description {
     font-size: 1rem;
-    line-height: 1;
+    line-height: 1.5;
     margin-right: 0;
     margin-bottom: .75em;
     margin-top: 0.5rem;
@@ -113,9 +117,10 @@
   }
 
   .readmore {
-    font-size: var(--font-size-base);
     color: var(--color-secondary);
-    margin-bottom: (1.5);
+    display: block;
+    font-size: var(--font-size-base);
+    margin-top: .5rem;
 
     &:hover,
     &:focus {
