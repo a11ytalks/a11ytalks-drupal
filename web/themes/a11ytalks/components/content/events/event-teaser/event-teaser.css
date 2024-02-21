@@ -1,23 +1,23 @@
 [data-component-id="a11ytalks:event-teaser"] {
-  padding: 1rem 2rem;
   margin-bottom: 1rem;
+  padding: 1rem 2rem;
   text-align: left;
 
   .event-teaser__date {
+    color: var(--color-gray);
+    font-size: 16px;
+    font-weight: 600;
     line-height: 1.5rem;
     margin-top: 0;
     margin-bottom: .05rem;
     text-transform: uppercase;
-    color: var(--color-gray);
-    font-size: 16px;
-    font-weight: 600;
   }
 
   .event-teaser__title {
     font-size: 1.5rem;
     line-height: 1.5rem;
-    margin-top: 0;
     margin-bottom: .5rem;
+    margin-top: 0;
   }
 
   .event-teaser__title-link {
@@ -36,8 +36,8 @@
 
   .event-teaser__content {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 20px;
+    grid-template-columns: 1fr;
     width: 100%;
   }
 

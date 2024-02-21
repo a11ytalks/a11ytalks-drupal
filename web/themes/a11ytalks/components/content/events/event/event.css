@@ -2,16 +2,15 @@
   padding: 0 15px;
 
   .event__title {
-    font-size: calc(var(--font-size-base) * 2);
-    max-width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 600;
-    text-align: center;
     color: var(--color-primary);
+    font-size: calc(var(--font-size-base) * 2);
+    font-weight: 600;
     line-height: 1.25;
-    margin-top: 1rem;
     margin-bottom: 0;
+    margin-inline: auto;
+    margin-top: 1rem;
+    max-width: 75%;
+    text-align: center;
 
     @media (prefers-color-scheme: light) {
       color: var(--color-black);
@@ -20,12 +19,12 @@
 
   .event__speaker {
     font-size: 16px;
-    margin-left: auto;
-    margin-right: auto;
     font-weight: 600;
-    text-align: center;
     line-height: 1rem;
-    margin: 1rem 0;
+    margin: 1rem;
+    margin-inline: auto;
+    max-width: 640px;
+    text-align: center;
   }
 
   .event__footnote {
@@ -35,30 +34,27 @@
 
   .event__body {
 
+    margin-inline: auto;
     max-width: 640px;
-    margin-left: auto;
-    margin-right: auto;
 
     p {
       word-break: break-word;
       line-height: 1.2rem;
     }
     & * {
+      margin-inline: auto;
       max-width: 640px;
-      margin-left: auto;
-      margin-right: auto
     }
   }
   .event__meta {
 
-    margin: 0 auto;
+    margin-inline: auto;
     text-align: center;
     word-break: break-word;
 
     & * {
+      margin-inline: auto;
       max-width: 640px;
-      margin-left: auto;
-      margin-right: auto
     }
 
     hr {
@@ -71,28 +67,30 @@
   }
 
   .event__tags {
-    max-width: 640px;
-    margin: 0 auto;
+    margin-inline: auto;
+    max-width: fit-content;
   }
 
   .calendar {
-    margin: 1rem auto;
-    padding: 0;
-    text-align: center;
     display: block;
     font-weight: 600;
+    margin: 1rem;
+    margin-inline: auto;
+    max-width: fit-content;
+    padding: 0;
+    text-align: center;
     text-transform: uppercase;
 
     & a {
-      display: inline-block;
-      height: var(--button-height);
-      padding: 0 24px;
-      line-height: var(--button-height);
-      text-decoration: none;
+      background: var(--color-accent);
       border: 1px solid var(--color-gray-border);
       border-radius: var(--button-border-radius);
-      background: var(--color-accent);
       color: var(--color-black);
+      display: inline-block;
+      height: var(--button-height);
+      line-height: var(--button-height);
+      padding: 0 24px;
+      text-decoration: none;
 
       &:hover,
       &:focus {
@@ -104,8 +102,13 @@
     }
   }
 
+  .event__date {
+    margin-inline: auto;
+    max-width: fit-content;
+  }
+
   .content__preview {
-    max-width: 40rem;
-    margin: 0 auto;
+    max-width: fit-content;
+    margin-inline: auto;
   }
 }

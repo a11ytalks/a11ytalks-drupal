@@ -10,4 +10,16 @@
 
     {% include 'a11ytalks:speaker-teaser' %}
   {% endstory %}
+
+  {% story speaker_next with {
+    name: "Next",
+    args: {
+      label: "Speaker Name",
+    }
+  } %}
+    <h3>Used in the Next Event component</h3>
+    <p>Speakers name is listed there.</p>
+    {% include "a11ytalks:speaker-next" %}
+  {% endstory %}
+
 {% endstories %}

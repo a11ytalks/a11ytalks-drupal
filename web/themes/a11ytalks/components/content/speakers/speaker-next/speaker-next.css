@@ -2,8 +2,8 @@
   text-align: center;
 
   .media {
+    margin-inline: auto;
     width: 300px;
-    margin: 0 auto;
 
     & img {
       border-radius: 50%;
@@ -12,11 +12,11 @@
   }
 
   .speaker-name {
+    color: var(--color-gray-border);
     font-size: 14px;
     font-weight: 600;
     margin-top: 13px;
     text-transform: uppercase;
-    color: var(--color-gray-border);
     width: 100%;
   }
 }
