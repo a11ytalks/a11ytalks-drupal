@@ -8,11 +8,9 @@
 } %}
   {% block calendar_link %}
     {% if (node.field_date_time.0.value|date('U') > 'now'|date('U')) %}
-      <ul className="calendar">
-        <li className="calendar__list-item">
-          <a target="_blank" href={{field_link}}>Add to Google Calendar</a>
-        </li>
-      </ul>
+      <div class="calendar">
+        <a target="_blank" href={{field_link.value}}>Add to Google Calendar</a>
+      </div>
     {% endif %}
   {% endblock %}
   {% block field_media %}
