@@ -45,7 +45,6 @@
         "drupal/metatag": "^2.0",
         "drupal/nomarkup": "^1.0",
         "drupal/pathauto": "^1.12",
-        "drupal/sdc_examples": "@dev",
         "drupal/smart_trim": "^2.1",
         "drupal/storybook": "^1.0@alpha",
         "drupal/twig_field_value": "^2.0",

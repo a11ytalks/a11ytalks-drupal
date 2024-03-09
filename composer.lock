@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c42a6d1b2c46253b083e9ac06e65f084",
+    "content-hash": "dd6c0262f0428feee188bfcc7ecf4b0a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2587,47 +2587,6 @@
                 "source": "https://cgit.drupalcode.org/pathauto",
                 "issues": "https://www.drupal.org/project/issues/pathauto",
                 "documentation": "https://www.drupal.org/docs/8/modules/pathauto"
-            }
-        },
-        {
-            "name": "drupal/sdc_examples",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/sdc_examples.git",
-                "reference": "a4f067fe2bd1a2079a0cda3055b4c7b39aced5bd"
-            },
-            "require": {
-                "drupal/core": "^9 || ^10"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "1.x-dev",
-                    "datestamp": "1701294126",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "e0ipso",
-                    "homepage": "https://www.drupal.org/user/550110"
-                }
-            ],
-            "description": "Provides example components.",
-            "homepage": "https://www.drupal.org/project/sdc_examples",
-            "support": {
-                "source": "https://git.drupalcode.org/project/sdc_examples"
             }
         },
         {
@@ -13035,7 +12994,6 @@
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
         "drupal/inline_entity_form": 5,
-        "drupal/sdc_examples": 20,
         "drupal/storybook": 15
     },
     "prefer-stable": true,
