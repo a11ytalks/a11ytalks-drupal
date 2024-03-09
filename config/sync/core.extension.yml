@@ -15,6 +15,7 @@ module:
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  editoria11y: 0
   field: 0
   field_ui: 0
   file: 0
@@ -45,7 +46,6 @@ module:
   path: 0
   path_alias: 0
   sdc: 0
-  sdc_examples: 0
   search: 0
   serialization: 0
   smart_trim: 0

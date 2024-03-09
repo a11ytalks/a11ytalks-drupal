@@ -1,0 +1,17 @@
+_core:
+  default_config_hash: 0RrcghSOjTnLRmKhHVeslSyi3zUFH8idsjwFPGJax_A
+content_root: ''
+no_load: ''
+ignore_elements: ''
+embedded_content_warning: ''
+assertiveness: smart
+download_links: ''
+ignore_link_strings: ''
+link_ignore_selector: 'svg.ext, svg.mailto, .link-purpose-text'
+hidden_handlers: ''
+ignore_all_if_absent: ''
+ed11y_theme: sleekTheme
+shadow_components: ''
+disable_sync: false
+preserve_params: 'search,keys,page,language,language_content_entity'
+custom_tests: 0
