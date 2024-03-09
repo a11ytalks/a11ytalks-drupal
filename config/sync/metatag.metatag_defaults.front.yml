@@ -1,0 +1,17 @@
+uuid: 6d827e54-5c4f-467a-8b53-7b044b57cd6d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
+id: front
+label: 'Front page'
+tags:
+  canonical_url: '[site:url]'
+  description: 'A virtual meet-up featuring speakers & conversations around digital accessibility'
+  shortlink: '[site:url]'
+  title: A11yTalks
+  twitter_cards_description: 'Virtual meet-up featuring speakers & conversations around digital accessibility'
+  twitter_cards_site: '@a11ytalks'
+  twitter_cards_title: A11yTalks
+  twitter_cards_type: summary
