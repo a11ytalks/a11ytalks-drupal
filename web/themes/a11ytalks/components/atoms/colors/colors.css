@@ -3,8 +3,9 @@
   .primary {background-color: var(--color-primary); }
   .secondary {background-color: var(--color-secondary); }
   .accent {background-color: var(--color-accent); }
-  .white {background-color: var(--color-white); }
+  .white {background-color: var(--color-white); color: var(--color-base) }
   .gray {background-color: var(--color-gray); }
+  .gray-light { background-color: var(--color-gray-light); }
   .gray-border {background-color: var(--color-gray-border); }
-  .gray-bg {background-color: var(--color-gray-bg); }
+  .gray-bg {background-color: var(--color-gray-bg); color: var(--color-base)}
 }

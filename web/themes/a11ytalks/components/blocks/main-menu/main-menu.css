@@ -21,7 +21,7 @@
     }
 
     &.is-active {
-      color: var(--color-base);
+      color: var(--color-accent);
     }
   }
 
@@ -33,6 +33,9 @@
   @media (prefers-color-scheme: light) {
     a {
       color: var(--color-secondary);
+      &.is-active {
+        color: var(--color-accent);
+      }
     }
   }
 }

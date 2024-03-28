@@ -49,7 +49,7 @@
 }
 
 .page-content {
-  padding-left: 1rem;
-  position: relative;
-  margin-left: 2rem;
+  @media (min-width: 960px) {
+    padding-left: 1rem;
+  }
 }

@@ -19,7 +19,7 @@
 
       &::hover,
       &::focus {
-        color: var(--color-gray-border);
+        color: var(--color-gray-light);
       }
 
     }
@@ -27,7 +27,7 @@
   }
 
   .site-slogan {
-    color: var(--color-gray-border);
+    color: var(--color-gray-light);
     font-size: 0.9rem;
     line-height: 1.625rem;
     margin-bottom: 0.5rem;
