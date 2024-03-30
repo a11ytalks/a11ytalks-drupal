@@ -1,3 +1,8 @@
 [data-component-id="a11ytalks:speaker_label"] {
   margin-inline: auto;
+
+  color: var(--color-accent);
+  @media (prefers-color-scheme: light) {
+    color: var(--color-gray);
+  }
 }

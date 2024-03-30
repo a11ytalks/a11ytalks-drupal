@@ -12,11 +12,15 @@
   }
 
   .speaker-name {
-    color: var(--color-gray-border);
+    color: var(--color-accent);
     font-size: 14px;
     font-weight: 600;
     margin-top: 13px;
     text-transform: uppercase;
     width: 100%;
+
+    @media (prefers-color-scheme: light) {
+      color: var(--color-gray);
+    }
   }
 }
