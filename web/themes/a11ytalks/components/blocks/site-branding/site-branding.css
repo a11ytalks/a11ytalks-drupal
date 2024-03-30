@@ -27,7 +27,7 @@
   }
 
   .site-slogan {
-    color: var(--color-gray-light);
+    color: var(--color-gray-bg);
     font-size: 0.9rem;
     line-height: 1.625rem;
     margin-bottom: 0.5rem;
