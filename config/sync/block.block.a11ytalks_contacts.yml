@@ -1,0 +1,25 @@
+uuid: 8927424a-6b7d-4e44-a17d-0d1b4dbf5a6d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f2d26eb7-1461-4ab5-85ac-1609ee84aae1'
+  module:
+    - block_content
+  theme:
+    - a11ytalks
+id: a11ytalks_contacts
+theme: a11ytalks
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'block_content:f2d26eb7-1461-4ab5-85ac-1609ee84aae1'
+settings:
+  id: 'block_content:f2d26eb7-1461-4ab5-85ac-1609ee84aae1'
+  label: Contacts
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

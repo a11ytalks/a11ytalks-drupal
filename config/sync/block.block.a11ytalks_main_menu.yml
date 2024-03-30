@@ -13,7 +13,7 @@ _core:
 id: a11ytalks_main_menu
 theme: a11ytalks
 region: sidebar_first
-weight: -8
+weight: -7
 provider: null
 plugin: 'system_menu_block:main'
 settings:
