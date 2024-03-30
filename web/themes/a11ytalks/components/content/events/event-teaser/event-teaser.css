@@ -4,7 +4,7 @@
   text-align: left;
 
   .event-teaser__date {
-    color: var(--color-gray-light);
+    color: var(--color-gray-bg);
     font-size: 16px;
     font-weight: 600;
     line-height: 1.5rem;
@@ -14,9 +14,9 @@
   }
 
   .event-teaser__title {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    margin-bottom: .5rem;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    margin-bottom: 0;
     margin-top: 0;
   }
 
@@ -48,10 +48,10 @@
   }
 
   .event-teaser__description {
-    font-size: 16px;
-    line-height: 1.5;
-    max-width: 650px;
-    margin-bottom: .75rem;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
 
     p {
       margin-top: 0;
@@ -72,10 +72,7 @@
     }
   }
 
-  .event-teaser__description {
-    margin-top: 0.5rem;
-    margin-bottom: 0;
-  }
+
 
   @media (min-width: 960px) {
     .event-teaser__content {
