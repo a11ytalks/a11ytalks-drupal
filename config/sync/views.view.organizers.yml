@@ -174,7 +174,7 @@ display:
         options:
           uses_fields: false
           columns: 3
-          cell_min_width: 100
+          cell_min_width: 300
           grid_gutter: 10
           alignment: horizontal
       row:
