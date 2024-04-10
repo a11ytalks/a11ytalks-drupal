@@ -1,9 +1,9 @@
-uuid: 27ca28a2-382a-45dd-a26c-c64a8720c46d
+uuid: 41e17a97-35a7-4664-994d-ab269c4e3337
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.user.compact
+    - core.entity_view_mode.user.past_organizers
     - field.field.user.user.field_body
     - field.field.user.user.field_callouts
     - field.field.user.user.field_full_name
@@ -12,40 +12,37 @@ dependencies:
     - field.field.user.user.field_pronouns
     - field.field.user.user.field_title
   module:
+    - link
     - nomarkup
     - user
 _core:
-  default_config_hash: 00zr_RBdTjPjBGITD3h4c1ESQZimjdVCcHGt1trLqIY
-id: user.user.compact
+  default_config_hash: mZLyuWM9CQx2ZJVqFGSbzgFnHzudVbHBYmdU256A5Wk
+id: user.user.past_organizers
 targetEntityType: user
 bundle: user
-mode: compact
+mode: past_organizers
 content:
-  field_full_name:
-    type: string
-    label: hidden
+  field_link:
+    type: link
+    label: visually_hidden
     settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_media:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: teaser
-      link: false
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: nofollow
+      target: _blank
     third_party_settings:
       nomarkup:
-        enabled: true
-        separator: '|'
-        referenced_entity: '1'
+        enabled: false
+        separator: ''
+        referenced_entity: ''
     weight: 0
     region: content
 hidden:
   field_body: true
   field_callouts: true
-  field_link: true
+  field_full_name: true
+  field_media: true
   field_pronouns: true
   field_title: true
   member_for: true

@@ -23,4 +23,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "/posts/*\r\n<front>"
+    pages: "/posts/*\r\n/user/*\r\n<front>"

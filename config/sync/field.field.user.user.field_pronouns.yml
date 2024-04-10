@@ -1,0 +1,20 @@
+uuid: 484a97c2-4da8-4d27-88f7-f47a3899bb68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_pronouns
+  module:
+    - user
+id: user.user.field_pronouns
+field_name: field_pronouns
+entity_type: user
+bundle: user
+label: Pronouns
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

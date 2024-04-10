@@ -3,10 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - field.field.user.user.field_body
+    - field.field.user.user.field_callouts
+    - field.field.user.user.field_full_name
+    - field.field.user.user.field_link
+    - field.field.user.user.field_media
+    - field.field.user.user.field_pronouns
+    - field.field.user.user.field_title
   module:
-    - image
+    - link
+    - nomarkup
+    - text
     - user
 _core:
   default_config_hash: mZLyuWM9CQx2ZJVqFGSbzgFnHzudVbHBYmdU256A5Wk
@@ -15,18 +22,93 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
-  member_for:
-    weight: 5
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 1
     region: content
-  user_picture:
-    type: image
+  field_callouts:
+    type: string
     label: hidden
     settings:
-      image_style: thumbnail
-      image_link: content
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
+      link_to_entity: false
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 6
+    region: content
+  field_full_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
     weight: 0
     region: content
-hidden: {  }
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: nofollow
+      target: _blank
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: ''
+        referenced_entity: ''
+    weight: 5
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: '1'
+    weight: 4
+    region: content
+  field_pronouns:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 3
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 2
+    region: content
+hidden:
+  member_for: true

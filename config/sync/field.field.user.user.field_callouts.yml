@@ -1,0 +1,20 @@
+uuid: f7c53c3a-c18b-47cc-a3fc-38a1075baee5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_callouts
+  module:
+    - user
+id: user.user.field_callouts
+field_name: field_callouts
+entity_type: user
+bundle: user
+label: Callouts
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

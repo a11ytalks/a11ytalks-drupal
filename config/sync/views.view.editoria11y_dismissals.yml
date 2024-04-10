@@ -649,11 +649,11 @@ display:
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          separator: ''
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
+          separator: ''
         nothing:
           id: nothing
           table: views

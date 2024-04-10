@@ -1,0 +1,21 @@
+uuid: 197ea5b4-8c17-43cf-a2dd-4e891a1cad95
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_callouts
+field_name: field_callouts
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

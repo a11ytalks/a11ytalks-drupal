@@ -1,0 +1,14 @@
+uuid: 3ef0b565-090e-44a8-8e76-cc7be83718af
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: users_organizers
+label: 'Users -> Organizers'
+type: 'canonical_entities:user'
+pattern: 'organizers/[current-user:field_full_name:value]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

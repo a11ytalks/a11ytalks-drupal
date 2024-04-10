@@ -1,0 +1,23 @@
+uuid: f674604d-381e-423a-b020-debd086768fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_link
+  module:
+    - link
+    - user
+id: user.user.field_link
+field_name: field_link
+entity_type: user
+bundle: user
+label: Link(s)
+description: 'Links to your favorite Social Media things'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 16
+field_type: link

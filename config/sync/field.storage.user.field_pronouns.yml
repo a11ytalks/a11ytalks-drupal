@@ -1,0 +1,21 @@
+uuid: ed432277-7933-40e6-b5b4-b8d178381802
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_pronouns
+field_name: field_pronouns
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
