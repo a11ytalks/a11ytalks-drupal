@@ -7,7 +7,7 @@
   field_youtube: content.field_youtube
 } %}
   {% block calendar_link %}
-    {% if (node.field_date_time.0.value|date('U') > 'now'|date('U')) %}
+    {% if field_link.value and (node.field_date_time.0.value|date('U') > 'now'|date('U')) %}
       <div class="calendar">
         <a target="_blank" href={{field_link.value}}>Add to Google Calendar</a>
       </div>
