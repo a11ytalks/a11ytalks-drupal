@@ -45,6 +45,7 @@
         "drupal/metatag": "^2.0",
         "drupal/nomarkup": "^1.0",
         "drupal/pathauto": "^1.12",
+        "drupal/redirect": "^1.9",
         "drupal/smart_trim": "^2.1",
         "drupal/stage_file_proxy": "^2.1",
         "drupal/storybook": "^1.0@alpha",

@@ -31,3 +31,18 @@ Storybook is based on the [Storybook](https://www.drupal.org/project/storybook) 
 If you want to have `watch` automatically update any changes run
 
 - `watch --color ddev drush storybook:generate-all-stories`
+
+## Content Types
+
+### Event
+
+Main content of the site.
+
+### Speaker
+
+Attached to the events. We may do more with this in the future.
+
+### Organizer
+
+Team information. This is deprecated in favor of User accounts and will be
+removed.
