@@ -7,7 +7,7 @@ dependencies:
 id: users_organizers
 label: 'Users -> Organizers'
 type: 'canonical_entities:user'
-pattern: 'organizers/[current-user:field_full_name:value]'
+pattern: 'organizers/[user:field_full_name]'
 selection_criteria: {  }
 selection_logic: and
 weight: 0

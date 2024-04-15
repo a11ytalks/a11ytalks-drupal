@@ -1,9 +1,9 @@
-uuid: 8927424a-6b7d-4e44-a17d-0d1b4dbf5a6d
+uuid: 585ccb7f-4c81-41b2-9b1e-131f4dc0d312
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:f2d26eb7-1461-4ab5-85ac-1609ee84aae1'
+    - 'block_content:basic:f4998833-8962-4ce3-b050-b589cfe0e9ac'
   module:
     - block_content
   theme:
@@ -13,10 +13,10 @@ theme: a11ytalks
 region: sidebar_first
 weight: -6
 provider: null
-plugin: 'block_content:f2d26eb7-1461-4ab5-85ac-1609ee84aae1'
+plugin: 'block_content:f4998833-8962-4ce3-b050-b589cfe0e9ac'
 settings:
-  id: 'block_content:f2d26eb7-1461-4ab5-85ac-1609ee84aae1'
-  label: Contacts
+  id: 'block_content:f4998833-8962-4ce3-b050-b589cfe0e9ac'
+  label: contacts
   label_display: '0'
   provider: block_content
   status: true

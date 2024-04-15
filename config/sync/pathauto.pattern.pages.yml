@@ -7,12 +7,12 @@ dependencies:
 id: pages
 label: Pages
 type: 'canonical_entities:node'
-pattern: 'pages/[node:title]'
+pattern: '[node:title]'
 selection_criteria:
-  416f7771-2810-4157-8bf5-356f65dcc4df:
+  acdf615f-eb6c-418c-a72d-43191ea79dd7:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 416f7771-2810-4157-8bf5-356f65dcc4df
+    uuid: acdf615f-eb6c-418c-a72d-43191ea79dd7
     context_mapping:
       node: node
     bundles:
