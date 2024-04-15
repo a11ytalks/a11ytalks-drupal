@@ -1,18 +1,12 @@
 {% embed "a11ytalks:event" with {
   body: content.body,
   field_date_time: content.field_date_time,
-  field_link: content.field_link,
+  field_link: content.field_link|field_value,
   field_media: content.field_media,
   field_speakers: content.field_speakers,
-  field_youtube: content.field_youtube
+  field_youtube: content.field_youtube,
+  date_time: node.field_date_time.0.value
 } %}
-  {% block calendar_link %}
-    {% if field_link.value and (node.field_date_time.0.value|date('U') > 'now'|date('U')) %}
-      <div class="calendar">
-        <a target="_blank" href={{field_link.value}}>Add to Google Calendar</a>
-      </div>
-    {% endif %}
-  {% endblock %}
   {% block field_media %}
     {{ content.field_media }}
   {% endblock %}
