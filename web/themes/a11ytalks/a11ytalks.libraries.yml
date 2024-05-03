@@ -2,6 +2,8 @@
 global:
   js:
     js/a11ytalks.js: {}
+  dependencies:
+    - core/drupal
   css:
     base:
       css/base/variables.css: {}
