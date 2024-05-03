@@ -9,7 +9,7 @@
   Drupal.behaviors.a11ytalks = {
     attach (context, settings) {
 
-      console.log('It works!');
+      caches.keys().then(list => list.map(key => caches.delete(key)))
 
     }
   };

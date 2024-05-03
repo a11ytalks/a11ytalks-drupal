@@ -260,8 +260,23 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 1
+          items_per_page: 2
       empty: {  }
+      sorts:
+        field_date_time_value:
+          id: field_date_time_value
+          table: node__field_date_time
+          field: field_date_time_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: datetime
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
       filters:
         status:
           id: status
@@ -421,6 +436,7 @@ display:
         pager: false
         style: false
         row: false
+        sorts: false
         filters: false
         filter_groups: false
       display_extenders: {  }
