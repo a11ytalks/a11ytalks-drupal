@@ -1,8 +1,0 @@
-name: Migrate Markdown Frontmatter
-type: module
-description: 'A migration module to take markdown frontmatter and make it available to fields'
-package: Migration
-core_version_requirement: ^10
-dependencies:
-  - migrate:migrate
-  - migrate_plus:migrate_plus
