@@ -52,6 +52,7 @@
         "drupal/storybook": "^1.0@alpha",
         "drupal/twig_field_value": "^2.0",
         "drupal/twig_tweak": "^3.2",
+        "drupal/webform": "^6.2",
         "drush/drush": "^12.4"
     },
     "require-dev": {
