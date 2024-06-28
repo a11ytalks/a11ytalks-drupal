@@ -9,7 +9,7 @@ _core:
 id: a11ytalks_secondary_local_tasks
 theme: a11ytalks
 region: header
-weight: -5
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:

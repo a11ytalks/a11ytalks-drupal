@@ -8,7 +8,7 @@ _core:
   default_config_hash: mufoCrfOvOmGXWBLRwQblEQbGEKQz09rnTbXnuVGC9o
 name: 'Basic HTML'
 format: basic_html
-weight: 0
+weight: -9
 filters:
   editor_file_reference:
     id: editor_file_reference
@@ -34,7 +34,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<br> <p> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <cite> <dl> <dt> <dd> <a hreflang href> <blockquote cite> <ul type> <ol start type> <strong> <em> <code> <li> <img src alt data-entity-uuid data-entity-type height width data-caption data-align>'
+      allowed_html: '<br> <p class="text-align-left text-align-center text-align-right text-align-justify"> <h2 id class="text-align-left text-align-center text-align-right text-align-justify"> <h3 id class="text-align-left text-align-center text-align-right text-align-justify"> <h4 id class="text-align-left text-align-center text-align-right text-align-justify"> <h5 id class="text-align-left text-align-center text-align-right text-align-justify"> <h6 id class="text-align-left text-align-center text-align-right text-align-justify"> <cite> <dl> <dt> <dd> <a hreflang href> <blockquote cite> <ul type> <ol type start> <strong> <em> <code> <li> <img src alt height width data-entity-uuid data-entity-type data-caption data-align> <span>'
       filter_html_help: false
       filter_html_nofollow: false
   filter_html_image_secure:

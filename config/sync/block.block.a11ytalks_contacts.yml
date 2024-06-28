@@ -11,7 +11,7 @@ dependencies:
 id: a11ytalks_contacts
 theme: a11ytalks
 region: sidebar_first
-weight: -6
+weight: -7
 provider: null
 plugin: 'block_content:f4998833-8962-4ce3-b050-b589cfe0e9ac'
 settings:

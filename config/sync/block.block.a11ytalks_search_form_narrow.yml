@@ -11,7 +11,7 @@ _core:
 id: a11ytalks_search_form_narrow
 theme: a11ytalks
 region: header
-weight: -2
+weight: -5
 provider: null
 plugin: search_form_block
 settings:

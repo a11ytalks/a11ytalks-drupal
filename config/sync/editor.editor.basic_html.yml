@@ -18,8 +18,16 @@ settings:
       - '|'
       - link
       - '|'
+      - fontColor
+      - fontBackgroundColor
+      - fontFamily
+      - fontSize
+      - '|'
       - bulletedList
       - numberedList
+      - alignment
+      - indent
+      - outdent
       - '|'
       - blockQuote
       - drupalInsertImage
@@ -27,8 +35,16 @@ settings:
       - heading
       - code
       - '|'
+      - removeFormat
+      - findAndReplace
       - sourceEditing
   plugins:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+        - right
     ckeditor5_heading:
       enabled_headings:
         - heading2
@@ -43,6 +59,13 @@ settings:
         reversed: false
         startIndex: true
       multiBlock: true
+    ckeditor5_plugin_pack_font__font_color:
+      colors: {  }
+      use_default_colors: true
+    ckeditor5_plugin_pack_font__font_family:
+      options: ''
+    ckeditor5_plugin_pack_font__font_size:
+      options: ''
     ckeditor5_sourceEditing:
       allowed_tags:
         - '<cite>'
@@ -62,7 +85,7 @@ image_upload:
   status: true
   scheme: public
   directory: inline-images
-  max_size: ''
+  max_size: null
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null

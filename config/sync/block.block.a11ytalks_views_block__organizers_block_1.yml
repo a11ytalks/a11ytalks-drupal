@@ -12,7 +12,7 @@ dependencies:
 id: a11ytalks_views_block__organizers_block_1
 theme: a11ytalks
 region: featured
-weight: -7
+weight: -6
 provider: null
 plugin: 'views_block:organizers-block_1'
 settings:

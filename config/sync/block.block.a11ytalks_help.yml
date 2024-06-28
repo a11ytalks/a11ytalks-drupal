@@ -11,7 +11,7 @@ _core:
 id: a11ytalks_help
 theme: a11ytalks
 region: header
-weight: -3
+weight: -6
 provider: null
 plugin: help_block
 settings:
