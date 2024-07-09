@@ -1,5 +1,5 @@
 {
-    "intelephense.environment.phpVersion": "8.1",
+    "intelephense.environment.phpVersion": "8.3",
     "git.ignoreLimitWarning": true,
-    "php.version": "8.1"
+    "php.version": "8.3"
 }
