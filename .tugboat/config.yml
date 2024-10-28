@@ -24,7 +24,7 @@ services:
         # SSH key found in the Tugboat Repository configuration must be
         # copied to the external server in order to use scp.
         - scp markie@158.51.41.11:a11ytalks-backup.mysql.gz /tmp/database.mysql.gz
-        - zcat /tmp/database.myssql.gz | mysql tugboat
+        - zcat /tmp/database.mysql.gz | mysql tugboat
         - rm /tmp/database.mysql.gz
 
       # Run any commands needed to prepare the site.  This is generally not needed
