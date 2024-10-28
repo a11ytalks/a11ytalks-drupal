@@ -2,23 +2,16 @@
   display: block;
 
   @media (min-width: 685px) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 1rem;
   }
+
 }
 
 .sidebar {
   width: 100%;
   text-align: center;
-
-
-  @media (min-width: 685px) {
-    max-width: 30vw;
-  }
-
-  @media (min-width: 960px) {
-    max-width: 20vw;
-  }
-
 }
 
 .sidebar__inner {
@@ -51,6 +44,6 @@
 .page-content {
   padding: 0 1.5rem;
   @media (min-width: 960px) {
-    
+
   }
 }
