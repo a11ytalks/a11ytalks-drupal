@@ -36,3 +36,5 @@ web/sites/simpletest
 .DS_Store
 node_modules
 /.well-known/
+
+*.mysql
