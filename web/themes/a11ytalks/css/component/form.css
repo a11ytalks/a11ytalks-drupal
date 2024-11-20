@@ -1,0 +1,14 @@
+.form-item {
+  color: var(--color-base);
+  margin-bottom: 1em;
+  max-width: 32em;
+
+  label {
+    font-weight: 600;
+  }
+
+  [class$="description"] {
+    font-size: .75rem;
+  }
+
+}
