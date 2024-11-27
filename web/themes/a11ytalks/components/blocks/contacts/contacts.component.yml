@@ -1,4 +1,5 @@
 $schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
 name: Contacts
+description: Block of our links. Hard coded for now
 status: stable
-group: A11yTalks
+group: Blocks

@@ -1,10 +1,13 @@
 $schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
 name: Main Menu
+description: ''
 status: stable
-group: A11yTalks
+group: Blocks
 
 props:
   type: object
   properties:
     items:
       type: array
+      title: Items
+      description: Main menu items.

@@ -1,4 +1,12 @@
 $schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
 name: Copyright
+description: Small block to contain copyright text.
 status: stable
-group: A11yTalks
+group: Blocks
+props:
+  type: object
+  properties:
+    content:
+      type: string
+      title: Content
+      description: Single line of text.
