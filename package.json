@@ -16,6 +16,8 @@
     "@storybook/server": "^8.0.0-beta.1",
     "@storybook/server-webpack5": "^8.0.0-beta.1",
     "css-loader": "^6.9.0",
+    "postcss": "^8.4.47",
+    "postcss-preset-env": "^10.0.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.69.7",
