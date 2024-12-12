@@ -4,13 +4,18 @@
 # This is so your IDE knows about the syntax for fixes and autocomplete.
 $schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
 name: Base Field
+description: Custom field component
 status: stable
-group: A11yTalks
+group: Fields
 
 props:
   type: object
   properties:
     field_name:
       type: string
+      title: Field Name
+      description: Becomes the class of the field
     content:
       type: ["string","null"]
+      title: Content
+      description: Field content.

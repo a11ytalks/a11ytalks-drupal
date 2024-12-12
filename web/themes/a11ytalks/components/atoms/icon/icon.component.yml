@@ -1,18 +1,22 @@
 $schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
 name: Icon
+description: Icon generator
 status: stable
-group: A11yTalks
+group: Atoms
 
 props:
   type: object
   properties:
-    label:
+    theIcon:
       type: string
-    icon:
-      type: object
-      properties:
-        path:
-          type: string
-        viewBox:
-          type: string
-    
+      title: Icon
+      description: 'Accepts: a11ytalks, bluesky, email, facebook, github, oc, twitter, youtube'
+      enum:
+        - a11ytalks
+        - bluesky
+        - email
+        - facebook
+        - github
+        - oc
+        - twitter
+        - youtube

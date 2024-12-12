@@ -3,14 +3,14 @@
 
 # This is so your IDE knows about the syntax for fixes and autocomplete.
 $schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
-name: Speaker (Teaser)
+name: Teaser Display
 status: stable
-group: A11yTalks
+group: Content - Events
 
 props:
   type: object
   properties:
-    label: 
+    label:
       title: "Label"
       type: string
     url:

@@ -5,7 +5,7 @@
 $schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
 name: Speaker Teaser
 status: stable
-group: A11yTalks
+group: Content - Speaker
 
 props:
   type: object

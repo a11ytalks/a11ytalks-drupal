@@ -1,4 +1,5 @@
 # a11ytalks-drupal
+
 Drupal version of a11ytalks
 
 ## Requirements
@@ -12,15 +13,23 @@ Drupal version of a11ytalks
 
 ### With DB snapshot
 
+Obtain a backup from the Backup migrate module on the live site.
+
 - `ddev import-db --file=PATH_TO_FILE`
 
 ### Clean slate
 
-- `ddev drush si` - to be replaced with a snapshot later.
+- `ddev drush si minimal` - to be replaced with a snapshot later.
 - `ddev drush config-set "system.site" uuid 8e44c643-c302-46ea-a054-c47fd6454ea5` - Updates the site UUID so the config imports without issue.
 - `ddev drush cim` - one day this will work out of the box, but the snapshot will replace it anyway
 
+### Enable Stage File Proxy
+
+- `ddev drush en stage_file_proxy`
+- `ddev drush config-set stage_file_proxy.settings origin "https://a11ytalks.com"`
+
 ### and then
+
 - Site is available at [https://a11ytalks-drupal.ddev.site](https://a11ytalks-drupal.ddev.site)
 
 ## Setting up Storybook

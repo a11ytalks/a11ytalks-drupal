@@ -1,10 +1,13 @@
 $schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
-name: Goal - Full
+name: Feed Icon
+description: Component for the feeds icon only.
 status: stable
-group: NMHockey
+group: Atoms
 
 props:
   type: object
   properties:
-    label:
+    url:
       type: string
+      title: URL
+      description: The RSS url

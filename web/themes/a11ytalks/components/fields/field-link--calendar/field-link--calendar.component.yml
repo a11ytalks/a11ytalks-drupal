@@ -1,14 +1,13 @@
-# Everything in this file is optional. Still, the file needs to exist. Adding
-# metadata here will improve the DX when using components.
-
-# This is so your IDE knows about the syntax for fixes and autocomplete.
 $schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
 name: Calendar Link
+description: Custom calendar link field.
 status: stable
-group: A11yTalks
+group: Fields
 
 props:
   type: object
   properties:
     href:
       type: string
+      title: Link
+      description: URL of link.

@@ -1,4 +1,4 @@
 $schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
 name: Image - Teaser
 status: stable
-group: A11yTalks
+group: Media

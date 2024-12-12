@@ -1,7 +1,7 @@
 $schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
 name: Tags
 status: stable
-group: A11yTalks
+group: Taxonomy
 
 props:
   type: object

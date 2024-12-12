@@ -4,15 +4,25 @@
 # This is so your IDE knows about the syntax for fixes and autocomplete.
 $schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
 name: Site Branding
+description: Branding block.
 status: stable
-group: A11yTalks
+group: Blocks
 
 props:
   type: object
   properties:
     site_logo:
       type: string
+      title: Logo
+      description: 'URL of site logo. Default: https://a11ytalks.com/themes/a11ytalks/logo.png'
+      default: https://a11ytalks.com/themes/a11ytalks/logo.png
     site_slogan:
       type: string
+      title: Slogan
+      description: 'default: Virtual meet-up featuring speakers & conversations around digital accessibility'
+      default: 'Virtual meet-up featuring speakers & conversations around digital accessibility'
     site_name:
       type: string
+      title: Site Name
+      description: 'default: "A11ytalks"'
+      default: A11ytalks
