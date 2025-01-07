@@ -3,7 +3,7 @@ _core:
 langcode: en
 uuid: 8e44c643-c302-46ea-a054-c47fd6454ea5
 name: A11yTalks
-mail: admin@example.com
+mail: team@a11ytalks.com
 slogan: 'Virtual meet-up featuring speakers & conversations around digital accessibility'
 page:
   403: /node/32
