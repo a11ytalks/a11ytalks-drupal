@@ -51,6 +51,7 @@
         "drupal/redirect": "^1.9",
         "drupal/sdc_styleguide": "^1.1",
         "drupal/smart_trim": "^2.1",
+        "drupal/smtp": "^1.4",
         "drupal/stage_file_proxy": "^3.1",
         "drupal/storybook": "^1.0@alpha",
         "drupal/token": "^1.14",
