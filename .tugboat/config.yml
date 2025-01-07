@@ -100,7 +100,7 @@ services:
         - vendor/bin/drush updatedb --yes
 
         # Grab SMTP settings from the Tugboat environment.
-        - vendor/bin/drush config:set --yes smtp.settings smtp_password ${SMTP_PASSWORD}
+        - vendor/bin/drush config:set --yes smtp.settings smtp_password "${SMTP_PASSWORD}"
 
         # If you are downloading your files from a remove server, you won't need
         # to enable Stage File Proxy.
