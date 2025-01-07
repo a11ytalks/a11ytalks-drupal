@@ -1,0 +1,5 @@
+name: 'Feed Icon Demo'
+description: ''
+props:
+  url: '#'
+slots: {  }
