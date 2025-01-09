@@ -1,14 +1,34 @@
+.form-textarea,
+.form-email {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .form-item {
   color: var(--color-base);
-  margin-bottom: 1em;
-  max-width: 32em;
+  margin-block-start: 1.5rem;
+
+  .form-item {
+    margin-block-start: 0;
+  }
 
   label {
+    font-weight: 600;
+  }
+
+  legend {
     font-weight: 600;
   }
 
   [class$="description"] {
     font-size: .75rem;
   }
+}
 
+.fieldset-wrapper label {
+  font-weight: normal;
+}
+
+.webform-button--submit {
+  margin-block-start: 1.5rem;
 }
