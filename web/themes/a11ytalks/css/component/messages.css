@@ -1,0 +1,51 @@
+/**
+ * @file
+ * Message element styles.
+ *
+ * @see /webform/test_element_message
+ */
+
+.messages {
+  padding: 10px;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+/* Info message styles. */
+.messages.messages--info {
+  background-image: none;
+  border-color: var(--color-primary) var(--color-primary) var(--color-primary) transparent; /* LTR */
+  background-color: color-mix(in srgb, var(--color-primary) 20%, white);
+  color: black;
+  box-shadow: -8px 0 0 var(--color-primary); /* LTR */
+
+  a {
+    color: color-mix(in srgb, var(--color-primary) 60%, black);
+
+    &:hover {
+      color: color-mix(in srgb, var(--color-primary) 40%, black);
+    }
+  }
+}
+
+[dir="rtl"] .messages.messages--info {
+  margin-left: 0;
+  border-color: var(--color-primary) transparent var(--color-primary) var(--color-primary);
+  box-shadow: 8px 0 0 var(--color-primary);
+}
+
+/* Error message styles. */
+.messages.messages--error {
+  color: var(--color-black);
+  border-color: var(--color-secondary) var(--color-secondary) var(--color-secondary) transparent; /* LTR */
+  background-color: color-mix(in srgb, var(--color-secondary) 20%, white);
+  box-shadow: -8px 0 0 var(--color-secondary); /* LTR */
+}
+
+[dir="rtl"] .messages.messages--error {
+  margin-left: 0;
+  border-color: var(--color-secondary) transparent var(--color-secondary) var(--color-secondary);
+  box-shadow: 8px 0 0 var(--color-secondary);
+}

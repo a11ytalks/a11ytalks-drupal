@@ -46,9 +46,14 @@ elements: |-
         ':input[name="can_we_share_your_feedback_publicly"]':
           value: attribute
     '#title__access': false
+    '#first__title': 'First name'
+    '#first__title_display': before
     '#middle__access': false
+    '#last__title': 'Last name'
+    '#last__title_display': before
     '#suffix__access': false
     '#degree__access': false
+    '#flexbox': '0'
   email_address:
     '#type': email
     '#title': 'Email address (If you would like to be contacted regarding your feedback)'

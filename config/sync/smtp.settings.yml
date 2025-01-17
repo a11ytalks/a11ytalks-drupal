@@ -8,7 +8,7 @@ smtp_protocol: tls
 smtp_autotls: true
 smtp_timeout: 30
 smtp_username: team@a11ytalks.com
-smtp_password: 'changeme'
+smtp_password: changeme
 smtp_from: team@a11ytalks.com
 smtp_fromname: A11yTalks
 smtp_client_hostname: ''
