@@ -1,0 +1,45 @@
+.form-textarea,
+.form-email,
+.form-text {
+  box-sizing: border-box;
+}
+
+.form-item {
+  color: var(--color-base);
+  margin-block-start: 1.5rem;
+
+  .form-item {
+    margin-block-start: 0;
+  }
+
+  label {
+    font-weight: 600;
+  }
+
+  legend {
+    font-weight: 600;
+  }
+
+  [class$="description"] {
+    font-size: .75rem;
+  }
+
+  textarea,
+  [type="text"],
+  [type="email"] {
+    font-family: inherit;
+    font-size: inherit;
+    appearance: none;
+    border: solid 1px var(--color-base);
+    padding: 1rem;
+    width: 100%;
+  }
+}
+
+.fieldset-wrapper label {
+  font-weight: normal;
+}
+
+.webform-button--submit {
+  margin-block-start: 1.5rem;
+}

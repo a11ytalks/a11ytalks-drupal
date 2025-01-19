@@ -1,0 +1,22 @@
+_core:
+  default_config_hash: JqYNByWeXZGynyqoPRWQIjp3VcQhuoyq5WlM-7YzBvI
+smtp_on: true
+smtp_host: smtp.gmail.com
+smtp_hostbackup: ''
+smtp_port: '587'
+smtp_protocol: tls
+smtp_autotls: true
+smtp_timeout: 30
+smtp_username: team@a11ytalks.com
+smtp_password: changeme
+smtp_from: team@a11ytalks.com
+smtp_fromname: A11yTalks
+smtp_client_hostname: ''
+smtp_client_helo: ''
+smtp_allowhtml: true
+smtp_test_address: team@a11ytalks.com
+smtp_reroute_address: ''
+smtp_debugging: false
+smtp_debug_level: 1
+prev_mail_system: php_mail
+smtp_keepalive: false

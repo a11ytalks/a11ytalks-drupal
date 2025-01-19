@@ -1,70 +1,112 @@
-uuid: be2bc733-1256-48e0-a43d-1d69c93155b2
+uuid: 9c8c066c-41c4-4afa-b23c-a0a00ccbf111
 langcode: en
 status: open
-dependencies:
-  module:
-    - honeypot
-third_party_settings:
-  honeypot:
-    honeypot: true
+dependencies: {  }
 weight: 0
 open: null
 close: null
-uid: 2
+uid: 1
 template: false
 archive: false
-id: feedback
-title: Feedback
-description: 'Collect feedback from community.'
+id: a11ytalks_new_speaker
+title: 'A11yTalks New Speaker'
+description: ''
 categories: {  }
 elements: |-
-  what_are_we_doing_well:
-    '#type': textarea
-    '#title': 'What are we doing well?'
-  what_are_we_not_doing_well:
-    '#type': textarea
-    '#title': 'What are we not doing well?'
-  how_can_we_improve:
-    '#type': textarea
-    '#title': 'How can we improve?'
-  can_we_share_your_feedback_publicly:
-    '#type': radios
-    '#title': 'Can we share your feedback publicly? (If you think we are great, we might quote you.)'
-    '#options':
-      'no': 'No'
-      anonymous: 'Yes, but share it anonymously'
-      attribute: 'Yes, and include my name'
-    '#required': true
   full_name:
-    '#type': webform_name
-    '#title': 'Full name'
-    '#states':
-      visible:
-        ':input[name="can_we_share_your_feedback_publicly"]':
-          value: attribute
-      required:
-        ':input[name="can_we_share_your_feedback_publicly"]':
-          value: attribute
-    '#title__access': false
-    '#middle__access': false
-    '#suffix__access': false
-    '#degree__access': false
-  email_address:
+    '#type': textfield
+    '#title': 'Full Name'
+    '#required': true
+  preferred_nickname:
+    '#type': textfield
+    '#title': 'Preferred Nickname'
+  primary_email:
     '#type': email
-    '#title': 'Email address (If you would like to be contacted regarding your feedback)'
-  what_are_your_preferred_social_media_channels:
-    '#type': webform_checkboxes_other
-    '#title': 'What are your preferred channels for connecting with the accessibility community?'
+    '#title': 'Primary Email'
+    '#required': true
+  talk_topic:
+    '#type': textfield
+    '#title': 'Talk Topic'
+    '#required': true
+  talk_description:
+    '#type': textarea
+    '#title': 'Talk Description'
+    '#required': true
+  pronouns:
+    '#type': textfield
+    '#title': Pronouns
+  drupal_org_username:
+    '#type': textfield
+    '#title': 'Drupal.org Username'
+    '#description': 'We ask because we give credit to members at Drupal.org'
+  iaap_username:
+    '#type': textfield
+    '#title': 'IAAP username'
+    '#description': 'We ask because we give credit to members of the International Association of Accessibility Professionals'
+  job_title:
+    '#type': textfield
+    '#title': 'Job Title'
+  company_organization:
+    '#type': textfield
+    '#title': Company/Organization
+  proposed_talk_dates:
+    '#type': datelist
+    '#title': 'Proposed Talk Dates'
+    '#multiple': 4
+    '#description': |-
+      Tips on choosing talk dates:
+      Choose 2-3 dates
+      Choose dates that are mid-month and mid-week
+      Review our Speaker Resources page for more information
+    '#date_days':
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    '#date_part_order':
+      - year
+      - month
+      - day
+    '#date_text_parts':
+      - day
+      - year
+    '#date_year_range': '2023:2050'
+  proposed_talk_time:
+    '#type': webform_time
+    '#title': 'Proposed Talk Time'
+    '#description': |-
+      Our events are typically mid-month, mid-week, and to cover more time zones, but we can certainly be flexible. See our Speaker Resources page for more information.
+
+      Tips on choosing talk dates:
+      Choose times that are mid-day (Eastern Time)
+      We'll meet 30 minutes before your live talk to set things up and go over any last-minute items
+      Please give yourself buffer time before and after your talk so that you are not rushed
+      Review our Speaker Resources page for more information
+    '#timepicker': true
+  bio_image:
+    '#type': webform_image_file
+    '#title': 'Bio Image'
+    '#file_extensions': 'jpg jpeg png'
+    '#sanitize': true
+  presentation_slides_link:
+    '#type': webform_link
+    '#title': 'Presentation Slides (Link)'
+    '#title__access': false
+  are_you_from_an_under_represented_group:
+    '#type': radios
+    '#title': 'Are you from an under-represented group?'
     '#options':
-      a11y_slack: 'a11y Slack (web-a11y.slack.com)'
-      bluesky: Bluesky
-      discord: Discord
-      facebook: Facebook
-      linkedin: LinkedIn
-      mastodon: Mastodon
-      twitter: Twitter/X
-    '#options_display': two_columns
-    '#options_none': true
+      'Yes': 'Yes'
+      'No': 'No'
+      "I'd Rather Not Answer": "I'd Rather Not Answer"
+  additional_links:
+    '#type': webform_link
+    '#title': 'Additional Links'
+    '#description': 'Additional Resources or Social Media links for us to share'
+  any_additional_information:
+    '#type': textarea
+    '#title': 'Any Additional Information'
 css: ''
 javascript: ''
 settings:
@@ -74,10 +116,10 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: /feedback
-  page_confirm_path: /feedback/confirmation
+  page_submit_path: ''
+  page_confirm_path: ''
   page_theme_name: ''
-  form_title: source_entity_webform
+  form_title: both
   form_submit_once: false
   form_open_message: ''
   form_close_message: ''
@@ -91,16 +133,16 @@ settings:
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_unsaved: true
+  form_unsaved: false
   form_disable_back: false
   form_submit_back: false
   form_disable_autocomplete: false
   form_novalidate: false
   form_disable_inline_errors: false
-  form_required: true
-  form_autofocus: true
+  form_required: false
+  form_autofocus: false
   form_details_toggle: false
-  form_reset: true
+  form_reset: false
   form_access_denied: default
   form_access_denied_title: ''
   form_access_denied_message: ''
@@ -134,7 +176,7 @@ settings:
   autofill: false
   autofill_message: ''
   autofill_excluded_elements: {  }
-  wizard_progress_bar: false
+  wizard_progress_bar: true
   wizard_progress_pages: false
   wizard_progress_percentage: false
   wizard_progress_link: false
@@ -171,8 +213,8 @@ settings:
   draft_pending_multiple_message: ''
   confirmation_type: page
   confirmation_url: ''
-  confirmation_title: 'Thanks for your feedback!'
-  confirmation_message: 'We appreciate you taking the time to give us feedback. Thanks for helping us make A11yTalks better!'
+  confirmation_title: ''
+  confirmation_message: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -248,42 +290,5 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers:
-  email:
-    id: email
-    handler_id: email
-    label: Email
-    notes: ''
-    status: true
-    conditions: {  }
-    weight: 0
-    settings:
-      states:
-        - completed
-      to_mail: '[site:mail]'
-      to_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      from_mail: _default
-      from_options: {  }
-      from_name: _default
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-      subject: 'A11yTalks Feedback Form Submission: #[webform_submission:sid]'
-      body: _default
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      exclude_attachments: false
-      html: true
-      attachments: false
-      twig: false
-      theme_name: ''
-      parameters: {  }
-      debug: false
+handlers: {  }
 variants: {  }

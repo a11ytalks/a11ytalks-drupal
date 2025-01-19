@@ -10,6 +10,8 @@ global:
       css/base/elements.css: {}
     component:
       css/component/block.css: {}
+      css/component/form.css: {}
+      css/component/messages.css: {}
     layout:
       css/layout/layout.css: {}
     theme:
