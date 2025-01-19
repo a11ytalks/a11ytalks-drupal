@@ -1,16 +1,18 @@
 {% set theColors = [
-  "base",
-  "primary",
-  "secondary",
-  "accent",
   "white",
+  "black",
+  "black-light",
   "gray",
   "gray-light",
-  "gray-border",
-  "gray-bg"
+  "gray-lighter",
+  "primary",
+  "secondary",
+  "accent"
 ] %}
 
 <div {{attributes.addClass("colors")}}>
+  <h2>Colors</h2>
+  <p>These are the colors used in the A11yTalks theme. Colors are used in variables as `<i>var(--color-(colorName))</i>`</p>
   <ul>
     {% for color in theColors %}
     <li class="{{color}}">{{color}}</li>

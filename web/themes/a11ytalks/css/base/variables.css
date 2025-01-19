@@ -41,20 +41,25 @@
 /** Variables **/
 :root {
 
-
+  /* Colors */
   --color-white: #FFF;
-  --color-gray: #6e6e6e;
-  --color-gray-border: #757575;
-  --color-gray-light: #787878;
-  --color-gray-bg: #c8c8c8;
   --color-black: #000;
-
-  --color-base: #222;
+  --color-black-light: #222;
+  --color-gray: #6e6e6e;
+  --color-gray-light: #787878;
+  --color-gray-lighter: #c8c8c8;
   --color-primary: #2ec4b6;
   --color-secondary: #E90909;
   --color-accent: #FF9F1c;
 
-  --color-base-dark: var(--color-gray-bg);
+  /* Light Mode Bases */
+  --color-base: var(--color-black-light);
+  --color-background: var(--color-white);
+  --color-gray-border: var(--color-gray-light);
+
+  /* Dark Mode Bases */
+  --color-base-dark: var(--color-gray-lighter);
+  --color-background-dark: var(--color-black);
 
   --font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
