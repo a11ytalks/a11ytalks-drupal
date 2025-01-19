@@ -43,3 +43,15 @@
 .webform-button--submit {
   margin-block-start: 1.5rem;
 }
+
+@media (prefers-color-scheme: dark) {
+  .form-item {
+    color: var(--color-base-dark);
+  }
+
+  textarea,
+  [type="text"],
+  [type="email"] {
+    border: solid 1px var(--color-base-dark);
+  }
+}
