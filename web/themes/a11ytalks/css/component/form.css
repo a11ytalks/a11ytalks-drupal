@@ -33,6 +33,10 @@
     border: solid 1px var(--color-base);
     padding: 1rem;
     width: 100%;
+
+    &.error {
+      border: solid 2px var(--color-secondary);
+    }
   }
 }
 
