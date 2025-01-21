@@ -36,6 +36,13 @@
   }
 }
 
+.form-required::after {
+  display: inline-block;
+  margin-inline: 0.15em;
+  content: "*";
+  color: var(--color-secondary);
+}
+
 .fieldset-wrapper label {
   font-weight: normal;
 }
