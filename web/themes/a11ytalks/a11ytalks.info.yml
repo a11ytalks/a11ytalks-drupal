@@ -3,7 +3,7 @@ type: theme
 base theme: stable9
 description: A11y Talks theme
 package: Custom
-core_version_requirement: ^10
+core_version_requirement: ^10 || ^11
 logo: logo.png
 libraries:
   - a11ytalks/global

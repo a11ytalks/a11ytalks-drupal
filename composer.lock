@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "078e3702bf0bead8b3b128052979e740",
+    "content-hash": "099dd052ff977569b502c7ecf4baad99",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2798,62 +2798,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/link_attributes",
                 "issues": "https://www.drupal.org/project/issues/link_attributes"
-            }
-        },
-        {
-            "name": "drupal/menus_attribute",
-            "version": "1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/menus_attribute.git",
-                "reference": "8.x-1.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/menus_attribute-8.x-1.3.zip",
-                "reference": "8.x-1.3",
-                "shasum": "480619a4ae7fb251e72182ba0ebc3b5528610323"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9 || ^10"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.3",
-                    "datestamp": "1684164443",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "aloknarwaria",
-                    "homepage": "https://www.drupal.org/user/906640"
-                },
-                {
-                    "name": "pankaj1433",
-                    "homepage": "https://www.drupal.org/user/3519047"
-                },
-                {
-                    "name": "themodularlab",
-                    "homepage": "https://www.drupal.org/user/3190381"
-                },
-                {
-                    "name": "vishnusoniskr",
-                    "homepage": "https://www.drupal.org/user/3494493"
-                }
-            ],
-            "description": "Attributes for menu links",
-            "homepage": "https://www.drupal.org/project/menus_attribute",
-            "support": {
-                "source": "https://git.drupalcode.org/project/menus_attribute"
             }
         },
         {
