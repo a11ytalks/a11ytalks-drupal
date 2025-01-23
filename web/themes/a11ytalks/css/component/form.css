@@ -55,12 +55,18 @@
     }
   }
 
-  [type="date"] {
+  [type="date"],
+  [type="time"] {
     font-family: inherit;
     font-size: inherit;
     appearance: none;
     border: solid 1px var(--color-base);
     padding: 1rem;
+  }
+
+  [type="time"] {
+    width: auto;
+    display: block;
   }
 }
 
