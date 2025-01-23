@@ -7,6 +7,17 @@
   box-sizing: border-box;
 }
 
+.form-date-table {
+  td {
+    border: 0;
+    padding: 0;
+  }
+
+  .webform-multiple-add {
+    padding-block: 10px;
+  }
+}
+
 .form-item {
   color: var(--color-base);
   margin-block-start: 1.5rem;
@@ -42,6 +53,14 @@
     &.error {
       border: solid 2px var(--color-secondary);
     }
+  }
+
+  [type="date"] {
+    font-family: inherit;
+    font-size: inherit;
+    appearance: none;
+    border: solid 1px var(--color-base);
+    padding: 1rem;
   }
 }
 
