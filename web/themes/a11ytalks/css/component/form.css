@@ -1,6 +1,9 @@
 .form-textarea,
 .form-email,
-.form-text {
+.form-text,
+.form-password,
+.form-time,
+.form-url {
   box-sizing: border-box;
 }
 
@@ -26,7 +29,9 @@
 
   textarea,
   [type="text"],
-  [type="email"] {
+  [type="email"],
+  [type="password"],
+  [type="url"] {
     font-family: inherit;
     font-size: inherit;
     appearance: none;
