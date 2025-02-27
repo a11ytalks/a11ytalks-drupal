@@ -64,6 +64,14 @@
     p {
       clear: both;
     }
+
+    span.add-to-calendar {
+      display: inline;
+    }
+    label.addtocal__label {
+      border-right: none;
+      width: auto;
+    }
   }
 
   .event__tags {
