@@ -95,7 +95,11 @@
             }
         },
         "enable-patching": true,
-        "patches": {},
+        "patches": {
+            "drupal/smart_date": {
+                "#3509465: Augmenters receive inaccurate timestamps (https://dgo.to/3509465)": "patches/drupal/smart_date/172.patch"
+            }
+        },
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
