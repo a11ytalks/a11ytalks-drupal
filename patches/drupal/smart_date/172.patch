@@ -1,0 +1,46 @@
+diff --git a/src/SmartDatePluginTrait.php b/src/SmartDatePluginTrait.php
+index 0e20e1d2f3894949c164766e71601a9c2eddcd2e..82026745f5406c4a1baa3420fdc38b5a5fa5a626 100644
+--- a/src/SmartDatePluginTrait.php
++++ b/src/SmartDatePluginTrait.php
+@@ -136,6 +136,9 @@ trait SmartDatePluginTrait {
+         // Not sure how to handle anything else, so return an empty set.
+         return $elements;
+       }
++      $stored_start_ts = $start_ts;
++      $stored_end_ts = $end_ts;
++
+       $timezone = $item->timezone ? $item->timezone : $timezone_override;
+       // Do an all day check before manipulating the range.
+       if (static::isAllDay($start_ts, $end_ts)) {
+@@ -214,9 +217,7 @@ trait SmartDatePluginTrait {
+       }
+ 
+       if (!empty($augmenters['instances'])) {
+-        // @todo examine why we aren't using the $start_ts and $end_ts that are
+-        // already normalized above.
+-        $this->augmentOutput($elements[$delta], $augmenters['instances'], $item->value, $item->end_value, $timezone, $delta);
++        $this->augmentOutput($elements[$delta], $augmenters['instances'], $stored_start_ts, $stored_end_ts, $timezone, $delta);
+       }
+     }
+ 
+@@ -303,19 +304,11 @@ trait SmartDatePluginTrait {
+    * @param string $ends
+    *   An optional timestamp to specify the end of the last instance.
+    */
+-  protected function augmentOutput(array &$output, array $augmenters, $start_ts, $end_ts, $timezone, $delta, $type = 'instances', $repeats = '', $ends = '') {
++  protected function augmentOutput(array &$output, array $augmenters, int $start_ts, int $end_ts, $timezone, $delta, $type = 'instances', $repeats = '', $ends = '') {
+     if (!$augmenters) {
+       return;
+     }
+ 
+-    if (!is_numeric($start_ts)) {
+-      $start_ts = strtotime($start_ts);
+-    }
+-
+-    if (!is_numeric($end_ts)) {
+-      $end_ts = ($end_ts !== NULL) ? strtotime($end_ts) : $start_ts;
+-    }
+-
+     foreach ($augmenters as $augmenter_id => $augmenter) {
+       // Fallback for outdated schema.
+       if ($type === 'instances' && !isset($this->sharedSettings[$type])) {

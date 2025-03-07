@@ -12,9 +12,10 @@ dependencies:
     - field.field.node.event.field_youtube
     - node.type.event
   module:
-    - datetime
+    - date_augmenter
     - link
     - nomarkup
+    - smart_date
     - text
     - user
 id: node.event.default
@@ -34,14 +35,51 @@ content:
     weight: 1
     region: content
   field_date_time:
-    type: datetime_default
+    type: smartdate_default
     label: hidden
     settings:
       timezone_override: America/New_York
-      format_type: long
+      format_type: medium
+      format: compact
+      force_chronological: false
+      add_classes: false
+      time_wrapper: true
+      localize: false
+      parts:
+        start: start
+        end: '0'
+        duration: '0'
+      duration:
+        separator: ' | '
+        unit: ''
+        decimals: 2
+        suffix: h
     third_party_settings:
+      date_augmenter:
+        instances:
+          status:
+            addtocal: true
+          weights:
+            order:
+              addtocal:
+                weight: 0
+          settings:
+            addtocal:
+              label: 'Add to calendar'
+              event_title: ''
+              location: ''
+              description: ''
+              retain_spacing: false
+              icons: true
+              max_desc: 60
+              ellipsis: true
+              past_events: false
+              target: ''
+              ignore_timezone_if_UTC: true
+          augmenter_settings:
+            fields__field_date_time__settings_edit_form__third_party_settings__date_augmenter__instances__augmenter_settings__active_tab: ''
       nomarkup:
-        enabled: false
+        enabled: true
         separator: '|'
         referenced_entity: ''
     weight: 5
