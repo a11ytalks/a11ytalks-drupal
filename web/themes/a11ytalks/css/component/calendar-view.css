@@ -36,6 +36,10 @@
   }
 }
 
+.calendar-view-table thead th {
+  color: var(--color-black-light);
+}
+
 .view-footer {
   padding: 1rem 0;
   display: flex;

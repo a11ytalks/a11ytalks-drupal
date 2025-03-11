@@ -1,0 +1,15 @@
+uuid: 7b4449a0-0dd6-4518-afee-9726dd959e38
+langcode: en
+status: true
+dependencies: {  }
+id: new_default
+label: 'New Default'
+date_format: 'F j, Y'
+time_format: 'g:ia (T)'
+time_hour_format: 'ga (T)'
+allday_label: 'All day'
+separator: ' - '
+join: ', '
+ampm_reduce: '1'
+date_first: '1'
+site_time_toggle: '0'

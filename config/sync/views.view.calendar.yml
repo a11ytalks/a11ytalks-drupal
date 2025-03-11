@@ -255,20 +255,7 @@ display:
       relationships: {  }
       use_ajax: true
       header: {  }
-      footer:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: true
-          content:
-            value: '<a href="https://calendar.google.com/calendar/u/4?cid=dGVhbUBhMTF5dGFsa3MuY29t" data-align="center" class="calendar-link" target="_blank" aria-label="Add A11yTalks Calendar (opens in new tab)">Add A11yTalks Google Calendar</a>'
-            format: full_html
-          tokenize: false
+      footer: {  }
       display_extenders: {  }
     cache_metadata:
       max-age: -1

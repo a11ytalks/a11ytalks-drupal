@@ -50,7 +50,7 @@ elements: |-
     '#type': textfield
     '#title': Company/Organization
   proposed_talk_dates:
-    '#type': date
+    '#type': datelist
     '#title': 'Proposed Talk Dates'
     '#multiple': 4
     '#description': |-
@@ -58,13 +58,6 @@ elements: |-
       Choose 2-3 dates
       Choose dates that are mid-month and mid-week
       Review our Speaker Resources page for more information
-    '#title_display': before
-    '#multiple__sorting': false
-    '#multiple__add': false
-    '#multiple__add_more_input': false
-    '#wrapper_attributes':
-      class:
-        - form-date-table
     '#date_days':
       - '1'
       - '2'
@@ -75,6 +68,9 @@ elements: |-
       - year
       - month
       - day
+    '#date_text_parts':
+      - day
+      - year
     '#date_year_range': '2023:2050'
   proposed_talk_time:
     '#type': webform_time
@@ -108,7 +104,6 @@ elements: |-
     '#type': webform_link
     '#title': 'Additional Links'
     '#description': 'Additional Resources or Social Media links for us to share'
-    '#title_display': ''
   any_additional_information:
     '#type': textarea
     '#title': 'Any Additional Information'
