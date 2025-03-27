@@ -16,3 +16,7 @@ global:
       css/layout/layout.css: {}
     theme:
       css/theme/print.css: { media: print }
+calendar:
+  css:
+    component:
+      css/component/calendar-view.css: {}

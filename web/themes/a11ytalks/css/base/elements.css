@@ -1,7 +1,7 @@
 /**
  * Generic
  */
- .sr-only:not(:focus):not(:active) {
+.sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
@@ -99,7 +99,7 @@ hr {
   margin-right: auto;
   margin-left: auto;
   background-size: 100% 26px;
-  background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, #ff9f1c 11px, #ff9f1c 15px, transparent 15px, transparent 26px);
+  background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, var(--color-accent) 11px, var(--color-accent) 15px, transparent 15px, transparent 26px);
   width: 100px;
   clear: both;
 }
@@ -358,7 +358,7 @@ tfoot {
 }
 
 .button {
-  border: 1px solid #ff9f1c;
+  border: 1px solid var(--color-accent);
   border-radius: 5px;
   padding: .5rem;
 }
