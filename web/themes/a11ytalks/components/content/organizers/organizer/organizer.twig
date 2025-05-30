@@ -8,16 +8,21 @@
 
   <h2 class="member-bio__name">
     {{ label }}
-    <span class="pronouns">
-      ({{ field_pronouns }})
-    </span>
+    {% if field_pronouns | render %}
+      <span class="pronouns">
+        ({{ field_pronouns }})
+      </span>
+    {% endif %}
   </h2>
-  <h3 class="member-bio__title seafoam">
-    {{ field_title }}
-  </h3>
+  {% if field_title | render %}
+    <h3 class="member-bio__title seafoam">
+      {{ field_title }}
+    </h3>
+  {% endif %}
   <div class="member-bio__body">
     {{ body }}
   </div>
+  {% if field_callouts | render or field_link | render %}
   <div class="member-bio__meta">
     {% if field_callouts | render %}
     <div class="member-callout">
@@ -27,6 +32,7 @@
       </ul>
     </div>
     {% endif %}
+    {% if field_link | render %}
     <div class="member-social">
       <ul class="social-links">
         <li>
@@ -34,8 +40,10 @@
         </li>
         {{ field_link }}
       </ul>
+      {% endif %}
     </div>
   </div>
+  {% endif %}
 
   <div class="member-bio__link">
     <a href="/pages/about">Back to About</a>
