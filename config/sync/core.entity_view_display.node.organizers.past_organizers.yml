@@ -13,29 +13,22 @@ dependencies:
     - field.field.node.organizers.field_title
     - node.type.organizers
   module:
-    - link
+    - layout_builder
     - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
 id: node.organizers.past_organizers
 targetEntityType: node
 bundle: organizers
 mode: past_organizers
-content:
-  field_link:
-    type: link
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    weight: 0
-    region: content
+content: {  }
 hidden:
   body: true
   field_callouts: true
   field_current: true
+  field_link: true
   field_media: true
   field_pronouns: true
   field_title: true

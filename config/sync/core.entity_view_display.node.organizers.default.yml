@@ -44,21 +44,31 @@ content:
         referenced_entity: ''
     weight: 4
     region: content
+  field_current:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
   field_link:
     type: link
     label: hidden
     settings:
       trim_length: 80
       url_only: false
-      url_plain: true
-      rel: nofollow
+      url_plain: false
+      rel: '0'
       target: _blank
     third_party_settings:
       nomarkup:
         enabled: false
-        separator: ''
+        separator: '|'
         referenced_entity: ''
-    weight: 5
+    weight: 6
     region: content
   field_media:
     type: entity_reference_entity_view
@@ -98,5 +108,4 @@ content:
     weight: 1
     region: content
 hidden:
-  field_current: true
   links: true

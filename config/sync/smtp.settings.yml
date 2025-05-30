@@ -14,7 +14,7 @@ smtp_fromname: A11yTalks
 smtp_client_hostname: ''
 smtp_client_helo: ''
 smtp_allowhtml: true
-smtp_test_address: team@a11ytalks.com
+smtp_test_address: markie@teampoop.com
 smtp_reroute_address: ''
 smtp_debugging: false
 smtp_debug_level: 1
