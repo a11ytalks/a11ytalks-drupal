@@ -22,5 +22,3 @@ props:
     field_date_time:
       title: "Date Time"
       type: string
-slots:
-  speaker_image: {}

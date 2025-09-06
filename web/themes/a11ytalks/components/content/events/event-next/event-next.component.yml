@@ -16,6 +16,3 @@ props:
       type: string
     body:
       type: string
-
-slots:
-  media_image: {}

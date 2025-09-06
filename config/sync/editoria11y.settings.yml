@@ -15,3 +15,4 @@ shadow_components: ''
 disable_sync: false
 preserve_params: 'search,keys,page,language,language_content_entity'
 custom_tests: 0
+ck5_table_headers: row

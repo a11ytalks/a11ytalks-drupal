@@ -41,7 +41,7 @@
         "drupal/date_augmenter": "^1.1",
         "drupal/editoria11y": "^2.1",
         "drupal/feeds": "^3.0@beta",
-        "drupal/gin": "^4.0",
+        "drupal/gin": "^4.1",
         "drupal/google_tag": "^2.0",
         "drupal/honeypot": "^2.1",
         "drupal/inline_entity_form": "^3.0@RC",
@@ -95,11 +95,7 @@
             }
         },
         "enable-patching": true,
-        "patches": {
-            "drupal/smart_date": {
-                "#3509465: Augmenters receive inaccurate timestamps (https://dgo.to/3509465)": "patches/drupal/smart_date/172.patch"
-            }
-        },
+        "patches": {},
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"

@@ -12,5 +12,3 @@ props:
   properties:
     label:
       type: string
-slots:
-  media_image: {}
