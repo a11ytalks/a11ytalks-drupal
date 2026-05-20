@@ -2,17 +2,18 @@ uuid: 1b5cc053-ab8d-4f96-917d-5412a640b9f1
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.page
   module:
     - node
 id: pages
 label: Pages
 type: 'canonical_entities:node'
-pattern: '[node:title]'
+pattern: '/[node:title]'
 selection_criteria:
   acdf615f-eb6c-418c-a72d-43191ea79dd7:
     id: 'entity_bundle:node'
     negate: false
-    uuid: acdf615f-eb6c-418c-a72d-43191ea79dd7
     context_mapping:
       node: node
     bundles:

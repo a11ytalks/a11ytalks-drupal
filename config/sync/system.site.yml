@@ -4,7 +4,7 @@ langcode: en
 uuid: 8e44c643-c302-46ea-a054-c47fd6454ea5
 name: A11yTalks
 mail: team@a11ytalks.com
-slogan: 'Virtual meet-up featuring speakers & conversations around digital accessibility'
+slogan: 'Virtual meet-up featuring speakers & conversations around digital accessibility on the last Wednesday of the month unless otherwise noted.'
 page:
   403: /node/32
   404: /node/32

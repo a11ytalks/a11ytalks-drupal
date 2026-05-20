@@ -2,6 +2,8 @@ uuid: 0a1cf544-77d6-4637-a247-6d6ad52ecdd5
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.organizers
   module:
     - node
 id: organizers
@@ -12,7 +14,6 @@ selection_criteria:
   48d27a64-2fcf-44ee-a7b9-92e28f44c140:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 48d27a64-2fcf-44ee-a7b9-92e28f44c140
     context_mapping:
       node: node
     bundles:

@@ -2,6 +2,8 @@ uuid: 0a338961-8a8f-4d05-ac63-c920b4a6c94f
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.event
   module:
     - node
 id: events
@@ -12,7 +14,6 @@ selection_criteria:
   e1d18ad8-3eef-4484-8da5-ca54c4300cbc:
     id: 'entity_bundle:node'
     negate: false
-    uuid: e1d18ad8-3eef-4484-8da5-ca54c4300cbc
     context_mapping:
       node: node
     bundles:
