@@ -1,0 +1,40 @@
+{#
+/**
+ * @file
+ * Theme override for the All Tags filter page (tag_list view).
+ *
+ * Renders tag filter buttons at the top and all events below.
+ * JavaScript filters the event list when a tag button is clicked.
+ *
+ * Available variables:
+ * - rows: A list of rendered tag term rows (used as filter buttons via the
+ *   views-view-unformatted--tag-list.html.twig template).
+ * - view: The view object.
+ */
+#}
+{{ attach_library('a11ytalks/tag-filter') }}
+
+<div class="tag-filter-page" data-tag-filter>
+
+  <nav class="tag-filter-page__nav" aria-label="Filter talks by topic">
+    <ul class="tag-filter-page__buttons" role="list">
+      <li>
+        <button
+          class="tag-filter-btn tag-filter-btn--active"
+          data-filter="all"
+          aria-pressed="true"
+          type="button">
+          {{ 'All Talks'|t }}
+        </button>
+      </li>
+      {{ rows }}
+    </ul>
+  </nav>
+
+  <p class="tag-filter-page__status sr-only" aria-live="polite" aria-atomic="true"></p>
+
+  <div class="tag-filter-page__events">
+    {{ drupal_view('events_all_embed', 'default') }}
+  </div>
+
+</div>

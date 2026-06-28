@@ -20,3 +20,12 @@ calendar:
   css:
     component:
       css/component/calendar-view.css: {}
+
+tag-filter:
+  js:
+    js/tag-filter.js: {}
+  css:
+    component:
+      css/component/tag-filter.css: {}
+  dependencies:
+    - core/drupal
