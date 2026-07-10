@@ -1,8 +1,14 @@
-{% embed "a11ytalks:event-teaser" with {
-  body: content.body,
-  field_date_time: content.field_date_time
-} %}
-  {% block speaker_image %}
-    {{ content.field_speakers }}
-  {% endblock %}
-{% endembed %}
+{% set tag_ids = [] %}
+{% for tag in node.field_tags %}
+  {% set tag_ids = tag_ids|merge([tag.target_id]) %}
+{% endfor %}
+<article class="event-teaser-outer" data-tags="{{ tag_ids|join(' ') }}">
+  {% embed "a11ytalks:event-teaser" with {
+    body: content.body,
+    field_date_time: content.field_date_time
+  } %}
+    {% block speaker_image %}
+      {{ content.field_speakers }}
+    {% endblock %}
+  {% endembed %}
+</article>
