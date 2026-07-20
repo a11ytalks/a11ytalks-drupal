@@ -16,14 +16,8 @@
         {% endblock %}
       {% endif %}
       {{field_footnote}} {# only one occurance of this field. #}
-
-      {% if field_link and (date_time|date('U') > 'now'|date('U')) %}
-        <div class="calendar">
-          <a target="_blank" href={{content.field_link|field_value}} class="button">Add to Google Calendar <span class="sr-only">Opens in a new window</span></a>
-        </div>
-      {% endif %}
       <hr />
-      <p class="event__date">{{ field_date_time}}</p>
+      <p class="event__date">Join the discussion: {{ field_date_time}}</p>
     </div>
   <div class="event__tags">
     {% block field_tags %}
