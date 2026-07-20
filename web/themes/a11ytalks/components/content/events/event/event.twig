@@ -17,7 +17,10 @@
       {% endif %}
       {{field_footnote}} {# only one occurance of this field. #}
       <hr />
-      <p class="event__date">Join the discussion: {{ field_date_time}}</p>
+
+      {% set yt = node.field_youtube.entity.field_media_oembed_video.0.value|default('https://www.youtube.com/c/accessibilitytalks')%}
+      <p class="event__date">Join the discussion on <b><a href="{{yt}}">YouTube</a></b>: {{ field_date_time}}</p>
+
     </div>
   <div class="event__tags">
     {% block field_tags %}
