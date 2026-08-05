@@ -1,0 +1,113 @@
+/**
+ * Tag filter page styles.
+ *
+ * Provides layout and visual treatment for the /tags filter page,
+ * including the filter button group, active state, and hidden event state.
+ */
+
+/* ========================================================================
+   Filter page container
+   ======================================================================== */
+
+.tag-filter-page {
+  container-type: inline-size;
+}
+
+/* ========================================================================
+   Filter button navigation
+   ======================================================================== */
+
+.tag-filter-page__nav {
+  margin-block-end: var(--sp2, 2rem);
+}
+
+.tag-filter-page__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========================================================================
+   Individual filter buttons
+   ======================================================================== */
+
+.tag-filter-btn {
+  background: transparent;
+  border: 1px solid #757575;
+  border-radius: var(--button-border-radius, 20px);
+  color: var(--color-base, #222);
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: var(--font-size-small, 0.875rem);
+  font-weight: 600;
+  height: var(--button-height, 35px);
+  line-height: var(--button-height, 35px);
+  padding-inline: 1.25rem;
+  text-transform: uppercase;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+  white-space: nowrap;
+}
+
+.tag-filter-btn:hover,
+.tag-filter-btn:focus-visible {
+  background-color: #757575;
+  color: var(--color-white, #fff);
+  outline: 2px solid var(--color-primary, #2ec4b6);
+  outline-offset: 2px;
+}
+
+/* Active / selected state */
+.tag-filter-btn--active,
+.tag-filter-btn[aria-pressed="true"] {
+  background-color: var(--color-primary, #2ec4b6);
+  border-color: var(--color-primary, #2ec4b6);
+  color: var(--color-black-light, #222);
+}
+
+.tag-filter-btn--active:hover,
+.tag-filter-btn--active:focus-visible,
+.tag-filter-btn[aria-pressed="true"]:hover,
+.tag-filter-btn[aria-pressed="true"]:focus-visible {
+  background-color: #757575;
+  border-color: #757575;
+  color: var(--color-white, #fff);
+}
+
+/* ========================================================================
+   Event results area
+   ======================================================================== */
+
+/* Events hidden by the filter */
+.tag-filter-page__events [data-tags][hidden] {
+  /* Use display:none for semantics; hidden attribute handles visibility. */
+  display: none;
+}
+
+/* ========================================================================
+   Dark mode
+   ======================================================================== */
+
+@media (prefers-color-scheme: dark) {
+  .tag-filter-btn {
+    border-color: var(--color-gray-lighter, #c8c8c8);
+    color: var(--color-base-dark, #c8c8c8);
+  }
+
+  .tag-filter-btn:hover,
+  .tag-filter-btn:focus-visible {
+    background-color: var(--color-gray-lighter, #c8c8c8);
+    color: var(--color-black, #000);
+  }
+
+  .tag-filter-btn--active,
+  .tag-filter-btn[aria-pressed="true"] {
+    color: var(--color-black, #000);
+  }
+}

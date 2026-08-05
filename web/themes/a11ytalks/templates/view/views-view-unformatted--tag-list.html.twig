@@ -1,32 +1,33 @@
 {#
 /**
  * @file
- * Theme override to display a view of unformatted rows.
+ * Theme override to display tag list view rows as filter buttons.
+ *
+ * Each row is a taxonomy term rendered as a clickable filter button.
+ * The data-filter attribute holds the term ID used by tag-filter.js.
  *
  * Available variables:
  * - title: The title of this group of rows. May be empty.
  * - rows: A list of the view's row items.
  *   - attributes: The row's HTML attributes.
- *   - content: The row's content.
+ *   - content: The rendered tag name and event count.
+ *   - term_id: The taxonomy term ID (added via preprocess).
  * - view: The view object.
- * - default_row_class: A flag indicating whether default classes should be
- *   used on rows.
- *
- * @see template_preprocess_views_view_unformatted()
  */
 #}
 {% if title %}
   <h3>{{ title }}</h3>
 {% endif %}
-<ul>
 {% for row in rows %}
-  {%
-    set row_classes = [
-      default_row_class ? 'views-row',
-    ]
-  %}
-  <li>
-    {{- row.content -}}
-  </li>
+  {% if row.term_id %}
+    <li>
+      <button
+        class="tag-filter-btn"
+        data-filter="{{ row.term_id }}"
+        aria-pressed="false"
+        type="button">
+        {{- row.content -}}
+      </button>
+    </li>
+  {% endif %}
 {% endfor %}
-</ul>

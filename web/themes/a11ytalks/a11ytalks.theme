@@ -32,5 +32,32 @@ function a11ytalks_preprocess_page(array &$variables): void {
  * Implements hook_preprocess_HOOK() for node.html.twig.
  */
 function a11ytalks_preprocess_node(array &$variables): void {
+  // Attach tag IDs to event teasers so the filter page JavaScript can filter
+  // events by tag without needing to parse rendered markup.
+  if ($variables['view_mode'] === 'teaser' && $variables['node']->bundle() === 'event') {
+    $tag_ids = [];
+    foreach ($variables['node']->get('field_tags') as $tag_ref) {
+      if ($tag_ref->target_id !== NULL) {
+        $tag_ids[] = $tag_ref->target_id;
+      }
+    }
+    $variables['event_tag_ids'] = implode(' ', $tag_ids);
+  }
+}
 
+/**
+ * Implements hook_preprocess_views_view_unformatted() for tag_list.
+ *
+ * Passes the taxonomy term ID for each row so the Twig template can set
+ * the data-filter attribute on each filter button.
+ */
+function a11ytalks_preprocess_views_view_unformatted__tag_list(array &$variables): void {
+  $result = $variables['view']->result;
+  foreach ($variables['rows'] as $key => &$row) {
+    $row_result = $result[$key] ?? NULL;
+    if ($row_result) {
+      // The base field for taxonomy_term_field_data is tid.
+      $row['term_id'] = $row_result->tid ?? NULL;
+    }
+  }
 }
