@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "453e121f8e53b2f9df5e81998fdae6dc",
+    "content-hash": "5126a22e4338cec079d93e431bccf302",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2110,29 +2110,37 @@
         },
         {
             "name": "drupal/editoria11y",
-            "version": "2.2.24",
+            "version": "3.0.11",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/editoria11y.git",
-                "reference": "2.2.24"
+                "reference": "3.0.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/editoria11y-2.2.24.zip",
-                "reference": "2.2.24",
-                "shasum": "17510986c8b81cd8a9a306c6dba5db419878238b"
+                "url": "https://ftp.drupal.org/files/projects/editoria11y-3.0.11.zip",
+                "reference": "3.0.11",
+                "shasum": "8d882e96cbe7fd7441b8d685e680aeb9d4c295c4"
             },
             "require": {
-                "drupal/core": "^9 || ^10 || ^11"
+                "drupal/core": "^10.3 || ^11 || ^12"
             },
             "conflict": {
                 "drupal/csp": "<1.24"
             },
+            "require-dev": {
+                "drupal/key": "^1.18",
+                "drupal/views_data_export": "^1.9"
+            },
+            "suggest": {
+                "drupal/key": "Required by the editoria11y_csa submodule for secure license key storage.",
+                "drupal/views_data_export": "Required by the editoria11y_export submodule for filterable bulk CSV exports; pulls in csv_serialization and the league/csv library."
+            },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.2.24",
-                    "datestamp": "1791401252",
+                    "version": "3.0.11",
+                    "datestamp": "1791552741",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3341,17 +3349,17 @@
         },
         {
             "name": "drupal/storybook",
-            "version": "1.0.2",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/storybook.git",
-                "reference": "1.0.2"
+                "reference": "1.0.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/storybook-1.0.2.zip",
-                "reference": "1.0.2",
-                "shasum": "e9f48f920b9dd9711d04826f470073e28ef93d62"
+                "url": "https://ftp.drupal.org/files/projects/storybook-1.0.4.zip",
+                "reference": "1.0.4",
+                "shasum": "dd58df9e0626f1cd1dc7d8d80913a565d630789e"
             },
             "require": {
                 "drupal/core": "^9 || ^10 || ^11",
@@ -3363,8 +3371,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.2",
-                    "datestamp": "1731516576",
+                    "version": "1.0.4",
+                    "datestamp": "1783434371",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3913,23 +3921,26 @@
         },
         {
             "name": "e0ipso/twig-storybook",
-            "version": "v1.5.2",
+            "version": "v1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/e0ipso/twig-storybook.git",
-                "reference": "e778c6f267a95b80fcf2a7b1800b8f51e02853a2"
+                "reference": "394a075d5d7493e58c960216658acbcdc643f059"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/e0ipso/twig-storybook/zipball/e778c6f267a95b80fcf2a7b1800b8f51e02853a2",
-                "reference": "e778c6f267a95b80fcf2a7b1800b8f51e02853a2",
+                "url": "https://api.github.com/repos/e0ipso/twig-storybook/zipball/394a075d5d7493e58c960216658acbcdc643f059",
+                "reference": "394a075d5d7493e58c960216658acbcdc643f059",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "ext-mbstring": "*",
                 "php": ">=8.1",
+                "psr/log": "^1.0 || ^2.0 || ^3.0",
                 "symfony/dom-crawler": "^4.4.45 || ^6 || ^7",
+                "symfony/http-foundation": "^4.4.45 || ^6 || ^7",
+                "symfony/http-kernel": "^4.4.45 || ^6 || ^7",
                 "twig/twig": "^2.15.4 || ^3"
             },
             "require-dev": {
@@ -3938,6 +3949,7 @@
                 "nikic/php-parser": "^4",
                 "php-parallel-lint/php-parallel-lint": "^1",
                 "phpro/grumphp-shim": "^2",
+                "phpstan/phpstan": "^2.1",
                 "phpunit/phpunit": "^9.5",
                 "povils/phpmnd": "^3",
                 "squizlabs/php_codesniffer": "^3"
@@ -3962,9 +3974,9 @@
             "description": "Extends Twig with new \"stories\" and \"story\" tags for easily writing Storybook stories using Twig templates.",
             "support": {
                 "issues": "https://github.com/e0ipso/twig-storybook/issues",
-                "source": "https://github.com/e0ipso/twig-storybook/tree/v1.5.2"
+                "source": "https://github.com/e0ipso/twig-storybook/tree/v1.6.1"
             },
-            "time": "2024-11-13T16:47:44+00:00"
+            "time": "2026-01-16T10:28:10+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -10181,30 +10193,29 @@
         },
         {
             "name": "doctrine/instantiator",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "c6222283fa3f4ac679f8b9ced9a4e23f163e80d0"
+                "reference": "23da848e1a2308728fe5fdddabf4be17ff9720c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/c6222283fa3f4ac679f8b9ced9a4e23f163e80d0",
-                "reference": "c6222283fa3f4ac679f8b9ced9a4e23f163e80d0",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/23da848e1a2308728fe5fdddabf4be17ff9720c7",
+                "reference": "23da848e1a2308728fe5fdddabf4be17ff9720c7",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.1"
+                "php": "^8.4"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^11",
+                "doctrine/coding-standard": "^14",
                 "ext-pdo": "*",
                 "ext-phar": "*",
                 "phpbench/phpbench": "^1.2",
-                "phpstan/phpstan": "^1.9.4",
-                "phpstan/phpstan-phpunit": "^1.3",
-                "phpunit/phpunit": "^9.5.27",
-                "vimeo/psalm": "^5.4"
+                "phpstan/phpstan": "^2.1",
+                "phpstan/phpstan-phpunit": "^2.0",
+                "phpunit/phpunit": "^10.5.58"
             },
             "type": "library",
             "autoload": {
@@ -10231,7 +10242,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/instantiator/issues",
-                "source": "https://github.com/doctrine/instantiator/tree/2.0.0"
+                "source": "https://github.com/doctrine/instantiator/tree/2.1.0"
             },
             "funding": [
                 {
@@ -10247,7 +10258,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-12-30T00:23:10+00:00"
+            "time": "2026-01-05T06:47:08+00:00"
         },
         {
             "name": "drupal/coder",
