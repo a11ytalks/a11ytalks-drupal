@@ -1,0 +1,29 @@
+uuid: bef297c6-b31e-41b4-9d9c-c782d6c222a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.duplicate_of_organizers
+  module:
+    - system
+    - views
+  theme:
+    - stark
+id: stark_views_block__duplicate_of_organizers_block_1
+theme: stark
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:duplicate_of_organizers-block_1'
+settings:
+  id: 'views_block:duplicate_of_organizers-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: 48
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /about

@@ -1,0 +1,23 @@
+uuid: 0d5214e6-01e1-49e2-b524-da2b0b87b97c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f4998833-8962-4ce3-b050-b589cfe0e9ac'
+  module:
+    - block_content
+  theme:
+    - stark
+id: stark_contacts
+theme: stark
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'block_content:f4998833-8962-4ce3-b050-b589cfe0e9ac'
+settings:
+  id: 'block_content:f4998833-8962-4ce3-b050-b589cfe0e9ac'
+  label: contacts
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

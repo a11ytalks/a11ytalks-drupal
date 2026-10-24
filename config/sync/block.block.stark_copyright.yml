@@ -1,0 +1,23 @@
+uuid: 5e4e3fd7-fd63-4931-9cf1-43b70018a4f0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:392d0f2e-a70f-4c1d-b18e-5ebb349a6948'
+  module:
+    - block_content
+  theme:
+    - stark
+id: stark_copyright
+theme: stark
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'block_content:392d0f2e-a70f-4c1d-b18e-5ebb349a6948'
+settings:
+  id: 'block_content:392d0f2e-a70f-4c1d-b18e-5ebb349a6948'
+  label: Copyright
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }

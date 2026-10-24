@@ -1,0 +1,26 @@
+uuid: b960ef16-8e20-4d64-8c10-12a1f705c48c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - stark
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: stark_page_title
+theme: stark
+region: sidebar_first
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/posts/*\r\n/user/*\r\n<front>"

@@ -1,0 +1,29 @@
+uuid: 68cf2f1b-7202-42bc-b092-7747015ed7c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.organizers
+  module:
+    - system
+    - views
+  theme:
+    - stark
+id: stark_views_block__organizers_block_1
+theme: stark
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:organizers-block_1'
+settings:
+  id: 'views_block:organizers-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /about

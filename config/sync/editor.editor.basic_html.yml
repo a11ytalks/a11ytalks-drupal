@@ -58,6 +58,7 @@ settings:
       properties:
         reversed: false
         startIndex: true
+        styles: true
       multiBlock: true
     ckeditor5_plugin_pack_font__font_color:
       colors: {  }
@@ -74,8 +75,6 @@ settings:
         - '<dd>'
         - '<a hreflang>'
         - '<blockquote cite>'
-        - '<ul type>'
-        - '<ol type>'
         - '<h2 id>'
         - '<h3 id>'
         - '<h4 id>'

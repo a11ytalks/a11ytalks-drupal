@@ -6,6 +6,6 @@ dependencies:
     - node
 id: node.simple
 label: Simple
-description: ''
+description: null
 targetEntityType: node
 cache: true

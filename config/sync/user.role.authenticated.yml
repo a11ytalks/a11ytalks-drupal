@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - filter.format.webform_default
   module:
     - file
     - filter
@@ -23,4 +24,5 @@ permissions:
   - 'render storybook stories'
   - 'search content'
   - 'use text format basic_html'
+  - 'use text format webform_default'
   - 'view media'

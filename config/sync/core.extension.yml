@@ -53,6 +53,7 @@ module:
   metatag_twitter_cards: 0
   metatag_verification: 0
   mysql: 0
+  navigation: 0
   node: 0
   nomarkup: 0
   options: 0
@@ -63,6 +64,8 @@ module:
   redirect_404: 0
   sdc_styleguide: 0
   search: 0
+  search_help: 0
+  search_node: 0
   serialization: 0
   smart_date: 0
   smart_trim: 0
@@ -86,9 +89,8 @@ module:
   views: 10
   standard: 1000
 theme:
-  olivero: 0
-  claro: 0
   a11ytalks: 0
-  gin: 0
   stable9: 0
+  stark: 0
+  default_admin: 0
 profile: standard

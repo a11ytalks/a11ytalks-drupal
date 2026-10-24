@@ -16,3 +16,4 @@ disable_sync: false
 preserve_params: 'search,keys,page,language,language_content_entity'
 custom_tests: 0
 ck5_table_headers: row
+tests_off: 'CONTRAST_WARNING_GRAPHIC,LINK_CLICK_HERE,LINK_IMAGE_ALT'
